@@ -17,6 +17,7 @@ import CloseIcon from '@mui/icons-material/Close';
 import PropTypes from 'prop-types';
 import Nav from '../../Components/Nav'
 import Skill from "../../Components/Skill"
+import Projects from '../../Components/Projects'
 
 
 
@@ -64,6 +65,8 @@ export default function Home({ photo }) {
       <main >
         <Nav/>
         <Skill/>
+        <Projects/>
+        
       
 
       </main>
