@@ -22,7 +22,7 @@ function Projects() {
     const colorMode = React.useContext(ColorModeContext);
     const theme = useTheme();
     return (
-        <Box id="skills" py="50px">
+        <Box id="projects" py="50px">
             <Container>
                 <Box display="flex" gap="20px" mb="40px">
                     <div className={

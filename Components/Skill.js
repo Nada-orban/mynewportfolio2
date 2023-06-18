@@ -15,16 +15,6 @@ import CodeIcon from '@mui/icons-material/Code';
 import StorageIcon from '@mui/icons-material/Storage';
 import ShareIcon from '@mui/icons-material/Share';
 import ComputerIcon from '@mui/icons-material/Computer';
-import {
-    SiTensorflow,
-    SiUnity,
-    SiLatex,
-    SiLinux,
-    SiGnubash
-} from 'react-icons/si'
-import {GiSoundWaves} from 'react-icons/gi'
-import {BiNetworkChart} from 'react-icons/bi'
-import {FiMonitor} from 'react-icons/fi'
 import Image from 'next/image'
 import skill1 from '../public/assets/skills/html-1.svg'
 import skill2 from '../public/assets/skills/CSS3_logo.svg.png'
