@@ -79,10 +79,16 @@ function Projects() {
                         <Grid item
                             md={6}
                             xs={12}>
-                            <Typography variant='h4'>Personal Date Night</Typography>
+                            <Typography variant='h4'
+                                sx={
+                                    {color: "secondary.pink"}
+                            }>Personal Date Night</Typography>
                             <Typography variant='subtitle1'
                                 sx={
-                                    {my: "10px"}
+                                    {
+                                        my: "10px",
+                                        color: "black"
+                                    }
                             }>For when you need a break from your partner but already got a babysitter. Now couples can go to different events in similar locations and at the same time. A group programming project with Can Rozanes, Irene Truong and Jamie Yeung.</Typography>
                             <Box display="flex" justifyContent="start" alignItems="center" gap="5px">
                                 <AiFillHtml5 style={
@@ -128,10 +134,16 @@ function Projects() {
                         <Grid item
                             md={6}
                             xs={12}>
-                            <Typography variant='h4'>Personal Date Night</Typography>
+                            <Typography variant='h4'
+                                sx={
+                                    {color: "secondary.pink"}
+                            }>Personal Date Night</Typography>
                             <Typography variant='subtitle1'
                                 sx={
-                                    {my: "10px"}
+                                    {
+                                        my: "10px",
+                                        color: "black"
+                                    }
                             }>For when you need a break from your partner but already got a babysitter. Now couples can go to different events in similar locations and at the same time. A group programming project with Can Rozanes, Irene Truong and Jamie Yeung.</Typography>
                             <Box display="flex" justifyContent="start" alignItems="center" gap="5px">
                                 <AiFillHtml5 style={
