@@ -1,5 +1,12 @@
 
+.buttonstyle{
+    background-color: var(--secondray-maincolor);
+    padding: 15px;
+    border-radius: 10px;
+    border-style: none;
 
+
+}
 
 .bigfake{  
         
