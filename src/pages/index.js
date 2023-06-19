@@ -32,6 +32,7 @@ import Skill from "../../Components/Skill"
 import Projects from '../../Components/Projects'
 import Contact from '../../Components/Contact'
 import About from '../../Components/About'
+import Landing from '../../Components/Landing'
 
 
 export default function Home({photo}) {
@@ -65,6 +66,7 @@ export default function Home({photo}) {
 
             <main>
                 <Nav/>
+                <Landing/>
                 <About/>
                 <Skill/>
                 <Projects/>

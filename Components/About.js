@@ -73,7 +73,7 @@ function About() {
                         </h1>
                     </div>
                 </Box>
-                <Grid container>
+                <Grid container mt="50px">
                     <Grid item
                         md={6}
                         xs={12}>

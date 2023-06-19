@@ -78,7 +78,7 @@ function Projects() {
                         </h1>
                     </div>
                 </Box>
-                <Box>
+                <Box my="70px">
                     <Grid container
                         spacing={5}>
                         <Grid item
