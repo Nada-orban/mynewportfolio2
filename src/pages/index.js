@@ -33,6 +33,7 @@ import Projects from '../../Components/Projects'
 import Contact from '../../Components/Contact'
 import About from '../../Components/About'
 import Landing from '../../Components/Landing'
+import Footer from '../../Components/Footer'
 
 
 export default function Home({photo}) {
@@ -71,6 +72,7 @@ export default function Home({photo}) {
                 <Skill/>
                 <Projects/>
                 <Contact/>
+                <Footer/>
 
 
             </main>

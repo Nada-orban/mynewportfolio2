@@ -40,6 +40,7 @@ function Landing() {
                                 }
                                 data-aos="zoom-in"
                                 data-aos-delay="50">H</span>
+                                
                             <span className={
                                     styles.a
                                 }
