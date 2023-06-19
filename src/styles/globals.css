@@ -6,6 +6,7 @@
   --secondray-maincolor: #FDD865; 
   /* --secondray-maincolor: #D3817A; */
   --primary-color:#A378DF;
+  --secondary-pinkcolor:"#E5657B"
   /* --secondray-maincolor: #0DD1CF; */
 }
 * {
@@ -19,7 +20,7 @@ body {
   max-width: 100vw;
   overflow-x: hidden;
   /* background-color: #a8e4eb; */
-  color: white!important;
+  color: black!important;
   /* background: #FFC517; */
   /* font-family: 'Sofia Sans Condensed',
   sans-serif; */

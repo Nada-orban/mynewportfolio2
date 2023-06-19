@@ -17,6 +17,11 @@ import {DiJavascript} from 'react-icons/di'
 import {SiJavascript, SiNextdotjs, SiMui, SiTailwindcss} from 'react-icons/si'
 import Image from 'next/image'
 import exampleimage from '../public/assets/projects/work-personal-date-night.png'
+import LaunchIcon from '@mui/icons-material/Launch';
+import DraftsIcon from '@mui/icons-material/Drafts';
+import {HiOutlineMailOpen} from 'react-icons/hi';
+import {FiExternalLink} from 'react-icons/fi';
+
 
 function Projects() {
     const colorMode = React.useContext(ColorModeContext);
@@ -114,10 +119,20 @@ function Projects() {
                             <Box my="20px" gap="10px" display="flex">
                                 <button className={
                                     styles.buttonstyle
-                                }>View It Here</button>
+                                }>
+                                    <Typography>View It Here</Typography><FiExternalLink className={
+                                        styles.iconlink
+                                    }/>
+                                </button>
                                 <button className={
                                     styles.buttonstyle
-                                }>View Github Repo</button>
+                                }>
+                                    <Typography>
+                                        View Github Repo</Typography><FiExternalLink className={
+                                        styles.iconlink
+                                    }/>
+
+                                </button>
                             </Box>
                         </Grid>
                         <Grid item
@@ -169,10 +184,20 @@ function Projects() {
                             <Box my="20px" gap="10px" display="flex">
                                 <button className={
                                     styles.buttonstyle
-                                }>View It Here</button>
+                                }>
+                                    <Typography>View It Here</Typography><FiExternalLink className={
+                                        styles.iconlink
+                                    }/>
+                                </button>
                                 <button className={
                                     styles.buttonstyle
-                                }>View Github Repo</button>
+                                }>
+                                    <Typography>
+                                        View Github Repo</Typography><FiExternalLink className={
+                                        styles.iconlink
+                                    }/>
+
+                                </button>
                             </Box>
                         </Grid>
                         <Grid item

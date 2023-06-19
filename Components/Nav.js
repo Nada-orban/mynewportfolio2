@@ -110,7 +110,7 @@ function Nav() {
                                             </li>
                                         <li><NavLinks to="about" spy={true} smooth={true} offset={0} duration={500} className={Styles.navlink}  >ABOUT<span>/</span></NavLinks>
                                         </li>
-                                        <li><NavLinks to="skill" spy={true} smooth={true} offset={0} duration={500} className={Styles.navlink}  >SKILLS<span>/</span></NavLinks>
+                                        <li><NavLinks to="skills" spy={true} smooth={true} offset={0} duration={500} className={Styles.navlink}  >SKILLS<span>/</span></NavLinks>
                                         </li> 
                                         <li><NavLinks to="projects" spy={true} smooth={true} offset={0} duration={500} className={Styles.navlink}  >PROJECTS<span>/</span></NavLinks>
                                         </li>

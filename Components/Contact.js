@@ -13,7 +13,14 @@ import {ColorModeContext} from '../public/theme'
 import {styled, useTheme, alpha} from '@mui/material/styles';
 import TextField from '@mui/material/TextField';
 import Link from 'next/link'
-import { useForm, ValidationError } from '@formspree/react';
+import {useForm, ValidationError} from '@formspree/react';
+import DraftsIcon from '@mui/icons-material/Drafts';
+import {HiOutlineMailOpen} from 'react-icons/hi'
+import AttachEmailIcon from '@mui/icons-material/AttachEmail';
+import EmailIcon from '@mui/icons-material/Email';
+import PhoneIphoneIcon from '@mui/icons-material/PhoneIphone';
+import EastIcon from '@mui/icons-material/East';
+
 
 function Contact() {
     const colorMode = React.useContext(ColorModeContext);
@@ -82,29 +89,109 @@ function Contact() {
                         </h1>
                     </div>
                 </Box>
-                <Box>
-                <form onSubmit={handleSubmit}  >
-                                <Box mb="20px">
-                                    <Box gap="5px" mb="10px" mt="30px" sx={{ display: { sm: 'grid', md: "flex" } }}>
+
+                <Box display="flex" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                    <AttachEmailIcon sx={
+                        {
+                            mt: "5px",
+                            marginRight: "3px"
+                        }
+                    }/> {/* <Typography variant='h5' >:</Typography> */}
+                    <Link href="mailto:ahmadadelattia@gmail.com"
+                        className={
+                            styles.myEmail
+                    }>
+                        <Typography variant='h5'
+                            sx={
+                                {color: "secondary.main"}
+                            }
+                            className={
+                                styles.linkText
+                        }>
+                            ahmadadelattia@gmail.com</Typography>
+                    </Link>
+                </Box>
+                {/* <Box display="flex" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                    <PhoneIphoneIcon sx={
+                        {mt: "5px"}
+                    }/> 
+                    <Typography variant='h5'
+                        className={
+                            styles.linkText
+                    }>
+                        (+1) 469-596-4371</Typography>
+
+                   </Box> */}
+                <Paper elevation={4}
+                    sx={
+                        {
+                            backgroundColor: "white",
+                            p: "50px",
+                            borderRadius: "10px",
+                            m: "30px"
+                        }
+                }>
+                    <form onSubmit={handleSubmit}>
+                        <Box mb="20px">
+                            <Box display="grid">
+                                <label for="fname"
+                                    className={
+                                        styles.labelform
+                                }>
+                                    Name</label>
+                                <input type="text" id="fname" name="firstname" placeholder=" Enter Your name"
+                                    className={
+                                        styles.forminput
+                                    }/>
+
+                            </Box>
+                            <Box display="grid">
+                                <label for="email"
+                                    className={
+                                        styles.labelform
+                                }>
+                                    Email</label>
+                                <input type="email" id="email" name="email" placeholder=" Enter Your Email"
+                                    className={
+                                        styles.forminput
+                                    }/>
+
+                            </Box>
+                            <Box display="grid">
+                                <label for="message"
+                                    className={
+                                        styles.labelform
+                                }>
+                                    Message</label>
+                                <textarea id="message" name="message" placeholder=" Enter Your Message"
+                                    className={
+                                        styles.forminput2
+                                    }/>
+
+
+                            </Box>
+                            {/* <Box gap="5px" mb="10px" mt="30px" sx={{ display: "grid" }}>
+                                        
+                                     
                                         <TextField
                                             data-aos="fade-up"
                                             data-aos-anchor-placement="top-bottom"
-                                            // sx={{ '& .css-14m6kzo-MuiInputBase-root-MuiFilledInput-root.Mui-focused': { backgroundColor: "neutral.white" } }}
+                                            
                                             id="name"
                                             name="name"
                                             type="name"
-                                            label="Name"
+                                            label=" Enter Your Name"
                                             variant="filled"
                                             color="secondary"
                                             style={{
-                                                backgroundColor: "#055f6946", width: "100%"
+                                                backgroundColor: "#F0F0F0", width: "100%"
                                             }}
                                             InputProps={{
                                                 style: {
-                                                    color: "white"
+                                                    color: "black"
                                                 }
                                             }}
-                                            f
+                                            
                                         />
                                         <ValidationError
                                             prefix="Name"
@@ -118,12 +205,12 @@ function Contact() {
                                             id="email"
                                             name="email"
                                             type="email"
-                                            label="Email"
+                                            label="Enter Your Email"
                                             variant="filled"
                                             color="secondary"
 
                                             style={{
-                                                backgroundColor: "#055f6946", width: "100%",
+                                                backgroundColor: "#F0F0F0", width: "100%",
                                             }}
                                             InputProps={{
                                                 style: {
@@ -140,54 +227,21 @@ function Contact() {
                                             errors={state.errors}
                                         />
                                     </Box>
-                                    <Box mb="10px" data-aos="fade-up"
-                                        data-aos-anchor-placement="top-bottom" >
-                                        <TextField
-
-
-                                            id="subject"
-                                            name="subject"
-                                            label="Subject"
-                                            color="secondary"
-                                            variant="filled"
-                                            multiline
-
-
-                                            style={{
-                                                backgroundColor: "#055f6946", width: "100%"
-                                            }}
-                                            InputProps={{
-                                                style: {
-                                                    color: "white"
-                                                }
-                                            }}
-
-
-
-
-                                        />
-                                        <ValidationError
-                                            prefix="Message"
-                                            field="message"
-                                            errors={state.errors}
-                                        />
-
-
-                                    </Box>
+                              
 
                                     <TextField
                                         data-aos="fade-up"
                                         data-aos-anchor-placement="top-bottom"
                                         id="message"
                                         name="message"
-                                        label="Message"
+                                        label="Enter Your Message"
                                         color="secondary"
                                         variant="filled"
                                         multiline
                                         rows={6}
 
                                         style={{
-                                            backgroundColor: "#055f6946", width: "100%"
+                                            backgroundColor: "#F0F0F0", width: "100%"
                                         }}
                                         InputProps={{
                                             style: {
@@ -203,19 +257,18 @@ function Contact() {
                                         prefix="Message"
                                         field="message"
                                         errors={state.errors}
-                                    />
-                                </Box>
+                                    /> */} </Box>
 
-                                <button className={styles.buttonstyle} type="submit" data-aos="fade-right" >
-                                  
-                                   
-                                        Send
-                                        {/* <EastIcon sx={{ ml: "30px", width: "50px", height: "30px" }} className={styles.normalButton2icon} /> */}
-                                   
-
-                                </button>
-                            </form>
-                </Box>
+                        <button className={
+                                styles.buttonstyle
+                            }
+                            type="submit"
+                            data-aos="fade-right">
+                            <Typography>Send Email</Typography><DraftsIcon className={
+                                styles.iconlink
+                            }/> {/* <EastIcon sx={{ ml: "30px", width: "50px", height: "30px" }} className={styles.normalButton2icon} /> */} </button>
+                    </form>
+                </Paper>
             </Container>
         </Box>
     )
