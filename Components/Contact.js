@@ -25,7 +25,7 @@ import EastIcon from '@mui/icons-material/East';
 function Contact() {
     const colorMode = React.useContext(ColorModeContext);
     const theme = useTheme();
-    const [state, handleSubmit] = useForm("moqzolwp");
+    const [state, handleSubmit] = useForm("mjvdegqz");
     return (
         <Box id="contact" py="50px">
             <Container>
@@ -72,7 +72,7 @@ function Contact() {
 
                         </h1>
                     </div>
-                    <div className={
+                    {/* <div className={
                         styles.titlesection
                     }>
                         <h1>
@@ -87,16 +87,15 @@ function Contact() {
                                 data-aos="zoom-in"
                                 data-aos-delay="450">e</span>
                         </h1>
-                    </div>
-                </Box>
+                    </div> */} </Box>
 
-                <Box display="flex" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                {/* <Box display="flex" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
                     <AttachEmailIcon sx={
                         {
                             mt: "5px",
                             marginRight: "3px"
                         }
-                    }/> {/* <Typography variant='h5' >:</Typography> */}
+                    }/> 
                     <Link href="mailto:ahmadadelattia@gmail.com"
                         className={
                             styles.myEmail
@@ -110,7 +109,7 @@ function Contact() {
                         }>
                             ahmadadelattia@gmail.com</Typography>
                     </Link>
-                </Box>
+                </Box> */}
                 {/* <Box display="flex" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
                     <PhoneIphoneIcon sx={
                         {mt: "5px"}
