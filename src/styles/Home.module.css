@@ -623,46 +623,23 @@
 
 
 
-/********************* timeline ************************/
-.timeline {
-    transform: rotate(-90deg);
-    
-}
-
-
-.timelineContentContainer {
-    text-align: left;
-    
-}
-.timelineContentup {
-    display: inline-block;
-
-    transform: rotate(90deg);
-    text-align: center;
-    
-    min-width: 50;
-
-}
-
-
-.timelineContent {
-    display: inline-block;
-        transform: rotate(90deg);
-        text-align:start;
-        margin-top: 110px;
-        min-width: 50;
-        max-width: 350px;
-        margin-right: -50px;
-        
-}
-
-
-.timelineIcon {
-    transform: rotate(90deg);
-}
-
 
 /* #############contact##############3 */
+.contactbackground{
+        background: linear-gradient(#bbb7b78f,
+            #00000000 ),url('../../public/assets/background/hand-drawn-collage-design_23-2149543516.avif');
+ 
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 100vh;
+        background-position: center;
+        z-index: -1;
+       
+        overflow: hidden;
+      
+
+}
 .forminput{
     padding: 20px;
     border-radius: 5px;

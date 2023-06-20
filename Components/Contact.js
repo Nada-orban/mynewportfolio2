@@ -27,7 +27,10 @@ function Contact() {
     const theme = useTheme();
     const [state, handleSubmit] = useForm("mjvdegqz");
     return (
-        <Box id="contact" py="50px">
+        <Box id="contact" py="50px"
+            className={
+                styles.contactbackground
+        }>
             <Container>
                 <Box display="flex" gap="20px">
                     <div className={

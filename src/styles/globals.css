@@ -6,7 +6,8 @@
   --secondray-maincolor: #FDD865; 
   /* --secondray-maincolor: #D3817A; */
   --primary-color:#A378DF;
-  --secondary-pinkcolor:"#E5657B"
+  --secondary-pinkcolor:#E5657B;
+  --secondary-mediumpurple:#7976B7;
   /* --secondray-maincolor: #0DD1CF; */
 }
 * {

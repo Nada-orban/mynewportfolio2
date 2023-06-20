@@ -43,7 +43,7 @@ export const themeSettongs = (mode) => {
 
             } : {
                 primary: {
-                    main: "#004037"
+                    main: "#E5657B"
                 },
                 secondary: {
                     main: "#E7BA66",

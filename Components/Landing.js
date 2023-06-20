@@ -28,7 +28,7 @@ function Landing() {
     const colorMode = React.useContext(ColorModeContext);
     const theme = useTheme();
     return (
-        <Box id="home"  height="100vh" sx={{pt:{xs:"50%",sm:"30%",md:"15%"}}}  className={styles.landingbackground}>
+        <Box id="home"  height="100vh" sx={{pt:{xs:"50%",sm:"30%",md:"15%"},position:"relative"}}  className={styles.landingbackground}>
             <Container>
                 <Box display="flex" gap="15px" margin="auto" justifyContent="center" >
                     <div className={
@@ -145,7 +145,7 @@ function Landing() {
                                 color: "neutral.lightpink"
                             }
                     }>FRONT END DEVELOPER</Typography>
-                    <Box display="flex" sx={{ justifyContent: "center", mt: { sm: "10px", xs: "10px", md: "0px", lg: "20px" }, mb: "30px" }} alignItems="center" gap="20px" data-aos="fade-up" data-aos-delay="1350">
+                    <Box display="grid" sx={{position:"absolute",backgroundColor:"white",p:" 30px 15px",left:"-6px",top:"35%", borderRadius:"10px", mt: { sm: "0px", }, mb: "30px" }} alignItems="center" gap="20px" data-aos="fade-up" data-aos-delay="1350">
                             <a href="mailto:ahmadadelattia@gmail.com" target="_blank"><Avatar  sx={{ width: "30px", height: "30px", backgroundColor: "neutral.lightpink", color: "white" }} className={styles.nadaavatar}><EmailIcon /></Avatar></a>
                             <a href="https://www.linkedin.com/in/ahmedadelattia" target="_blank" ><Avatar  sx={{ width: "30px", height: "30px", backgroundColor: "neutral.lightpink", color: "white" }} className={styles.nadaavatar}><FiLinkedin /></Avatar></a>
                             <a href="https://github.com/ahmedadelattia" target="_blank"><Avatar  sx={{ width: "30px", height: "30px", backgroundColor: "neutral.lightpink", color: "white" }} className={styles.nadaavatar}><FiGithub /></Avatar></a>

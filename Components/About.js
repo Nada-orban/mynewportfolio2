@@ -21,7 +21,7 @@ import {ColorModeContext} from '../public/theme'
 import {styled, useTheme, alpha} from '@mui/material/styles';
 import {Toys} from '@mui/icons-material'
 import {Link} from 'react-scroll'
-import profilephoto from '../public/assets/about/353824194_295336369500269_6820613116304325861_n.jpg'
+import profilephoto from '../public/assets/about/353087579_795325908762859_926682285706518817_n.jpg'
 
 
 const NavLinks = styled(Link)`
