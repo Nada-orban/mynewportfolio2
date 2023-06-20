@@ -1,7 +1,15 @@
-import { createContext, useState, useMemo } from "react";
-import { createTheme } from '@mui/material/styles';
-import { lightGreen, green, brown, grey, lime, red, blue } from '@mui/material/colors';
-import { fontSize } from "@mui/system";
+import {createContext, useState, useMemo} from "react";
+import {createTheme} from '@mui/material/styles';
+import {
+    lightGreen,
+    green,
+    brown,
+    grey,
+    lime,
+    red,
+    blue
+} from '@mui/material/colors';
+import {fontSize} from "@mui/system";
 
 export const themeSettongs = (mode) => {
     return {
@@ -9,14 +17,13 @@ export const themeSettongs = (mode) => {
             mode: mode,
             ...(mode === "dark" ? {
                 primary: {
-                    main: grey[800],
+                    main: grey[800]
                 },
-                secondary: {
-                    // main: red[400],
+                secondary: { // main: red[400],
                     main: "#dc965a"
                 },
                 neutral: {
-                  
+
                     green: green[400],
                     red: red[500],
                     blue: blue[900],
@@ -30,55 +37,56 @@ export const themeSettongs = (mode) => {
                 },
                 text: {
                     primary: 'black',
-                    secondary: grey[500],
-                },
+                    secondary: grey[500]
+                }
 
 
             } : {
                 primary: {
-                    main: "#004037",
+                    main: "#004037"
                 },
                 secondary: {
-                    main:"#E7BA66",
-                 yellow:"#E7BA66",
-                 pink:"#E5657B"
+                    main: "#E7BA66",
+                    yellow: "#E7BA66",
+                    pink: "#E5657B"
                     // #D3817A
                     // main: "#25C37D",
                     // main: "#0DD1CF"
                 },
                 neutral: {
-                    purple:"#A378DF",
-                    lightpurple:"#C6A4EF",
-                    mediumpurple:"#7976B7"
+                    purple: "#A378DF",
+                    lightpurple: "#C6A4EF",
+                    mediumpurple: "#7976B7"
                 },
                 background: {
                     main: "#EBE8E7",
-                    
+                    secondary: "#FCC101"
+
                     // main: "#7A5CE0",#29654D,
                     // secondary: "#164038"#FAF3E8
 
 
-
-                }, text: {
-                    primary: " #FFFFFF",
-                    secondary: "#F7AE9D",
                 },
+                text: {
+                    primary: " #FFFFFF",
+                    secondary: "#F7AE9D"
+                }
 
-            }),
+            })
 
         },
         typography: {
             fontFamily: ['Josefin Sans', 'sans - serif'].join(", "),
-            fontSize: 13,
+            fontSize: 13
 
-        },
+        }
 
     }
 };
 
 
 export const ColorModeContext = createContext({
-    toggleColorMode: () => { }
+    toggleColorMode: () => {}
 });
 
 export const useMode = () => {

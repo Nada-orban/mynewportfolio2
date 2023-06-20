@@ -28,9 +28,9 @@ function Landing() {
     const colorMode = React.useContext(ColorModeContext);
     const theme = useTheme();
     return (
-        <Box id="home" pt="15%" height="100vh">
+        <Box id="home"  height="100vh" sx={{pt:{xs:"50%",sm:"30%",md:"15%"}}}  className={styles.landingbackground}>
             <Container>
-                <Box display="flex" gap="15px" margin="auto" justifyContent="center">
+                <Box display="flex" gap="15px" margin="auto" justifyContent="center" >
                     <div className={
                         styles.titlesection1
                     }>

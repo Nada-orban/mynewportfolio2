@@ -79,7 +79,7 @@ function About() {
                         xs={12}>
                         <Box borderRadius="10px">
                             <Image src={profilephoto}
-                                width={400}
+                                width={350}
                                 className={
                                     styles.photoabout
                                 }/>

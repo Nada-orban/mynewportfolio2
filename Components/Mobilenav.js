@@ -93,7 +93,7 @@ function Mobilenav() {
                     <Box display='flex' flexGrow={1} alignItems="center" justifyContent="space-between" sx={{ px: { xs: "0px", sm: "0px", md: "40px" } }}>
 
                         <Typography variant="h5" noWrap sx={{ flexGrow: 1, color: "background.secondary", fontWeight: "bold", }} className={navname ? Styles.navnameactive : Styles.navname} >
-                            Ahmed Adel Attia
+                            Nada
                         </Typography>
                         <Box position="fixed" sx={{ top: "0px ", right: "20px", }} >
                             <Box onClick={handleDrawerToggle} sx={{ display: { md: "none", sm: "flex" }, cursor: "pointer", position: "relative" }} className={hoverbutton ? Styles.hoverbuttonactive : Styles.hoverbutton}>
@@ -104,7 +104,7 @@ function Mobilenav() {
                                         <Box>
                                             <Box sx={{ color: "background.secondary", textAlign: "start" }} data-aos="fade-down"
                                                 data-aos-delay="200"><Typography noWrap sx={{ color: "background.secondary", fontWeight: "bold", fontSize: "15px" }} className={Styles.logoname}  >
-                                                    Ahmed Adel Attia
+                                                    Nada
                                                 </Typography></Box>
                                             <List  >
                                                 <ListItem>

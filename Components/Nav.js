@@ -25,12 +25,10 @@ import MenuList from '@mui/material/MenuList';
 import MenuItem from '@mui/material/MenuItem';
 import ListItemText from '@mui/material/ListItemText';
 import ListItemIcon from '@mui/material/ListItemIcon';
-
 import Lottie from 'lottie-react'
 import { ColorModeContext } from '../public/theme'
 import { styled, useTheme, alpha } from '@mui/material/styles';
 import Image from 'next/image';
-
 import { AiOutlineFilePdf } from 'react-icons/ai'
 import { FiFacebook, FiLinkedin, FiGithub } from 'react-icons/fi'
 import { SiUpwork } from 'react-icons/si'
@@ -38,7 +36,7 @@ import Mobilenav from './Mobilenav';
 
 
 const NavLinks = styled(Link)`
-  color: #A378DF;
+  color: white;
   &.active {
     color: #F7AE9D;
     
@@ -97,7 +95,7 @@ function Nav() {
                                 <Typography  noWrap sx={{ flexGrow: 1, color: "text.primary", fontWeight: "bolder",fontSize:"30px" }} >
                                     Nada
                                 </Typography>
-                                <Box onClick={handleDrawerToggle} sx={{ display: { md: "none", sm: "flex" }, cursor: "pointer", position: "relative" }} className={hoverbutton ? Styles.hoverbuttonactive : Styles.hoverbutton}>
+                                <Box onClick={handleDrawerToggle} sx={{ display: { md: "none", sm: "flex" },justifyContent:"end", cursor: "pointer", position: "relative" }} className={hoverbutton ? Styles.hoverbuttonactive : Styles.hoverbutton}>
                                     <Box className={mobileOpen ? Styles.activeHamburger : Styles.hamburber} position="absolute"></Box>
                                 </Box>
                                 <Box sx={{ display: { xs: "none", sm: 'none', md: 'block', } }}>
