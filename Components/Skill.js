@@ -77,7 +77,7 @@ function Skill() {
                         </div>
 
                     </Box>
-                    <Grid container direction="row" justifyContent="center" alignItems="center" my="50px"
+                    <Grid container direction="row" justifyContent="center" alignItems="center" my="50px" margin="auto"
                         spacing={2}>
                         <Grid item
                             md={2}

@@ -72,6 +72,7 @@ function Contact() {
 
                         </h1>
                     </div>
+
                     {/* <div className={
                         styles.titlesection
                     }>
@@ -88,6 +89,12 @@ function Contact() {
                                 data-aos-delay="450">e</span>
                         </h1>
                     </div> */} </Box>
+                <Box textAlign="center" margin="auto">
+                    <Typography variant='h6'>Feel free to Contact me by submitting the form below and I will get back to you
+                    </Typography>
+                    <Typography variant='h6'>
+                        as soon as possible</Typography>
+                </Box>
 
                 {/* <Box display="flex" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
                     <AttachEmailIcon sx={
@@ -125,7 +132,7 @@ function Contact() {
                     sx={
                         {
                             backgroundColor: "white",
-                            p: "50px",
+                            p: "25px 20px",
                             borderRadius: "10px",
                             m: "30px"
                         }

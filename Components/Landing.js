@@ -142,14 +142,14 @@ function Landing() {
                         sx={
                             {
                                 textAlign: "center",
-                                color: "secondary.pink"
+                                color: "neutral.lightpink"
                             }
                     }>FRONT END DEVELOPER</Typography>
                     <Box display="flex" sx={{ justifyContent: "center", mt: { sm: "10px", xs: "10px", md: "0px", lg: "20px" }, mb: "30px" }} alignItems="center" gap="20px" data-aos="fade-up" data-aos-delay="1350">
-                            <a href="mailto:ahmadadelattia@gmail.com" target="_blank"><Avatar  sx={{ width: "30px", height: "30px", backgroundColor: "secondary.pink", color: "white" }} className={styles.nadaavatar}><EmailIcon /></Avatar></a>
-                            <a href="https://www.linkedin.com/in/ahmedadelattia" target="_blank" ><Avatar  sx={{ width: "30px", height: "30px", backgroundColor: "secondary.pink", color: "white" }} className={styles.nadaavatar}><FiLinkedin /></Avatar></a>
-                            <a href="https://github.com/ahmedadelattia" target="_blank"><Avatar  sx={{ width: "30px", height: "30px", backgroundColor: "secondary.pink", color: "white" }} className={styles.nadaavatar}><FiGithub /></Avatar></a>
-                            <a href="https://scholar.google.com/citations?user=x2TMhSQAAAAJ&hl=en&oi=sra" target="_blank"><Avatar  sx={{ width: "30px", height: "30px", backgroundColor: "secondary.pink", color: "white" }} className={styles.nadaavatar}><SiUpwork /></Avatar></a>
+                            <a href="mailto:ahmadadelattia@gmail.com" target="_blank"><Avatar  sx={{ width: "30px", height: "30px", backgroundColor: "neutral.lightpink", color: "white" }} className={styles.nadaavatar}><EmailIcon /></Avatar></a>
+                            <a href="https://www.linkedin.com/in/ahmedadelattia" target="_blank" ><Avatar  sx={{ width: "30px", height: "30px", backgroundColor: "neutral.lightpink", color: "white" }} className={styles.nadaavatar}><FiLinkedin /></Avatar></a>
+                            <a href="https://github.com/ahmedadelattia" target="_blank"><Avatar  sx={{ width: "30px", height: "30px", backgroundColor: "neutral.lightpink", color: "white" }} className={styles.nadaavatar}><FiGithub /></Avatar></a>
+                            <a href="https://scholar.google.com/citations?user=x2TMhSQAAAAJ&hl=en&oi=sra" target="_blank"><Avatar  sx={{ width: "30px", height: "30px", backgroundColor: "neutral.lightpink", color: "white" }} className={styles.nadaavatar}><SiUpwork /></Avatar></a>
                         </Box>
                 </Box>
 

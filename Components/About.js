@@ -76,7 +76,9 @@ function About() {
                 <Grid container mt="50px">
                     <Grid item
                         md={6}
-                        xs={12}>
+                        xs={12}
+                        justifyContent="center"
+                        display="flex">
                         <Box borderRadius="10px">
                             <Image src={profilephoto}
                                 width={350}

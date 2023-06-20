@@ -29,7 +29,7 @@ function Projects() {
     return (
         <Box id="projects" py="50px">
             <Container>
-                <Box display="flex" gap="20px" mb="40px">
+                <Box display="flex" gap="20px">
                     <div className={
                         styles.titlesection
                     }>
@@ -78,12 +78,19 @@ function Projects() {
                         </h1>
                     </div>
                 </Box>
+                <Box textAlign="center" margin="auto">
+                    <Typography variant='h6'>Here you will find some of the personal and clients projects that I created with each
+                    </Typography>
+                    <Typography variant='h6'>
+                        project containing its own case study</Typography>
+                </Box>
                 <Box my="70px">
                     <Grid container
                         spacing={5}>
                         <Grid item
                             md={6}
-                            xs={12}>
+                            xs={12}
+                            margin="auto">
                             <Typography variant='h4'
                                 sx={
                                     {color: "secondary.pink"}
@@ -137,9 +144,42 @@ function Projects() {
                         </Grid>
                         <Grid item
                             md={6}
-                            xs={12}>
-                            <Image src={exampleimage}
-                                width={500}/>
+                            xs={12}
+                            sx={
+                                {
+                                    order: {
+                                        xs: -1,
+                                        sm: -1,
+                                        md: 1
+                                    }
+                                }
+                        }>
+                            <Box sx={
+                                {
+                                    display: {
+                                        xs: "none",
+                                        sm: "block",
+                                        md: "block"
+                                    }
+                                }
+                            }>
+                                <Image src={exampleimage}
+                                    width={500}/>
+                            </Box>
+                            <Box sx={
+                                {
+                                    display: {
+                                        xs: "block",
+                                        sm: "none",
+                                        md: "none"
+                                    }
+                                }
+                            }>
+                                <Image src={exampleimage}
+                                    width={350}/>
+                            </Box>
+
+
                         </Grid>
 
                     </Grid>
@@ -206,8 +246,31 @@ function Projects() {
                             sx={
                                 {order: -1}
                         }>
-                            <Image src={exampleimage}
-                                width={500}/>
+                            <Box sx={
+                                {
+                                    display: {
+                                        xs: "none",
+                                        sm: "block",
+                                        md: "block"
+                                    }
+                                }
+                            }>
+                                <Image src={exampleimage}
+                                    width={500}/>
+                            </Box>
+                            <Box sx={
+                                {
+                                    display: {
+                                        xs: "block",
+                                        sm: "none",
+                                        md: "none"
+                                    }
+                                }
+                            }>
+                                <Image src={exampleimage}
+                                    width={350}/>
+                            </Box>
+
                         </Grid>
 
                     </Grid>
