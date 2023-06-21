@@ -92,13 +92,13 @@ function Nav() {
                         <Toolbar >
                             <Box display='flex' flexGrow={1} alignItems="center" justifyContent="space-between" sx={{ px: { sm: "10px", md: "20px" } }}>
 
-                                <Typography  noWrap sx={{ flexGrow: 1, color: "text.primary", fontWeight: "bolder",fontSize:"30px" }} >
+                                <Typography  noWrap sx={{ flexGrow: 1, color: "text.primary", fontWeight: "bolder",fontSize:"30px",display:"none" }} >
                                     Nada
                                 </Typography>
-                                <Box onClick={handleDrawerToggle} sx={{ display: { md: "none", sm: "flex" },justifyContent:"end", cursor: "pointer", position: "relative" }} className={hoverbutton ? Styles.hoverbuttonactive : Styles.hoverbutton}>
+                                {/* <Box onClick={handleDrawerToggle} sx={{ display: { md: "none", sm: "flex" },justifyContent:"end", cursor: "pointer", position: "relative" }} className={hoverbutton ? Styles.hoverbuttonactive : Styles.hoverbutton}>
                                     <Box className={mobileOpen ? Styles.activeHamburger : Styles.hamburber} position="absolute"></Box>
-                                </Box>
-                                <Box sx={{ display: { xs: "none", sm: 'none', md: 'block', } }}>
+                                </Box> */}
+                                <Box sx={{ display: { xs: "none", sm: 'none', md: 'block', },textAlign:"end",position:"fixed",right:"30px" }}>
                               
                                     
                                     <ul className={Styles.menu}>

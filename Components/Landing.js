@@ -493,6 +493,38 @@ function Landing() {
                         </a>
                     </Box>
                 </Box>
+                <Box justifyContent="center" display="flex">
+                    <Link to="about"
+                        spy={true}
+                        smooth={true}
+                        offset={0}
+                        duration={500}>
+                        <Box width="110px" height="50px"
+                            className={
+                                styles.w
+                        }>
+
+                            <Box className={
+                                    styles.l
+                                }
+                                width="110px"
+                                height="50px">
+                                <Box className={
+                                    styles.c2
+                                }>
+                                    <Box className={
+                                        styles.firstview111
+                                    }></Box>
+                                    <Box className={
+                                        styles.secoundview111
+                                    }></Box>
+
+                                </Box>
+                            </Box>
+                        </Box>
+                    </Link>
+
+                </Box>
 
 
             </Container>
