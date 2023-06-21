@@ -21,7 +21,7 @@ import {ColorModeContext} from '../public/theme'
 import {styled, useTheme, alpha} from '@mui/material/styles'
 import {Link} from 'react-scroll'
 import {FiFacebook, FiLinkedin, FiGithub} from 'react-icons/fi'
-import {SiUpwork, SiGooglescholar} from 'react-icons/si'
+import {SiUpwork, SiGooglescholar, SiFreelancer} from 'react-icons/si'
 import EmailIcon from '@mui/icons-material/Email';
 
 function Landing() {
@@ -461,7 +461,7 @@ function Landing() {
                         gap="20px"
                         data-aos="fade-up"
                         data-aos-delay="1350">
-                        <a href="mailto:ahmadadelattia@gmail.com" target="_blank">
+                        <a href="mailto:nadasamir9334@gmail.com" target="_blank">
                             <Avatar sx={
                                     {
                                         width: "30px",
@@ -474,7 +474,7 @@ function Landing() {
                                     styles.nadaavatar
                             }><EmailIcon/></Avatar>
                         </a>
-                        <a href="https://www.linkedin.com/in/ahmedadelattia" target="_blank">
+                        <a href="https://www.linkedin.com/in/nada-samir-441a58130/" target="_blank">
                             <Avatar sx={
                                     {
                                         width: "30px",
@@ -487,7 +487,7 @@ function Landing() {
                                     styles.nadaavatar
                             }><FiLinkedin/></Avatar>
                         </a>
-                        <a href="https://github.com/ahmedadelattia" target="_blank">
+                        <a href="https://github.com/Nada-orban" target="_blank">
                             <Avatar sx={
                                     {
                                         width: "30px",
@@ -500,7 +500,7 @@ function Landing() {
                                     styles.nadaavatar
                             }><FiGithub/></Avatar>
                         </a>
-                        <a href="https://scholar.google.com/citations?user=x2TMhSQAAAAJ&hl=en&oi=sra" target="_blank">
+                        <a href="https://www.upwork.com/freelancers/~0158c861bae4be2e7b" target="_blank">
                             <Avatar sx={
                                     {
                                         width: "30px",
@@ -512,6 +512,19 @@ function Landing() {
                                 className={
                                     styles.nadaavatar
                             }><SiUpwork/></Avatar>
+                        </a>
+                        <a href="https://www.freelancer.com/u/nadaSamir2020" target="_blank">
+                            <Avatar sx={
+                                    {
+                                        width: "30px",
+                                        height: "30px",
+                                        backgroundColor: "neutral.lightpink",
+                                        color: "white"
+                                    }
+                                }
+                                className={
+                                    styles.nadaavatar
+                            }><SiFreelancer/></Avatar>
                         </a>
                     </Box>
                 </Box>
