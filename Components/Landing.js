@@ -43,7 +43,181 @@ function Landing() {
         }>
             <Container>
                 <Box display="flex" gap="15px" margin="auto" justifyContent="center">
-                    <div className={
+                    <Box width="110px" height="160px"
+                        className={
+                            styles.w
+                    }>
+                        <Box className={
+                                styles.l
+                            }
+                            width="61px"
+                            height="160px">
+                            <Box className={
+                                styles.c1
+                            }>
+                                <Box className={
+                                    styles.firstview
+                                }></Box>
+                                <Box className={
+                                    styles.secoundview
+                                }></Box>
+
+                            </Box>
+                        </Box>
+                        <Box className={
+                                styles.l
+                            }
+                            width="27px"
+                            height="160px">
+                            <Box className={
+                                styles.c2
+                            }>
+                                <Box className={
+                                    styles.firstview2
+                                }></Box>
+                                <Box className={
+                                    styles.secoundview2
+                                }></Box>
+
+                            </Box>
+                        </Box>
+                        <Box className={
+                                styles.l
+                            }
+                            width="22px"
+                            height="160px">
+                            <Box className={
+                                styles.c1
+                            }>
+                                <Box className={
+                                    styles.firstview3
+                                }></Box>
+                                <Box className={
+                                    styles.secoundview3
+                                }></Box>
+
+                            </Box>
+                        </Box>
+
+                    </Box>
+                    <Box width="112px" height="160px"
+                        className={
+                            styles.w
+                    }>
+
+                        <Box className={
+                                styles.l
+                            }
+                            width="27px"
+                            height="160px">
+                            <Box className={
+                                styles.c2
+                            }>
+                                <Box className={
+                                    styles.firstview2
+                                }></Box>
+                                <Box className={
+                                    styles.secoundview2
+                                }></Box>
+
+                            </Box>
+                        </Box>
+                        <Box className={
+                                styles.l
+                            }
+                            width="85px"
+                            height="160px">
+                            <Box className={
+                                styles.c1
+                            }>
+                                <Box className={
+                                    styles.firstview4
+                                }></Box>
+                                <Box className={
+                                    styles.secoundview4
+                                }></Box>
+
+                            </Box>
+                        </Box>
+
+                    </Box>
+                    <Box width="256px" height="160px"
+                        className={
+                            styles.w
+                    }>
+                        <Box className={
+                                styles.l
+                            }
+                            width="63px"
+                            height="160px">
+                            <Box className={
+                                styles.c1
+                            }>
+                                <Box className={
+                                    styles.firstview5
+                                }></Box>
+                                <Box className={
+                                    styles.secoundview5
+                                }></Box>
+
+                            </Box>
+                        </Box>
+
+                        <Box className={
+                                styles.l
+                            }
+                            width="66px"
+                            height="160px">
+                            <Box className={
+                                styles.c2
+                            }>
+                                <Box className={
+                                    styles.firstview6
+                                }></Box>
+                                <Box className={
+                                    styles.secoundview6
+                                }></Box>
+
+                            </Box>
+                        </Box>
+
+                        <Box className={
+                                styles.l
+                            }
+                            width="61px"
+                            height="160px">
+                            <Box className={
+                                styles.c1
+                            }>
+                                <Box className={
+                                    styles.firstview7
+                                }></Box>
+                                <Box className={
+                                    styles.secoundview7
+                                }></Box>
+
+                            </Box>
+                        </Box>
+                        <Box className={
+                                styles.l
+                            }
+                            width="66px"
+                            height="160px">
+                            <Box className={
+                                styles.c2
+                            }>
+                                <Box className={
+                                    styles.firstview6
+                                }></Box>
+                                <Box className={
+                                    styles.secoundview6
+                                }></Box>
+
+                            </Box>
+                        </Box>
+
+                    </Box>
+                    {/* <div className={
                         styles.titlesection1
                     }>
                         <h1>
@@ -116,7 +290,7 @@ function Landing() {
                                 data-aos-delay="300">A</span>
 
                         </h1>
-                    </div>
+                    </div> */}
                     {/* <div className={
                         styles.titlesection1
                     }>

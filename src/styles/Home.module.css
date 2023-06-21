@@ -158,6 +158,246 @@
 
 
 /* ######################landing######################## */
+
+.w{
+    
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+
+}
+.l{
+    position: relative;
+    overflow: hidden;
+    display: block;
+    float: left;
+
+}
+.c1{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: block;
+    transform: translate(0%,0%);
+    transition-duration: 0s;
+
+}
+.c1:hover{
+    transform: translate(-100%,0%);
+    transition-duration: 0.3s;
+
+}
+.firstview{
+    background-image: url("../../public/assets/h.png");
+    background-size: 61px 320px;
+    background-position: 0 -160px;
+    left: 100%;
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    overflow: hidden;
+
+}
+.secoundview{
+    background-image: url("../../public/assets/h.png");
+    background-size: 61px 320px;
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    background-position: 0 0px;
+
+}
+.c2{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: block;
+    transform: translate(0%,0%);
+    transition-duration: 0s;
+
+}
+.c2:hover{
+    transform: translate(0%,-100%);
+    transition-duration: 0.3s;
+
+}
+.firstview2{
+    background-image: url("../../public/assets/i.png");
+    background-size: 27px 320px;
+    background-position: 0 -160px;
+    left: 0;
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 100%;
+    overflow: hidden;
+
+}
+.secoundview2{
+    background-image: url("../../public/assets/i.png");
+    background-size: 27px 320px;
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    background-position: 0 0px;
+
+}
+.firstview3{
+    background-image: url("../../public/assets/comma.png");
+    background-size: 22px 320px;
+    background-position: 0 160px;
+    left: 100%;
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    overflow: hidden;
+
+}
+.secoundview3{
+    background-image: url("../../public/assets/comma.png");
+    background-size: 22px 320px;
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    background-position: 0 0px;
+
+}
+.firstview4{
+    background-image: url("../../public/assets/m.png");
+    background-size: 85px 320px;
+    background-position: 0 -160px;
+    left: 100%;
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    overflow: hidden;
+
+}
+.secoundview4{
+    background-image: url("../../public/assets/m.png");
+    background-size: 85px 320px;
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    background-position: 0 0px;
+
+}
+.firstview5{
+    background-image: url("../../public/assets/n.png");
+    background-size: 63px 320px;
+    background-position: 0 -160px;
+    left: 100%;
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    overflow: hidden;
+
+}
+.secoundview5{
+    background-image: url("../../public/assets/n.png");
+    background-size: 63px 320px;
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    background-position: 0 0px;
+
+}
+.firstview6{
+    background-image: url("../../public/assets/a.png");
+    background-size: 66px 320px;
+    background-position: 0 -160px;
+    left: 0%;
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 100%;
+    overflow: hidden;
+
+}
+.secoundview6{
+    background-image: url("../../public/assets/a.png");
+    background-size: 66px 320px;
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    background-position: 0 0px;
+
+}
+.firstview7{
+    background-image: url("../../public/assets/d.png");
+    background-size: 61px 320px;
+    background-position: 0 -160px;
+    left: 100%;
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    overflow: hidden;
+
+}
+.secoundview7{
+    background-image: url("../../public/assets/d.png");
+    background-size: 61px 320px;
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    background-position: 0 0px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* .video{
   width: 100%;
   height: 100%;
@@ -196,10 +436,7 @@
 }
 
 
-.WhoamiAnimation {
-    width: 500px;
-    height: 500px;
-}
+
 
 @media only screen and (max-width: 600px) {
     .homeSection {
