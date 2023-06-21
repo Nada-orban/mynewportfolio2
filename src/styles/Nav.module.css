@@ -4,7 +4,11 @@
     display: flex;
 
 }
+.separtator{
+    color: white;
+    margin-left:5px;
 
+}
 
 .Appbar {
     background: transparent !important;
