@@ -217,6 +217,99 @@ function Landing() {
                         </Box>
 
                     </Box>
+                    <Box width="304px" height="160px"
+                        className={
+                            styles.w
+                    }>
+                        <Box className={
+                                styles.l
+                            }
+                            width="62px"
+                            height="160px">
+                            <Box className={
+                                styles.c1
+                            }>
+                                <Box className={
+                                    styles.firstviewS
+                                }></Box>
+                                <Box className={
+                                    styles.secoundviewS
+                                }></Box>
+
+                            </Box>
+                        </Box>
+
+                        <Box className={
+                                styles.l
+                            }
+                            width="66px"
+                            height="160px">
+                            <Box className={
+                                styles.c2
+                            }>
+                                <Box className={
+                                    styles.firstview6
+                                }></Box>
+                                <Box className={
+                                    styles.secoundview6
+                                }></Box>
+
+                            </Box>
+                        </Box>
+                        <Box className={
+                                styles.l
+                            }
+                            width="85px"
+                            height="160px">
+                            <Box className={
+                                styles.c1
+                            }>
+                                <Box className={
+                                    styles.firstview4
+                                }></Box>
+                                <Box className={
+                                    styles.secoundview4
+                                }></Box>
+
+                            </Box>
+                        </Box>
+                        <Box className={
+                                styles.l
+                            }
+                            width="27px"
+                            height="160px">
+                            <Box className={
+                                styles.c2
+                            }>
+                                <Box className={
+                                    styles.firstview2
+                                }></Box>
+                                <Box className={
+                                    styles.secoundview2
+                                }></Box>
+
+                            </Box>
+                        </Box>
+                        <Box className={
+                                styles.l
+                            }
+                            width="64px"
+                            height="160px">
+                            <Box className={
+                                styles.c2
+                            }>
+                                <Box className={
+                                    styles.firstviewr
+                                }></Box>
+                                <Box className={
+                                    styles.secoundviewr
+                                }></Box>
+
+                            </Box>
+                        </Box>
+
+
+                    </Box>
                     {/* <div className={
                         styles.titlesection1
                     }>
@@ -330,7 +423,7 @@ function Landing() {
                                 textAlign: "center",
                                 color: "neutral.lightpink"
                             }
-                    }>FRONT END DEVELOPER</Typography>
+                    }>I'M A FRONT END DEVELOPER</Typography>
                     <Box display="flex"
                         sx={
                             {
