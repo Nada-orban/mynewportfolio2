@@ -191,10 +191,9 @@
 }
 @keyframes automatichover{
     0%{transform: translate(0%,0%);}
-    25%{transform: translate(-100%,0%);}
-    50%{transform: translate(0%,0%);}
-    75%{transform: translate(-100%,0%);}
+    50%{transform: translate(-100%,0%);}
     100%{transform: translate(0%,0%);}
+    
 }
 .firstview{
     background-image: url("../../public/assets/h.png");
@@ -229,12 +228,20 @@
     display: block;
     transform: translate(0%,0%);
     transition-duration: 0s;
+    animation-name: automatichover1;
+    animation-duration: 6s;
 
 }
 .c2:hover{
     transform: translate(0%,-100%);
     transition-duration: 0.3s;
 
+}
+@keyframes automatichover1{
+    0%{transform: translate(0%,0%);}
+    50%{transform: translate(0%,-100%);}
+    100%{transform: translate(0%,0%);}
+    
 }
 .firstview2{
     background-image: url("../../public/assets/i.png");
