@@ -19,7 +19,7 @@
 }
 .verticalmenu{
     list-style: none;
-    gap: 10px;
+    gap: 20px;
     display: grid;
 }
 .menu{

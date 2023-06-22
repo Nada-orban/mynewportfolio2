@@ -6,12 +6,14 @@ import {
     Divider,
     Paper,
     Stack
+
 } from '@mui/material'
 import React from 'react'
 import Styles from '../src/styles/Nav.module.css'
 import {ColorModeContext} from '../public/theme'
 import {styled, useTheme, alpha} from '@mui/material/styles';
 import {Link} from 'react-scroll'
+import Tooltip, {tooltipClasses} from '@mui/material/Tooltip';
 
 
 const NavLinks = styled(Link)`
@@ -24,10 +26,30 @@ const NavLinks = styled(Link)`
     background-color: transparent;
     transform: none;
    
+   
     
   }
   
 `;
+
+const LightTooltip = styled(({
+    className,
+    ...props
+}) => (
+    <Tooltip {...props}
+        classes={
+            {popper: className}
+        }/>
+))(({theme}) => ({
+    [`& .${
+            tooltipClasses.tooltip
+        }`]: {
+        backgroundColor: theme.palette.common.white,
+        color: 'rgba(0, 0, 0, 0.87)',
+        boxShadow: theme.shadows[1],
+        fontSize: 11
+    }
+}));
 
 function Verticalnavbar() {
     const colorMode = React.useContext(ColorModeContext);
@@ -46,10 +68,14 @@ function Verticalnavbar() {
                         className={
                             Styles.navlink
                     }>
-                        <Box className={
-                            Styles.navbox
-                        }></Box>
+
+                        <LightTooltip title="HOME" placement="left">
+                            <Box className={
+                                Styles.navbox
+                            }></Box>
+                        </LightTooltip>
                     </NavLinks>
+
                 </li>
 
                 <li>
@@ -61,9 +87,11 @@ function Verticalnavbar() {
                         className={
                             Styles.navlink
                     }>
-                        <Box className={
-                            Styles.navbox
-                        }></Box>
+                        <LightTooltip title="ABOUT" placement="left">
+                            <Box className={
+                                Styles.navbox
+                            }></Box>
+                        </LightTooltip>
                     </NavLinks>
                 </li>
 
@@ -76,9 +104,11 @@ function Verticalnavbar() {
                         className={
                             Styles.navlink
                     }>
-                        <Box className={
-                            Styles.navbox
-                        }></Box>
+                        <LightTooltip title="SKILLS" placement="left">
+                            <Box className={
+                                Styles.navbox
+                            }></Box>
+                        </LightTooltip>
                     </NavLinks>
                 </li>
 
@@ -91,9 +121,11 @@ function Verticalnavbar() {
                         className={
                             Styles.navlink
                     }>
-                        <Box className={
-                            Styles.navbox
-                        }></Box>
+                        <LightTooltip title="PROJECTS" placement="left">
+                            <Box className={
+                                Styles.navbox
+                            }></Box>
+                        </LightTooltip>
                     </NavLinks>
                 </li>
 
@@ -106,9 +138,11 @@ function Verticalnavbar() {
                         className={
                             Styles.navlink
                     }>
-                        <Box className={
-                            Styles.navbox
-                        }></Box>
+                        <LightTooltip title="CONTACT" placement="left">
+                            <Box className={
+                                Styles.navbox
+                            }></Box>
+                        </LightTooltip>
                     </NavLinks>
                 </li>
 
