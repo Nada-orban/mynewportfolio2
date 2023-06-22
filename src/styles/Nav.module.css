@@ -1,4 +1,27 @@
+.navbox{
+    border-width: 2px;
+    border-style: solid;
+    border-color: var(--secondary-lightpink);
+    /* border: 2px solid var(--secondary-lightpink); */
+    width: 10px;
+    height: 10px;
+    /* background-color: #D18DE0;
+    transform: rotate(45deg);
+    transition: all 0.3s ease-in-out; */
 
+
+}
+.navbox:hover{
+  background-color: transparent;
+  transform: none;
+ 
+   
+}
+.verticalmenu{
+    list-style: none;
+    gap: 10px;
+    display: grid;
+}
 .menu{
     list-style: none;
     display: flex;

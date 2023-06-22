@@ -38,7 +38,7 @@ import Mobilenav from './Mobilenav';
 const NavLinks = styled(Link)`
   color: white;
   &.active {
-    color: #A378DF;
+    color: #D18DE0;
     
   }
   

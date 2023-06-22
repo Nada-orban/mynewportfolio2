@@ -33,7 +33,10 @@ function Skill() {
     const colorMode = React.useContext(ColorModeContext);
     const theme = useTheme();
     return (
-        <Box id="skills" py="50px">
+        <Box id="skills" py="50px"
+            className={
+                styles.skillbackground
+        }>
             <Container>
                 <Box>
                     <Box display="flex" gap="20px">

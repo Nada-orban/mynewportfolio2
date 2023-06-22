@@ -23,6 +23,7 @@ import {Link} from 'react-scroll'
 import {FiFacebook, FiLinkedin, FiGithub} from 'react-icons/fi'
 import {SiUpwork, SiGooglescholar, SiFreelancer} from 'react-icons/si'
 import EmailIcon from '@mui/icons-material/Email';
+import Verticalnavbar from './Verticalnavbar'
 
 function Landing() {
     const colorMode = React.useContext(ColorModeContext);
@@ -560,6 +561,7 @@ function Landing() {
                     </Link>
 
                 </Box>
+                <Verticalnavbar/>
 
 
             </Container>

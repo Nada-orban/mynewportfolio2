@@ -27,7 +27,10 @@ function Projects() {
     const colorMode = React.useContext(ColorModeContext);
     const theme = useTheme();
     return (
-        <Box id="projects" py="50px">
+        <Box id="projects" py="50px"
+            className={
+                styles.projectbackground
+        }>
             <Container>
                 <Box display="flex" gap="20px">
                     <div className={
