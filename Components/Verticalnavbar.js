@@ -55,7 +55,14 @@ function Verticalnavbar() {
     const colorMode = React.useContext(ColorModeContext);
     const theme = useTheme();
     return (
-        <Box display="grid" position="fixed" top="50%" right="30px">
+        <Box display="grid" position="fixed" top="50%" right="30px"
+            sx={
+                {
+                    display: {
+                        xs: "none"
+                    }
+                }
+        }>
             <ul className={
                 Styles.verticalmenu
             }>
