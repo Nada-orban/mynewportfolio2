@@ -33,7 +33,7 @@ function Landing() {
             sx={
                 {
                     pt: {
-                        xs: "50%",
+                        xs: "35%",
                         sm: "30%",
                         md: "15%"
                     }

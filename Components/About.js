@@ -82,9 +82,32 @@ function About() {
                         xs={12}
                         justifyContent="center"
                         display="flex">
-                        <Box borderRadius="10px">
+                        <Box borderRadius="10px"
+                            sx={
+                                {
+                                    display: {
+                                        xs: "none",
+                                        sm: "block"
+                                    }
+                                }
+                        }>
                             <Image src={profilephoto}
                                 width={350}
+                                className={
+                                    styles.photoabout
+                                }/>
+                        </Box>
+                        <Box borderRadius="10px"
+                            sx={
+                                {
+                                    display: {
+                                        xs: "block",
+                                        sm: "none"
+                                    }
+                                }
+                        }>
+                            <Image src={profilephoto}
+                                width={300}
                                 className={
                                     styles.photoabout
                                 }/>
