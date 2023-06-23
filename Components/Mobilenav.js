@@ -92,9 +92,9 @@ function Mobilenav() {
                 <Toolbar>
                     <Box display='flex' flexGrow={1} alignItems="center" justifyContent="space-between" sx={{ px: { xs: "0px", sm: "0px", md: "40px" } }}>
 
-                        <Typography variant="h5" noWrap sx={{ flexGrow: 1, color: "background.secondary", fontWeight: "bold", }} className={navname ? Styles.navnameactive : Styles.navname} >
+                        {/* <Typography variant="h5" noWrap sx={{ flexGrow: 1, color: "background.secondary", fontWeight: "bold", }} className={navname ? Styles.navnameactive : Styles.navname} >
                             Nada
-                        </Typography>
+                        </Typography> */}
                         <Box position="fixed" sx={{ top: "0px ", right: "20px", }} >
                             <Box onClick={handleDrawerToggle} sx={{ display: { md: "none", sm: "flex" }, cursor: "pointer", position: "relative" }} className={hoverbutton ? Styles.hoverbuttonactive : Styles.hoverbutton}>
                                 <Box className={mobileOpen ? Styles.activeHamburger : Styles.hamburber} position="absolute"></Box>
