@@ -38,7 +38,7 @@ import { SiUpwork, SiGooglescholar } from 'react-icons/si'
 const NavLinks = styled(Link)`
   color: white;
   &.active {
-    color: #0F6973;
+    color: #A378DF;
     
   }
   
@@ -99,14 +99,21 @@ function Mobilenav() {
                             <Box onClick={handleDrawerToggle} sx={{ display: { md: "none", sm: "flex" }, cursor: "pointer", position: "relative" }} className={hoverbutton ? Styles.hoverbuttonactive : Styles.hoverbutton}>
                                 <Box className={mobileOpen ? Styles.activeHamburger : Styles.hamburber} position="absolute"></Box>
                                 {/* <Box className={mobileOpen ? Styles.navbackgroundactive : Styles.navbackground}></Box> */}
-                                <Box className={mobileOpen ? Styles.bigmenuBoxactive : Styles.bigmenuBox} backgroundColor="secondary.main" textAlign="end" BackdropProps={{ invisible: false }} sx={{ sm: "block", md: "none", lg: "none" }} >
+                                <Box className={mobileOpen ? Styles.bigmenuBoxactive : Styles.bigmenuBox} backgroundColor="#D9D2E7" textAlign="end" BackdropProps={{ invisible: false }} sx={{ sm: "block", md: "none", lg: "none" }} >
                                     {mobileOpen && (
                                         <Box>
                                             <Box sx={{ color: "background.secondary", textAlign: "start" }} data-aos="fade-down"
-                                                data-aos-delay="200"><Typography noWrap sx={{ color: "background.secondary", fontWeight: "bold", fontSize: "15px" }} className={Styles.logoname}  >
+                                                data-aos-delay="200"><Typography noWrap sx={{ color: "neutral.purple", fontWeight: "bold", fontSize: "30px" }} className={Styles.logoname}  >
                                                     Nada
                                                 </Typography></Box>
-                                            <List  >
+                                            <List  sx={{paddingLeft:"30px"}}>
+                                            <ListItem>
+                                                    <NavLinks to="home" spy={true} smooth={true} offset={0} duration={500} className={Styles.mobilenavlink} onClick={handleDrawerToggle} data-aos="fade-up"
+                                                        data-aos-delay="200">
+
+                                                        <Typography className={Styles.mobilenavlink} >Home</Typography>
+                                                    </NavLinks>
+                                                </ListItem>
                                                 <ListItem>
                                                     <NavLinks to="about" spy={true} smooth={true} offset={0} duration={500} className={Styles.mobilenavlink} onClick={handleDrawerToggle} data-aos="fade-up"
                                                         data-aos-delay="200">
@@ -122,20 +129,6 @@ function Mobilenav() {
                                                     </NavLinks>
                                                 </ListItem>
 
-                                                <ListItem>
-                                                    <NavLinks to="papers" spy={true} smooth={true} offset={0} duration={500} onClick={handleDrawerToggle} data-aos="fade-up"
-                                                        data-aos-delay="200">
-
-                                                        <Typography className={Styles.mobilenavlink}>PAPERS</Typography>
-                                                    </NavLinks>
-                                                </ListItem>
-                                                <ListItem>
-                                                    <NavLinks to="experience" spy={true} smooth={true} offset={0} duration={500} onClick={handleDrawerToggle} data-aos="fade-up"
-                                                        data-aos-delay="200">
-
-                                                        <Typography className={Styles.mobilenavlink}>EXPERIENCE</Typography>
-                                                    </NavLinks>
-                                                </ListItem>
                                                 <ListItem>
                                                     <NavLinks to="projects" spy={true} smooth={true} offset={0} duration={500} onClick={handleDrawerToggle} data-aos="fade-up"
                                                         data-aos-delay="200">
@@ -154,7 +147,7 @@ function Mobilenav() {
 
 
                                             </List>
-                                            <Box textAlign="start" mt="5px" paddingLeft="20px" data-aos="fade-up"
+                                            {/* <Box textAlign="start" mt="5px" paddingLeft="20px" data-aos="fade-up"
                                                 data-aos-delay="200">
                                                 <Typography sx={{ color: "background.secondary", fontSize: "15px" }}>Links</Typography>
                                                 <Box display="flex" sx={{ justifyContent: "start", mt: { sm: "10px", xs: "10px", md: "0px", lg: "0px" }, mb: "20px" }} alignItems="center" gap="20px" >
@@ -165,17 +158,17 @@ function Mobilenav() {
                                                 </Box>
 
 
-                                            </Box>
-                                            <Box textAlign="start" mt="20px" paddingLeft="20px" data-aos="fade-up"
+                                            </Box> */}
+                                            <Box textAlign="start" mt="40px" paddingLeft="30px" data-aos="fade-up"
                                                 data-aos-delay="200">
-                                                <Typography sx={{ color: "background.secondary", fontSize: "15px" }}>Email</Typography>
+                                                <Typography sx={{ color: "neutral.purple", fontSize: "20px" }}>SAY HELLO</Typography>
                                                 <a href="mailto:ahmadadelattia@gmail.com" className={Styles.emailstyle}>ahmadadelattia@gmail.com</a>
                                             </Box>
-                                            <Box textAlign="start" mt="20px" paddingLeft="20px" data-aos="fade-up"
+                                            {/* <Box textAlign="start" mt="20px" paddingLeft="20px" data-aos="fade-up"
                                                 data-aos-delay="200">
                                                 <Typography sx={{ color: "background.secondary", fontSize: "15px" }}>Phone</Typography>
                                                 <a href="mailto:ahmadadelattia@gmail.com" className={Styles.emailstyle}> 469-596-4371</a>
-                                            </Box>
+                                            </Box> */}
                                         </Box>
                                     )}
 
