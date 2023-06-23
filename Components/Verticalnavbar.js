@@ -59,7 +59,8 @@ function Verticalnavbar() {
             sx={
                 {
                     display: {
-                        xs: "none"
+                        xs: "none",
+                        sm: "block"
                     }
                 }
         }>

@@ -81,7 +81,8 @@ function About() {
                         md={6}
                         xs={12}
                         justifyContent="center"
-                        display="flex">
+                        display="flex"
+                        margin="auto">
                         <Box borderRadius="10px"
                             sx={
                                 {
