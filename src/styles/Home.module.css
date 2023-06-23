@@ -9,6 +9,7 @@
     align-items: center;
     cursor: pointer;
     transition: all 0.3s ease-in-out!important;
+    color: white;
 
 
 }
@@ -53,8 +54,8 @@
 }
 .titlesection {
     font-size: 35px;
-    
-    color: #D18DE0;
+    /* color: #D18DE0; */
+    color: white;
     font-weight: bold;
     margin-bottom: 10px;
     margin: auto;
@@ -671,7 +672,7 @@
 }
 /* #########################about################# */
 /* .aboutbackground{
-    background-color:#EAC0C9 ;
+    background-color:#E5DEDE ;
 } */
 .photoabout{
     border-radius: 10px;
@@ -862,7 +863,7 @@
     width: 100%;
     height: 100px;
     /* background-color: #FEF2D8; */
-    background-color: #7976B7;
+    background-color: #EAC0C9;
 
 
 }
@@ -878,7 +879,7 @@
 .contactbackground{
         /* background: linear-gradient(#bbb7b78f,
             #00000000 ),url('../../public/assets/background/hand-drawn-collage-design_23-2149543516.avif'); */
-        background-color: #7976B7;
+        background-color: #EAC0C9;
  
         background-repeat: no-repeat;
         background-size: cover;

@@ -46,7 +46,7 @@ export const themeSettongs = (mode) => {
                     main: "#E5657B"
                 },
                 secondary: {
-                    main: "#E7BA66",
+                    main: "#E5657B",
                     yellow: "#E7BA66",
                     pink: "#E5657B"
                     // #D3817A

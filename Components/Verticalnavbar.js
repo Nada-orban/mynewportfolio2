@@ -17,12 +17,12 @@ import Tooltip, {tooltipClasses} from '@mui/material/Tooltip';
 
 
 const NavLinks = styled(Link)`
-  color: #D18DE0;
-  background-color: #D18DE0;
+  color: #E5657B;
+  background-color: #E5657B;
   transform: rotate(45deg);
   transition: all 0.3s ease-in-out;
   &.active {
-    color:#D18DE0;
+    color:#E5657B;
     background-color: transparent;
     transform: none;
    
