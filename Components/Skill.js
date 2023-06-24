@@ -33,385 +33,393 @@ function Skill() {
     const colorMode = React.useContext(ColorModeContext);
     const theme = useTheme();
     return (
-        <Box id="skills" py="50px"
-            className={
-                styles.skillbackground
-        }>
-            <Container>
-                <Box>
-                    <Box display="flex" gap="20px">
-                        <div className={
-                            styles.titlesection
-                        }>
-                            <h1>
-                                <span class={
-                                        styles.a
-                                    }
-                                    data-aos="zoom-in"
-                                    data-aos-delay="50">S</span>
-                                <span class={
-                                        styles.a
-                                    }
-                                    data-aos="zoom-in"
-                                    data-aos-delay="100">k</span>
-                                <span class={
-                                        styles.a
-                                    }
-                                    data-aos="zoom-in"
-                                    data-aos-delay="150">i</span>
-                                <span class={
-                                        styles.a
-                                    }
-                                    data-aos="zoom-in"
-                                    data-aos-delay="200">l</span>
-                                <span class={
-                                        styles.a
-                                    }
-                                    data-aos="zoom-in"
-                                    data-aos-delay="250">l</span>
-                                <span class={
-                                        styles.a
-                                    }
-                                    data-aos="zoom-in"
-                                    data-aos-delay="300">s</span>
+        <>
+            <Box className={
+                styles.mediumbackgoundskilllanding
+            }></Box>
+            <Box id="skills" py="50px"
+                className={
+                    styles.skillbackground
+            }>
+                <Container>
+                    <Box>
+                        <Box display="flex" gap="20px">
+                            <div className={
+                                styles.titlesection
+                            }>
+                                <h1>
+                                    <span class={
+                                            styles.a
+                                        }
+                                        data-aos="zoom-in"
+                                        data-aos-delay="50">S</span>
+                                    <span class={
+                                            styles.a
+                                        }
+                                        data-aos="zoom-in"
+                                        data-aos-delay="100">k</span>
+                                    <span class={
+                                            styles.a
+                                        }
+                                        data-aos="zoom-in"
+                                        data-aos-delay="150">i</span>
+                                    <span class={
+                                            styles.a
+                                        }
+                                        data-aos="zoom-in"
+                                        data-aos-delay="200">l</span>
+                                    <span class={
+                                            styles.a
+                                        }
+                                        data-aos="zoom-in"
+                                        data-aos-delay="250">l</span>
+                                    <span class={
+                                            styles.a
+                                        }
+                                        data-aos="zoom-in"
+                                        data-aos-delay="300">s</span>
 
 
-                            </h1>
-                        </div>
+                                </h1>
+                            </div>
+
+                        </Box>
+                        <Grid container direction="row" justifyContent="center" alignItems="center" my="50px" margin="auto"
+                            spacing={2}>
+                            <Grid item
+                                md={2}
+                                sm={4}
+                                xs={6}
+                                mt="20px">
+                                <Paper sx={
+                                        {
+                                            borderRadius: "20px",
+                                            width: "130px",
+                                            height: "130px",
+                                            textAlign: "center",
+                                            paddingTop: "20px",
+                                            border: "1.5px solid orange"
+                                        }
+                                    }
+                                    square
+                                    elevation={6}>
+                                    <Typography variant='h5'
+                                        sx={
+                                            {
+                                                color: "black",
+                                                mb: "5px"
+                                            }
+                                    }>Html</Typography>
+                                    <Image src={skill1}
+                                        width={40}
+                                        alt="Picture of skill"/>
+                                </Paper>
+                            </Grid>
+                            <Grid item
+                                md={2}
+                                sm={4}
+                                xs={6}
+                                mt="20px">
+                                <Paper sx={
+                                        {
+                                            borderRadius: "20px",
+                                            width: "130px",
+                                            height: "130px",
+                                            textAlign: "center",
+                                            paddingTop: "20px",
+                                            border: "1.5px solid #2A66F3"
+                                        }
+                                    }
+                                    square
+                                    elevation={6}>
+                                    <Typography variant='h5'
+                                        sx={
+                                            {
+                                                color: "black",
+                                                mb: "5px"
+                                            }
+                                    }>Css
+                                    </Typography>
+                                    <Image src={skill2}
+                                        width={40}
+                                        alt="Picture of skill"/>
+                                </Paper>
+                            </Grid>
+
+                            <Grid item
+                                md={2}
+                                sm={4}
+                                xs={6}
+                                mt="20px">
+                                <Paper sx={
+                                        {
+                                            borderRadius: "20px",
+                                            width: "130px",
+                                            height: "130px",
+                                            textAlign: "center",
+                                            paddingTop: "20px",
+                                            border: "1.5px solid yellow"
+                                        }
+                                    }
+                                    square
+                                    elevation={6}>
+                                    <Typography variant='h5'
+                                        sx={
+                                            {
+                                                color: "black",
+                                                mb: "5px"
+                                            }
+                                    }>Javascript</Typography>
+                                    <Image src={skill3}
+                                        width={40}
+                                        alt="Picture of skill"/>
+                                </Paper>
+                            </Grid>
+
+                            <Grid item
+                                md={2}
+                                sm={4}
+                                xs={6}
+                                mt="20px">
+                                <Paper sx={
+                                        {
+                                            borderRadius: "20px",
+                                            width: "130px",
+                                            height: "130px",
+                                            textAlign: "center",
+                                            paddingTop: "20px",
+                                            border: "1.5px solid #6FDDFA"
+                                        }
+                                    }
+                                    square
+                                    elevation={6}>
+                                    <Typography variant='h5'
+                                        sx={
+                                            {
+                                                color: "black",
+                                                mb: "5px"
+                                            }
+                                    }>React.js</Typography>
+                                    <Image src={skill4}
+                                        width={40}
+                                        alt="Picture of skill"/>
+                                </Paper>
+                            </Grid>
+                            <Grid item
+                                md={2}
+                                sm={4}
+                                xs={6}
+                                mt="20px">
+                                <Paper sx={
+                                        {
+                                            borderRadius: "20px",
+                                            width: "130px",
+                                            height: "130px",
+                                            textAlign: "center",
+                                            paddingTop: "20px",
+                                            border: "1.5px solid #0AB3D7"
+                                        }
+                                    }
+                                    square
+                                    elevation={6}>
+                                    <Typography variant='h5'
+                                        sx={
+                                            {
+                                                color: "black",
+                                                mb: "5px"
+                                            }
+                                    }>Tailwind</Typography>
+                                    <Image src={skill5}
+                                        width={40}
+                                        alt="Picture of skill"/>
+                                </Paper>
+                            </Grid>
+                            <Grid item
+                                md={2}
+                                sm={4}
+                                xs={6}
+                                mt="20px">
+                                <Paper sx={
+                                        {
+                                            borderRadius: "20px",
+                                            width: "130px",
+                                            height: "130px",
+                                            textAlign: "center",
+                                            paddingTop: "20px",
+                                            border: "1.5px solid #7111F3"
+                                        }
+                                    }
+                                    square
+                                    elevation={6}>
+                                    <Typography variant='h5'
+                                        sx={
+                                            {
+                                                color: "black",
+                                                mb: "5px"
+                                            }
+                                    }>Bootstrap</Typography>
+                                    <Image src={skill6}
+                                        width={40}
+                                        alt="Picture of skill"/>
+                                </Paper>
+                            </Grid>
+                            <Grid item
+                                md={2}
+                                sm={4}
+                                xs={6}
+                                mt="20px">
+                                <Paper sx={
+                                        {
+                                            borderRadius: "20px",
+                                            width: "130px",
+                                            height: "130px",
+                                            textAlign: "center",
+                                            paddingTop: "20px",
+                                            border: "1.5px solid #845DC3"
+                                        }
+                                    }
+                                    square
+                                    elevation={6}>
+                                    <Typography variant='h5'
+                                        sx={
+                                            {
+                                                color: "black",
+                                                mb: "5px"
+                                            }
+                                    }>Redux</Typography>
+                                    <Image src={skill7}
+                                        width={40}
+                                        alt="Picture of skill"/>
+                                </Paper>
+                            </Grid>
+                            <Grid item
+                                md={2}
+                                sm={4}
+                                xs={6}
+                                mt="20px">
+                                <Paper sx={
+                                        {
+                                            borderRadius: "20px",
+                                            width: "130px",
+                                            height: "130px",
+                                            textAlign: "center",
+                                            paddingTop: "20px",
+                                            border: "1.5px solid black"
+                                        }
+                                    }
+                                    square
+                                    elevation={6}>
+                                    <Typography variant='h5'
+                                        sx={
+                                            {
+                                                color: "black",
+                                                mb: "5px"
+                                            }
+                                    }>Next.js</Typography>
+                                    <Image src={skill8}
+                                        width={40}
+                                        alt="Picture of skill"/>
+                                </Paper>
+                            </Grid>
+                            <Grid item
+                                md={2}
+                                sm={4}
+                                xs={6}
+                                mt="20px">
+                                <Paper sx={
+                                        {
+                                            borderRadius: "20px",
+                                            width: "130px",
+                                            height: "130px",
+                                            textAlign: "center",
+                                            paddingTop: "20px",
+                                            border: "1.5px solid #5EA64F"
+                                        }
+                                    }
+                                    square
+                                    elevation={6}>
+                                    <Typography variant='h5'
+                                        sx={
+                                            {
+                                                color: "black",
+                                                mb: "5px"
+                                            }
+                                    }>Node.js</Typography>
+                                    <Image src={skill9}
+                                        width={40}
+                                        alt="Picture of skill"/>
+                                </Paper>
+                            </Grid>
+                            <Grid item
+                                md={2}
+                                sm={4}
+                                xs={6}
+                                mt="20px">
+                                <Paper sx={
+                                        {
+                                            borderRadius: "20px",
+                                            width: "130px",
+                                            height: "130px",
+                                            textAlign: "center",
+                                            paddingTop: "20px",
+                                            border: "1.5px solid #5EA64F"
+                                        }
+                                    }
+                                    square
+                                    elevation={6}>
+                                    <Typography variant='h5'
+                                        sx={
+                                            {
+                                                color: "black",
+                                                mb: "5px"
+                                            }
+                                    }>Mongo DB</Typography>
+                                    <Image src={skill10}
+                                        width={40}
+                                        alt="Picture of skill"/>
+                                </Paper>
+                            </Grid>
+                            <Grid item
+                                md={2}
+                                sm={4}
+                                xs={6}
+                                mt="20px">
+                                <Paper sx={
+                                        {
+                                            borderRadius: "20px",
+                                            width: "130px",
+                                            height: "130px",
+                                            textAlign: "center",
+                                            paddingTop: "20px",
+                                            border: "1.5px solid black"
+                                        }
+                                    }
+                                    square
+                                    elevation={6}>
+                                    <Typography variant='h5'
+                                        sx={
+                                            {
+                                                color: "black",
+                                                mb: "5px"
+                                            }
+                                    }>express.js</Typography>
+                                    <Image src={skill11}
+                                        width={40}
+                                        alt="Picture of skill"/>
+                                </Paper>
+                            </Grid>
+
+
+                        </Grid>
 
                     </Box>
-                    <Grid container direction="row" justifyContent="center" alignItems="center" my="50px" margin="auto"
-                        spacing={2}>
-                        <Grid item
-                            md={2}
-                            sm={4}
-                            xs={6}
-                            mt="20px">
-                            <Paper sx={
-                                    {
-                                        borderRadius: "20px",
-                                        width: "130px",
-                                        height: "130px",
-                                        textAlign: "center",
-                                        paddingTop: "20px",
-                                        border: "1.5px solid orange"
-                                    }
-                                }
-                                square
-                                elevation={6}>
-                                <Typography variant='h5'
-                                    sx={
-                                        {
-                                            color: "black",
-                                            mb: "5px"
-                                        }
-                                }>Html</Typography>
-                                <Image src={skill1}
-                                    width={40}
-                                    alt="Picture of skill"/>
-                            </Paper>
-                        </Grid>
-                        <Grid item
-                            md={2}
-                            sm={4}
-                            xs={6}
-                            mt="20px">
-                            <Paper sx={
-                                    {
-                                        borderRadius: "20px",
-                                        width: "130px",
-                                        height: "130px",
-                                        textAlign: "center",
-                                        paddingTop: "20px",
-                                        border: "1.5px solid #2A66F3"
-                                    }
-                                }
-                                square
-                                elevation={6}>
-                                <Typography variant='h5'
-                                    sx={
-                                        {
-                                            color: "black",
-                                            mb: "5px"
-                                        }
-                                }>Css
-                                </Typography>
-                                <Image src={skill2}
-                                    width={40}
-                                    alt="Picture of skill"/>
-                            </Paper>
-                        </Grid>
 
-                        <Grid item
-                            md={2}
-                            sm={4}
-                            xs={6}
-                            mt="20px">
-                            <Paper sx={
-                                    {
-                                        borderRadius: "20px",
-                                        width: "130px",
-                                        height: "130px",
-                                        textAlign: "center",
-                                        paddingTop: "20px",
-                                        border: "1.5px solid yellow"
-                                    }
-                                }
-                                square
-                                elevation={6}>
-                                <Typography variant='h5'
-                                    sx={
-                                        {
-                                            color: "black",
-                                            mb: "5px"
-                                        }
-                                }>Javascript</Typography>
-                                <Image src={skill3}
-                                    width={40}
-                                    alt="Picture of skill"/>
-                            </Paper>
-                        </Grid>
-
-                        <Grid item
-                            md={2}
-                            sm={4}
-                            xs={6}
-                            mt="20px">
-                            <Paper sx={
-                                    {
-                                        borderRadius: "20px",
-                                        width: "130px",
-                                        height: "130px",
-                                        textAlign: "center",
-                                        paddingTop: "20px",
-                                        border: "1.5px solid #6FDDFA"
-                                    }
-                                }
-                                square
-                                elevation={6}>
-                                <Typography variant='h5'
-                                    sx={
-                                        {
-                                            color: "black",
-                                            mb: "5px"
-                                        }
-                                }>React.js</Typography>
-                                <Image src={skill4}
-                                    width={40}
-                                    alt="Picture of skill"/>
-                            </Paper>
-                        </Grid>
-                        <Grid item
-                            md={2}
-                            sm={4}
-                            xs={6}
-                            mt="20px">
-                            <Paper sx={
-                                    {
-                                        borderRadius: "20px",
-                                        width: "130px",
-                                        height: "130px",
-                                        textAlign: "center",
-                                        paddingTop: "20px",
-                                        border: "1.5px solid #0AB3D7"
-                                    }
-                                }
-                                square
-                                elevation={6}>
-                                <Typography variant='h5'
-                                    sx={
-                                        {
-                                            color: "black",
-                                            mb: "5px"
-                                        }
-                                }>Tailwind</Typography>
-                                <Image src={skill5}
-                                    width={40}
-                                    alt="Picture of skill"/>
-                            </Paper>
-                        </Grid>
-                        <Grid item
-                            md={2}
-                            sm={4}
-                            xs={6}
-                            mt="20px">
-                            <Paper sx={
-                                    {
-                                        borderRadius: "20px",
-                                        width: "130px",
-                                        height: "130px",
-                                        textAlign: "center",
-                                        paddingTop: "20px",
-                                        border: "1.5px solid #7111F3"
-                                    }
-                                }
-                                square
-                                elevation={6}>
-                                <Typography variant='h5'
-                                    sx={
-                                        {
-                                            color: "black",
-                                            mb: "5px"
-                                        }
-                                }>Bootstrap</Typography>
-                                <Image src={skill6}
-                                    width={40}
-                                    alt="Picture of skill"/>
-                            </Paper>
-                        </Grid>
-                        <Grid item
-                            md={2}
-                            sm={4}
-                            xs={6}
-                            mt="20px">
-                            <Paper sx={
-                                    {
-                                        borderRadius: "20px",
-                                        width: "130px",
-                                        height: "130px",
-                                        textAlign: "center",
-                                        paddingTop: "20px",
-                                        border: "1.5px solid #845DC3"
-                                    }
-                                }
-                                square
-                                elevation={6}>
-                                <Typography variant='h5'
-                                    sx={
-                                        {
-                                            color: "black",
-                                            mb: "5px"
-                                        }
-                                }>Redux</Typography>
-                                <Image src={skill7}
-                                    width={40}
-                                    alt="Picture of skill"/>
-                            </Paper>
-                        </Grid>
-                        <Grid item
-                            md={2}
-                            sm={4}
-                            xs={6}
-                            mt="20px">
-                            <Paper sx={
-                                    {
-                                        borderRadius: "20px",
-                                        width: "130px",
-                                        height: "130px",
-                                        textAlign: "center",
-                                        paddingTop: "20px",
-                                        border: "1.5px solid black"
-                                    }
-                                }
-                                square
-                                elevation={6}>
-                                <Typography variant='h5'
-                                    sx={
-                                        {
-                                            color: "black",
-                                            mb: "5px"
-                                        }
-                                }>Next.js</Typography>
-                                <Image src={skill8}
-                                    width={40}
-                                    alt="Picture of skill"/>
-                            </Paper>
-                        </Grid>
-                        <Grid item
-                            md={2}
-                            sm={4}
-                            xs={6}
-                            mt="20px">
-                            <Paper sx={
-                                    {
-                                        borderRadius: "20px",
-                                        width: "130px",
-                                        height: "130px",
-                                        textAlign: "center",
-                                        paddingTop: "20px",
-                                        border: "1.5px solid #5EA64F"
-                                    }
-                                }
-                                square
-                                elevation={6}>
-                                <Typography variant='h5'
-                                    sx={
-                                        {
-                                            color: "black",
-                                            mb: "5px"
-                                        }
-                                }>Node.js</Typography>
-                                <Image src={skill9}
-                                    width={40}
-                                    alt="Picture of skill"/>
-                            </Paper>
-                        </Grid>
-                        <Grid item
-                            md={2}
-                            sm={4}
-                            xs={6}
-                            mt="20px">
-                            <Paper sx={
-                                    {
-                                        borderRadius: "20px",
-                                        width: "130px",
-                                        height: "130px",
-                                        textAlign: "center",
-                                        paddingTop: "20px",
-                                        border: "1.5px solid #5EA64F"
-                                    }
-                                }
-                                square
-                                elevation={6}>
-                                <Typography variant='h5'
-                                    sx={
-                                        {
-                                            color: "black",
-                                            mb: "5px"
-                                        }
-                                }>Mongo DB</Typography>
-                                <Image src={skill10}
-                                    width={40}
-                                    alt="Picture of skill"/>
-                            </Paper>
-                        </Grid>
-                        <Grid item
-                            md={2}
-                            sm={4}
-                            xs={6}
-                            mt="20px">
-                            <Paper sx={
-                                    {
-                                        borderRadius: "20px",
-                                        width: "130px",
-                                        height: "130px",
-                                        textAlign: "center",
-                                        paddingTop: "20px",
-                                        border: "1.5px solid black"
-                                    }
-                                }
-                                square
-                                elevation={6}>
-                                <Typography variant='h5'
-                                    sx={
-                                        {
-                                            color: "black",
-                                            mb: "5px"
-                                        }
-                                }>express.js</Typography>
-                                <Image src={skill11}
-                                    width={40}
-                                    alt="Picture of skill"/>
-                            </Paper>
-                        </Grid>
-
-
-                    </Grid>
-
-                </Box>
-
-            </Container>
-        </Box>
+                </Container>
+            </Box>
+            <Box className={
+                styles.mediumbackgoundskill
+            }></Box>
+        </>
     )
 }
 

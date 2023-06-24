@@ -444,7 +444,7 @@ function Landing() {
                         sx={
                             {
                                 textAlign: "center",
-                                color: "secondary.main"
+                                color: "neutral.purple"
                             }
                     }>I'M A FRONT END DEVELOPER</Typography>
                     <Box display="flex"
@@ -467,7 +467,7 @@ function Landing() {
                                     {
                                         width: "30px",
                                         height: "30px",
-                                        backgroundColor: "secondary.main",
+                                        backgroundColor: "neutral.purple",
                                         color: "white"
                                     }
                                 }
@@ -480,7 +480,7 @@ function Landing() {
                                     {
                                         width: "30px",
                                         height: "30px",
-                                        backgroundColor: "secondary.main",
+                                        backgroundColor: "neutral.purple",
                                         color: "white"
                                     }
                                 }
@@ -493,7 +493,7 @@ function Landing() {
                                     {
                                         width: "30px",
                                         height: "30px",
-                                        backgroundColor: "secondary.main",
+                                        backgroundColor: "neutral.purple",
                                         color: "white"
                                     }
                                 }
@@ -506,7 +506,7 @@ function Landing() {
                                     {
                                         width: "30px",
                                         height: "30px",
-                                        backgroundColor: "secondary.main",
+                                        backgroundColor: "neutral.purple",
                                         color: "white"
                                     }
                                 }
@@ -519,7 +519,7 @@ function Landing() {
                                     {
                                         width: "30px",
                                         height: "30px",
-                                        backgroundColor: "secondary.main",
+                                        backgroundColor: "neutral.purple",
                                         color: "white"
                                     }
                                 }

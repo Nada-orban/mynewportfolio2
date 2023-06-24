@@ -17,12 +17,12 @@ import Tooltip, {tooltipClasses} from '@mui/material/Tooltip';
 
 
 const NavLinks = styled(Link)`
-  color: #E5657B;
-  background-color: #E5657B;
+  color: white;
+  background-color: white;
   transform: rotate(45deg);
   transition: all 0.3s ease-in-out;
   &.active {
-    color:#E5657B;
+    color:white;
     background-color: transparent;
     transform: none;
    
@@ -55,7 +55,7 @@ function Verticalnavbar() {
     const colorMode = React.useContext(ColorModeContext);
     const theme = useTheme();
     return (
-        <Box display="grid" position="fixed" top="50%" right="30px"
+        <Box display="grid" position="fixed" top="50%" right="30px" zIndex="2"
             sx={
                 {
                     display: {

@@ -10,8 +10,22 @@
     cursor: pointer;
     transition: all 0.3s ease-in-out!important;
     color: white;
+
    
 
+
+}
+.buttonstyle2{
+    background-color: var(--secondray-maincolor);
+    padding: 15px;
+    border-radius: 10px;
+    border-style: none;
+    display: flex;
+    gap: 0px;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out!important;
+    color: white;
 
 }
 .iconlink{
@@ -96,6 +110,12 @@
     }
     .titlesection1 {
         font-size: 25px;
+    
+    }
+    .buttonstyle2{
+       padding:auto;
+       width: 100%;
+       text-align: center;
     
     }
 }
@@ -730,6 +750,46 @@
 .skillbackground{ 
     background-color:#EAC0C9;
 }
+.mediumbackgoundskilllanding{
+    position: relative;
+    width: 100%;
+    height: 100px;
+    /* background-color: #FEF2D8; */
+    background-color: #EAC0C9;
+    
+   
+
+}
+.mediumbackgoundskilllanding::before{
+    content: "";
+    position: absolute;
+    background-color:#EBE8E7;
+    
+    width: 100%;
+    height: 100px;
+    clip-path: polygon(40% 60%, 100% 0, 0 0%);
+
+}
+.mediumbackgoundskill{
+    position: relative;
+    width: 100%;
+    height: 100px;
+    /* background-color: #FEF2D8; */
+    
+    background-color: #CBD5EE;
+
+}
+
+
+.mediumbackgoundskill::before{
+    content: "";
+    position: absolute;
+    background-color: #EAC0C9;
+    width: 100%;
+    height: 100px;
+    clip-path: polygon(60% 60%, 100% 0, 0 0%);
+
+}
 
 
 .slider {
@@ -865,6 +925,7 @@
     height: 100px;
     /* background-color: #FEF2D8; */
     background-color: #EAC0C9;
+    
 
 
 }
