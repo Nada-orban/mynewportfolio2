@@ -117,7 +117,16 @@ function About() {
                     <Grid item
                         md={6}
                         xs={12}>
-                        <Box my="50px">
+                        <Box my="50px "
+                            sx={
+                                {
+                                    textAlign: {
+                                        xs: "center",
+                                        sm: "center",
+                                        md: "start"
+                                    }
+                                }
+                        }>
                             <Typography variant='h6'>I have experience in developing responsive, user-friendly web applications using HTML, CSS, and JavaScript. I specialize in working with React, Next.js, Bootstrap, and Material UI to create beautiful and intuitive interfaces.</Typography>
                             <Typography variant="h6">I have a strong eye for design and enjoy collaborating with designers to cre- ate visually stunning interfaces that enhance the user experience. I stay up- to-date with the latest technologies and trends in front-end development and am always looking for ways to improve my skills</Typography>
                         </Box>
@@ -126,7 +135,17 @@ function About() {
                             spy={true}
                             smooth={true}
                             offset={0}
-                            duration={500}>
+                            duration={500}
+                            sx={
+                                {
+                                    display: "flex",
+                                    justifyContent: {
+                                        sm: "center",
+                                        xs: "center",
+                                        md: "start"
+                                    }
+                                }
+                        }>
                             <button className={
                                 styles.buttonstyle
                             }>

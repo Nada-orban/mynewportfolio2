@@ -89,11 +89,21 @@ function Projects() {
                 </Box>
                 <Box my="70px">
                     <Grid container
-                        spacing={5}>
+                        spacing={5}
+                        mb="60px">
                         <Grid item
                             md={6}
                             xs={12}
-                            margin="auto">
+                            margin="auto"
+                            sx={
+                                {
+                                    textAlign: {
+                                        xs: "center",
+                                        sm: "center",
+                                        md: "start"
+                                    }
+                                }
+                        }>
                             <Typography variant='h4'
                                 sx={
                                     {color: "secondary.pink"}
@@ -105,7 +115,16 @@ function Projects() {
                                         color: "black"
                                     }
                             }>For when you need a break from your partner but already got a babysitter. Now couples can go to different events in similar locations and at the same time. A group programming project with Can Rozanes, Irene Truong and Jamie Yeung.</Typography>
-                            <Box display="flex" justifyContent="start" alignItems="center" gap="5px">
+                            <Box display="flex" alignItems="center" gap="5px"
+                                sx={
+                                    {
+                                        justifyContent: {
+                                            xs: "center",
+                                            sm: "center",
+                                            md: "start"
+                                        }
+                                    }
+                            }>
                                 <AiFillHtml5 style={
                                     {
                                         width: "20px",
@@ -126,7 +145,16 @@ function Projects() {
                                 }/>
 
                             </Box>
-                            <Box my="20px" gap="10px" display="flex">
+                            <Box my="20px" gap="10px" display="flex"
+                                sx={
+                                    {
+                                        justifyContent: {
+                                            xs: "center",
+                                            sm: "center",
+                                            md: "start"
+                                        }
+                                    }
+                            }>
                                 <button className={
                                     styles.buttonstyle
                                 }>
@@ -163,11 +191,12 @@ function Projects() {
                                         xs: "none",
                                         sm: "block",
                                         md: "block"
-                                    }
+                                    },
+                                    margin: "auto"
                                 }
                             }>
                                 <Image src={exampleimage}
-                                    width={500}/>
+                                    width={650}/>
                             </Box>
                             <Box sx={
                                 {
@@ -187,11 +216,48 @@ function Projects() {
 
                     </Grid>
                     <Grid container
-                        spacing={7}
-                        my="20px">
+                        spacing={7}>
                         <Grid item
                             md={6}
                             xs={12}>
+                            <Box sx={
+                                {
+                                    display: {
+                                        xs: "none",
+                                        sm: "block",
+                                        md: "block"
+                                    }
+                                }
+                            }>
+                                <Image src={exampleimage}
+                                    width={650}/>
+                            </Box>
+                            <Box sx={
+                                {
+                                    display: {
+                                        xs: "block",
+                                        sm: "none",
+                                        md: "none"
+                                    }
+                                }
+                            }>
+                                <Image src={exampleimage}
+                                    width={350}/>
+                            </Box>
+
+                        </Grid>
+                        <Grid item
+                            md={6}
+                            xs={12}
+                            sx={
+                                {
+                                    textAlign: {
+                                        xs: "center",
+                                        sm: "center",
+                                        md: "start"
+                                    }
+                                }
+                        }>
                             <Typography variant='h4'
                                 sx={
                                     {color: "secondary.pink"}
@@ -203,7 +269,16 @@ function Projects() {
                                         color: "black"
                                     }
                             }>For when you need a break from your partner but already got a babysitter. Now couples can go to different events in similar locations and at the same time. A group programming project with Can Rozanes, Irene Truong and Jamie Yeung.</Typography>
-                            <Box display="flex" justifyContent="start" alignItems="center" gap="5px">
+                            <Box display="flex" alignItems="center" gap="5px"
+                                sx={
+                                    {
+                                        justifyContent: {
+                                            xs: "center",
+                                            sm: "center",
+                                            md: "start"
+                                        }
+                                    }
+                            }>
                                 <AiFillHtml5 style={
                                     {
                                         width: "20px",
@@ -224,7 +299,16 @@ function Projects() {
                                 }/>
 
                             </Box>
-                            <Box my="20px" gap="10px" display="flex">
+                            <Box my="20px" gap="10px" display="flex"
+                                sx={
+                                    {
+                                        justifyContent: {
+                                            xs: "center",
+                                            sm: "center",
+                                            md: "start"
+                                        }
+                                    }
+                            }>
                                 <button className={
                                     styles.buttonstyle
                                 }>
@@ -243,38 +327,7 @@ function Projects() {
                                 </button>
                             </Box>
                         </Grid>
-                        <Grid item
-                            md={6}
-                            xs={12}
-                            sx={
-                                {order: -1}
-                        }>
-                            <Box sx={
-                                {
-                                    display: {
-                                        xs: "none",
-                                        sm: "block",
-                                        md: "block"
-                                    }
-                                }
-                            }>
-                                <Image src={exampleimage}
-                                    width={500}/>
-                            </Box>
-                            <Box sx={
-                                {
-                                    display: {
-                                        xs: "block",
-                                        sm: "none",
-                                        md: "none"
-                                    }
-                                }
-                            }>
-                                <Image src={exampleimage}
-                                    width={350}/>
-                            </Box>
 
-                        </Grid>
 
                     </Grid>
                 </Box>

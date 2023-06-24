@@ -10,6 +10,7 @@
     cursor: pointer;
     transition: all 0.3s ease-in-out!important;
     color: white;
+   
 
 
 }
@@ -21,9 +22,9 @@
 
 }
 .buttonstyle:hover{
-    background-color:#E5657B;
+    background-color:white;
     gap: 10px;
-    color: white;
+    color:#E5657B;
     padding: 15px 10px;
 
 }

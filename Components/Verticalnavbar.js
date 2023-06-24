@@ -60,7 +60,8 @@ function Verticalnavbar() {
                 {
                     display: {
                         xs: "none",
-                        sm: "block"
+                        sm: "none",
+                        md: "block"
                     }
                 }
         }>
