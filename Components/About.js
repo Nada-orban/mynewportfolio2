@@ -146,12 +146,17 @@ function About() {
                                     }
                                 }
                         }>
-                            <button className={
-                                styles.buttonstyle
+                            <Paper elevation={4}
+                                sx={
+                                    {borderRadius: "10px"}
                             }>
+                                <button className={
+                                    styles.buttonstyle
+                                }>
+                                    <Typography>Get In Touch!</Typography>
+                                </button>
+                            </Paper>
 
-                                <Typography>Get In Touch!</Typography>
-                            </button>
                         </NavLinks>
                     </Grid>
                 </Grid>

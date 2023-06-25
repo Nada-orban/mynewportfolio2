@@ -1,6 +1,9 @@
 
 .buttonstyle{
-    background-color: var(--secondray-maincolor);
+    /* background-color: var(--secondray-maincolor); */
+    /* background-image:  linear-gradient(to left top, #ddabea, #d19de7, #c390e4, #b484e1, #a378df); */
+    background-image: linear-gradient(to right bottom, #a378df, #bc70ce, #cf68bc, #dc64a8, #e36294, #e56997, #e86f99, #ea769c, #ea84b3, #e893c8, #e4a1da, #e0b0ea);
+    /* background-image: linear-gradient(to right bottom, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #9ea6e6, #a4b1ea, #acbced, #c5cbf1, #dadcf5, #eeedfa, #ffffff); */
     padding: 15px;
     border-radius: 10px;
     border-style: none;
@@ -8,13 +11,24 @@
     gap: 0px;
     align-items: center;
     cursor: pointer;
+    
     transition: all 0.3s ease-in-out!important;
     color: white;
-
-   
-
+    position: relative;
 
 }
+
+/* .buttonstyle::before{
+    content: "";
+    border:1px solid red;
+    width: 150px;
+    left: 0px;
+    bottom: 0px;
+    height: 55px;
+    position: absolute;
+    
+
+} */
 .buttonstyle2{
     background-color: var(--secondray-maincolor);
     padding: 15px;
@@ -36,12 +50,15 @@
 
 }
 .buttonstyle:hover{
-    background-color:white;
+    /* background-color:white; */
+    /* background-image: linear-gradient(to left top, #ddabea, #d19de7, #c390e4, #b484e1, #a378df); */
+    background-image: linear-gradient(to right bottom, #a378df, #bc70ce, #cf68bc, #dc64a8, #e36294, #e56997, #e86f99, #ea769c, #ea84b3, #e893c8, #e4a1da, #e0b0ea); 
     gap: 10px;
-    color:#E5657B;
+    color:white;
     padding: 15px 10px;
 
 }
+
 .buttonstyle:hover .iconlink{
     display: block;
 }
@@ -57,6 +74,44 @@
         color: rgba(255, 255, 255, 0.04);
 
 }
+
+/* <button class="button-89" role="button">Button 89</button> */
+
+/* CSS */
+.button-89 {
+  --b: 3px;   /* border thickness */
+  --s: .45em; /* size of the corner */
+  --color: #373B44;
+  
+  padding: calc(.5em + var(--s)) calc(.9em + var(--s));
+  color: var(--color);
+  --_p: var(--s);
+  background:
+    conic-gradient(from 90deg at var(--b) var(--b),#0000 90deg,var(--color) 0)
+    var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
+  transition: .3s linear, color 0s, background-color 0s;
+  outline: var(--b) solid #0000;
+  outline-offset: .6em;
+  font-size: 16px;
+
+  border: 0;
+
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-89:hover,
+.button-89:focus-visible{
+  --_p: 0px;
+  outline-color: var(--color);
+  outline-offset: .05em;
+}
+
+.button-89:active {
+  background: var(--color);
+  color: #fff;
+}
 .bigfakeleft{
     position: absolute;
     top: -8rem;
@@ -70,7 +125,7 @@
 .titlesection {
     font-size: 35px;
     /* color: #D18DE0; */
-    color: white;
+    color:#A378DF;
     font-weight: bold;
     margin-bottom: 10px;
     margin: auto;

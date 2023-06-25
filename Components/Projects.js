@@ -158,22 +158,34 @@ function Projects() {
                                         }
                                     }
                             }>
-                                <button className={
-                                    styles.buttonstyle
+                                <Paper elevation={4}
+                                    sx={
+                                        {borderRadius: "10px"}
                                 }>
-                                    <Typography>View It Here</Typography><FiExternalLink className={
-                                        styles.iconlink
-                                    }/>
-                                </button>
-                                <button className={
-                                    styles.buttonstyle
+                                    <button className={
+                                        styles.buttonstyle
+                                    }>
+                                        <Typography>View It Here</Typography><FiExternalLink className={
+                                            styles.iconlink
+                                        }/>
+                                    </button>
+                                </Paper>
+                                <Paper elevation={4}
+                                    sx={
+                                        {borderRadius: "10px"}
                                 }>
-                                    <Typography>
-                                        View Github Repo</Typography><FiExternalLink className={
-                                        styles.iconlink
-                                    }/>
+                                    <button className={
+                                        styles.buttonstyle
+                                    }>
+                                        <Typography>
+                                            View Github Repo</Typography><FiExternalLink className={
+                                            styles.iconlink
+                                        }/>
 
-                                </button>
+                                    </button>
+                                </Paper>
+
+
                             </Box>
                         </Grid>
                         <Grid item
@@ -315,22 +327,33 @@ function Projects() {
                                         }
                                     }
                             }>
-                                <button className={
-                                    styles.buttonstyle
+                                <Paper elevation={4}
+                                    sx={
+                                        {borderRadius: "10px"}
                                 }>
-                                    <Typography>View It Here</Typography><FiExternalLink className={
-                                        styles.iconlink
-                                    }/>
-                                </button>
-                                <button className={
-                                    styles.buttonstyle
+                                    <button className={
+                                        styles.buttonstyle
+                                    }>
+                                        <Typography>View It Here</Typography><FiExternalLink className={
+                                            styles.iconlink
+                                        }/>
+                                    </button>
+                                </Paper>
+                                <Paper elevation={4}
+                                    sx={
+                                        {borderRadius: "10px"}
                                 }>
-                                    <Typography>
-                                        View Github Repo</Typography><FiExternalLink className={
-                                        styles.iconlink
-                                    }/>
+                                    <button className={
+                                        styles.buttonstyle
+                                    }>
+                                        <Typography>
+                                            View Github Repo</Typography><FiExternalLink className={
+                                            styles.iconlink
+                                        }/>
 
-                                </button>
+                                    </button>
+                                </Paper>
+
                             </Box>
                         </Grid>
 
