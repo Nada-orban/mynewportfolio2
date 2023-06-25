@@ -467,7 +467,8 @@ function Landing() {
                                     {
                                         width: "30px",
                                         height: "30px",
-                                        backgroundColor: "neutral.purple",
+                                        backgroundImage: "linear-gradient(to left top, #ddabea, #d19de7, #c390e4, #b484e1, #a378df)",
+                                        // backgroundColor: "neutral.purple",
                                         color: "white"
                                     }
                                 }
@@ -480,7 +481,8 @@ function Landing() {
                                     {
                                         width: "30px",
                                         height: "30px",
-                                        backgroundColor: "neutral.purple",
+                                        backgroundImage: "linear-gradient(to left top, #ddabea, #d19de7, #c390e4, #b484e1, #a378df)",
+                                        // backgroundColor: "neutral.purple",
                                         color: "white"
                                     }
                                 }
@@ -493,7 +495,8 @@ function Landing() {
                                     {
                                         width: "30px",
                                         height: "30px",
-                                        backgroundColor: "neutral.purple",
+                                        backgroundImage: "linear-gradient(to left top, #ddabea, #d19de7, #c390e4, #b484e1, #a378df)",
+                                        // backgroundColor: "neutral.purple",
                                         color: "white"
                                     }
                                 }
@@ -506,7 +509,8 @@ function Landing() {
                                     {
                                         width: "30px",
                                         height: "30px",
-                                        backgroundColor: "neutral.purple",
+                                        backgroundImage: "linear-gradient(to left top, #ddabea, #d19de7, #c390e4, #b484e1, #a378df)",
+                                        // backgroundColor: "neutral.purple",
                                         color: "white"
                                     }
                                 }
@@ -519,7 +523,8 @@ function Landing() {
                                     {
                                         width: "30px",
                                         height: "30px",
-                                        backgroundColor: "neutral.purple",
+                                        backgroundImage: "linear-gradient(to left top, #ddabea, #d19de7, #c390e4, #b484e1, #a378df)",
+                                        // backgroundColor: "neutral.purple",
                                         color: "white"
                                     }
                                 }

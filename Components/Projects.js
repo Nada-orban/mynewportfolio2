@@ -128,19 +128,22 @@ function Projects() {
                                 <AiFillHtml5 style={
                                     {
                                         width: "20px",
-                                        height: "20px"
+                                        height: "20px",
+                                        color: "white"
                                     }
                                 }/>
                                 <FaCss3Alt style={
                                     {
                                         width: "20px",
-                                        height: "20px"
+                                        height: "20px",
+                                        color: "white"
                                     }
                                 }/>
                                 <SiJavascript style={
                                     {
                                         width: "20px",
-                                        height: "20px"
+                                        height: "20px",
+                                        color: "white"
                                     }
                                 }/>
 
@@ -282,19 +285,22 @@ function Projects() {
                                 <AiFillHtml5 style={
                                     {
                                         width: "20px",
-                                        height: "20px"
+                                        height: "20px",
+                                        color: "white"
                                     }
                                 }/>
                                 <FaCss3Alt style={
                                     {
                                         width: "20px",
-                                        height: "20px"
+                                        height: "20px",
+                                        color: "white"
                                     }
                                 }/>
                                 <SiJavascript style={
                                     {
                                         width: "20px",
-                                        height: "20px"
+                                        height: "20px",
+                                        color: "white"
                                     }
                                 }/>
 
