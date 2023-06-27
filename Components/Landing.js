@@ -462,7 +462,7 @@ function Landing() {
                         gap="20px"
                         data-aos="fade-up"
                         data-aos-delay="1350">
-                        <a href="mailto:nadasamir9334@gmail.com" target="_blank">
+                        <a href="mailto:nadasamireldesoky@gmail.com" target="_blank">
                             <Avatar sx={
                                     {
                                         width: "30px",

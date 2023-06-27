@@ -99,14 +99,44 @@ function Mobilenav() {
                             <Box onClick={handleDrawerToggle} sx={{ display: { md: "none", sm: "flex" }, cursor: "pointer", position: "relative" }} className={hoverbutton ? Styles.hoverbuttonactive : Styles.hoverbutton}>
                                 <Box className={mobileOpen ? Styles.activeHamburger : Styles.hamburber} position="absolute"></Box>
                                 {/* <Box className={mobileOpen ? Styles.navbackgroundactive : Styles.navbackground}></Box> */}
-                                <Box className={mobileOpen ? Styles.bigmenuBoxactive : Styles.bigmenuBox} backgroundColor="#D9D2E7" textAlign="end" BackdropProps={{ invisible: false }} sx={{ sm: "block", md: "none", lg: "none" }} >
+                                <Box className={mobileOpen ? Styles.bigmenuBoxactive : Styles.bigmenuBox}   sx={{ sm: "block", md: "none", lg: "none" }} >
                                     {mobileOpen && (
                                         <Box>
                                             <Box sx={{ color: "background.secondary", textAlign: "start" }} data-aos="fade-down"
                                                 data-aos-delay="200"><Typography noWrap sx={{ color: "neutral.purple", fontWeight: "bold", fontSize: "30px" }} className={Styles.logoname}  >
                                                     Nada
                                                 </Typography></Box>
-                                            <List  sx={{paddingLeft:"30px"}}>
+                                                <Box display="flex" flexDirection="column" justifyContent="center" textAlign="center" gap="20px" pt="100px">
+                                                <NavLinks to="home" spy={true} smooth={true} offset={0} duration={500} className={Styles.mobilenavlink} onClick={handleDrawerToggle} data-aos="fade-up"
+                                                        data-aos-delay="200">
+
+                                                        <Typography className={Styles.mobilenavlink} >Home</Typography>
+                                                    </NavLinks>
+                                                    <NavLinks to="about" spy={true} smooth={true} offset={0} duration={500} className={Styles.mobilenavlink} onClick={handleDrawerToggle} data-aos="fade-up"
+                                                        data-aos-delay="200">
+
+                                                        <Typography className={Styles.mobilenavlink} >ABOUT</Typography>
+                                                    </NavLinks>
+                                                    <NavLinks to="skills" spy={true} smooth={true} offset={0} duration={500} onClick={handleDrawerToggle} data-aos="fade-up"
+                                                        data-aos-delay="200">
+
+                                                        <Typography className={Styles.mobilenavlink}>SKILLS</Typography>
+                                                    </NavLinks>
+                                                    <NavLinks to="projects" spy={true} smooth={true} offset={0} duration={500} onClick={handleDrawerToggle} data-aos="fade-up"
+                                                        data-aos-delay="200">
+
+                                                        <Typography className={Styles.mobilenavlink}>PROJECTS</Typography>
+                                                    </NavLinks>
+                                                    <NavLinks to="contact" spy={true} smooth={true} offset={0} duration={500} onClick={handleDrawerToggle} data-aos="fade-up"
+                                                        data-aos-delay="200">
+
+                                                        <Typography className={Styles.mobilenavlink}>CONTACT</Typography>
+                                                    </NavLinks>
+                                                
+                                                 
+
+                                                </Box>
+                                            {/* <List  sx={{paddingLeft:"30px"}}>
                                             <ListItem>
                                                     <NavLinks to="home" spy={true} smooth={true} offset={0} duration={500} className={Styles.mobilenavlink} onClick={handleDrawerToggle} data-aos="fade-up"
                                                         data-aos-delay="200">
@@ -146,7 +176,7 @@ function Mobilenav() {
 
 
 
-                                            </List>
+                                            </List> */}
                                             {/* <Box textAlign="start" mt="5px" paddingLeft="20px" data-aos="fade-up"
                                                 data-aos-delay="200">
                                                 <Typography sx={{ color: "background.secondary", fontSize: "15px" }}>Links</Typography>
@@ -159,10 +189,10 @@ function Mobilenav() {
 
 
                                             </Box> */}
-                                            <Box textAlign="start" mt="40px" paddingLeft="30px" data-aos="fade-up"
+                                            <Box textAlign="center" bottom="30px" right="25%" position="absolute" paddingLeft="0px" data-aos="fade-up"
                                                 data-aos-delay="200">
-                                                <Typography sx={{ color: "neutral.purple", fontSize: "20px" }}>SAY HELLO</Typography>
-                                                <a href="mailto:ahmadadelattia@gmail.com" className={Styles.emailstyle}>ahmadadelattia@gmail.com</a>
+                                                <Typography sx={{ color: "neutral.purple", fontSize: "30px" }}>SAY HELLO</Typography>
+                                                <a href="mailto:nadasamireldesoky@gmail.com" className={Styles.emailstyle}>nadasamireldesoky@gmail.com</a>
                                             </Box>
                                             {/* <Box textAlign="start" mt="20px" paddingLeft="20px" data-aos="fade-up"
                                                 data-aos-delay="200">
