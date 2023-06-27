@@ -1,7 +1,7 @@
 .navbox{
     border-width: 2px;
     border-style: solid;
-    border-color: var(--secondary-lightpink);
+    border-color: white;
     /* border: 2px solid var(--secondary-lightpink); */
     width: 10px;
     height: 10px;
@@ -47,7 +47,8 @@
 
 .Appbaractive {
     /* background-color: rgba(245, 241, 241, 0.822)!important; */
-    background-color: rgba(247, 241, 241, 0.87) !important;
+    background-color: #EBE8E7 !important;
+    
     transition: all .3s ease-in-out !important;
     /* padding: 5px 0px !important; */
     height: 60px;
@@ -108,7 +109,7 @@
 
 }
 .navlink:hover{
-    color:var(--secondray-maincolor);
+    color:#A378DF;
 }
 .smallicon:hover{
     color:var(--secondray-maincolor)

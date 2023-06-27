@@ -37,7 +37,7 @@ function Skill() {
             <Box className={
                 styles.mediumbackgoundskilllanding
             }></Box>
-            <Box id="skills" py="50px"
+            <Box id="skills" py="70px"
                 className={
                     styles.skillbackground
             }>
