@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
-import { AppBar, Avatar, Container } from '@mui/material';
+import { AppBar, Avatar, Container,Slide } from '@mui/material';
 import Box from '@mui/material/Box';
 import CssBaseline from '@mui/material/CssBaseline';
 import Divider from '@mui/material/Divider';
@@ -34,7 +34,33 @@ import { FiFacebook, FiLinkedin, FiGithub } from 'react-icons/fi'
 import { SiUpwork } from 'react-icons/si'
 import Mobilenav from './Mobilenav';
 
+import useScrollTrigger from '@mui/material/useScrollTrigger';
 
+
+function HideOnScroll(props) {
+    const { children, window } = props;
+    // Note that you normally won't need to set the window ref as useScrollTrigger
+    // will default to window.
+    // This is only being set here because the demo is in an iframe.
+    const trigger = useScrollTrigger({
+      target: window ? window() : undefined,
+    });
+  
+    return (
+      <Slide appear={false} direction="down" in={!trigger}>
+        {children}
+      </Slide>
+    );
+  }
+  
+  HideOnScroll.propTypes = {
+    children: PropTypes.element.isRequired,
+    /**
+     * Injected by the documentation to work in an iframe.
+     * You won't need it on your project.
+     */
+    window: PropTypes.func,
+  };
 const NavLinks = styled(Link)`
   color: white;
   &.active {
@@ -44,7 +70,7 @@ const NavLinks = styled(Link)`
   
 `;
 
-function Nav() {
+function Nav(props) {
     const [mobileOpen, setMobileOpen] = React.useState(false);
     const [navbar, setNavbar] = useState(false)
     const [hoverbutton, setHoverbutton] = useState(false)
@@ -78,6 +104,8 @@ function Nav() {
     return (
         <>
             <Box sx={{ display: { xs: "none", sm: "none", md: "block" } }}>
+                
+      <HideOnScroll {...props}>
 
                 <AppBar
                     variant="permanent"
@@ -183,6 +211,7 @@ function Nav() {
                       
                     </Container>
                 </AppBar>
+                </HideOnScroll>
 
             </Box>
             <Mobilenav />

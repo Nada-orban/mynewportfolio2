@@ -18,11 +18,13 @@ import Tooltip, {tooltipClasses} from '@mui/material/Tooltip';
 
 const NavLinks = styled(Link)`
   color: white;
+//   background-image: linear-gradient(to left top, #ddabea, #d19de7, #c390e4, #b484e1, #a378df);
   background-color: white;
   transform: rotate(45deg);
   transition: all 0.3s ease-in-out;
   &.active {
     color:white;
+    // background-image:transparent;
     background-color: transparent;
     transform: none;
    

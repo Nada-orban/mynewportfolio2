@@ -1,34 +1,137 @@
 
+@property --rotate {
+    syntax: "<angle>";
+    initial-value: 132deg;
+    inherits: false;
+  }
 .buttonstyle{
     /* background-color: var(--secondray-maincolor); */
     /* background-image:  linear-gradient(to left top, #ddabea, #d19de7, #c390e4, #b484e1, #a378df); */
     background-image: linear-gradient(to right bottom, #a378df, #bc70ce, #cf68bc, #dc64a8, #e36294, #e56997, #e86f99, #ea769c, #ea84b3, #e893c8, #e4a1da, #e0b0ea);
     /* background-image: linear-gradient(to right bottom, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #9ea6e6, #a4b1ea, #acbced, #c5cbf1, #dadcf5, #eeedfa, #ffffff); */
     padding: 15px;
-    border-radius: 10px;
+    border-radius: 5px;
     border-style: none;
     display: flex;
     gap: 0px;
     align-items: center;
     cursor: pointer;
-    
+    width:fit-content;
+    /* border:2px solid red; */
     transition: all 0.3s ease-in-out!important;
     color: white;
     position: relative;
+    height: 60px;
 
 }
+.buttonstyle:hover{
+    animation-name: backgroundglowing;
+    animation-duration: 3s;
+    animation-direction: normal;
+}
+@keyframes backgroundglowing {
+    0%{
+        background-position: 0% 100%;
+    }
+    50%{
+        background-position: 0% 50%;
+    }
+    
+}
 
+.buttonstyle::before {
+    content: "";
+    width: 106%;
+    height: 110%;
+    border-radius: 8px;
+    background-image: linear-gradient(
+      to right
+      , #A378DF, #E0B0EA 43%,#E5657B);
+      position: absolute;
+      z-index: -1;
+      top: -1%;
+      left: -2%;
+      animation: spin 2.5s linear infinite;
+     
+    opacity: 0;
+  }
+  
+  .buttonstyle::after {
+    position: absolute;
+    content: "";
+    top:  calc(60px / 6);
+    left: 0;
+    right: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    transform: scale(0.8);
+    filter: blur(calc(60px / 6));
+    background-image: linear-gradient(
+      to left
+      , #A378DF, #E0B0EA 43%,#E5657B);
+      
+    transition: opacity .5s;
+    animation: spin 2.5s linear infinite;
+    
+    opacity: 0;
+  }
+  
+  @keyframes spin {
+    0% {
+      background-position: 0% 100%;
+    }
+    100% {
+        background-position: 50% 0%;
+    }
+  }
+
+  .buttonstyle:hover:before, .buttonstyle:hover:after {
+    opacity: 1;
+  }
+  
 /* .buttonstyle::before{
     content: "";
-    border:1px solid red;
-    width: 150px;
-    left: 0px;
-    bottom: 0px;
-    height: 55px;
     position: absolute;
-    
+    width: 20px;
+    height: 2px;
+    background-color: red;
+    animation-name: glowing;
+    animation-duration: 3s;
+    animation-direction: normal;
 
+    top: -1px;
+    
+    
+}
+@keyframes glowing {
+    0%{
+        transform: translate(0%,0%);
+
+
+    }
+    25%{
+        transform:translate(50%,0%);
+
+    }
+    50%{
+        transform:translate(100%,0%);
+
+    }
+    75%{
+        transform:translate(100%,-100%);
+
+    }
+    100%{
+        transform:translate(0%,-100%);
+
+    }
+    
 } */
+  
+
+
 .buttonstyle2{
     background-color: var(--secondray-maincolor);
     padding: 15px;
@@ -49,15 +152,18 @@
     transition: all 0.5s ease-in-out;
 
 }
-.buttonstyle:hover{
-    /* background-color:white; */
-    /* background-image: linear-gradient(to left top, #ddabea, #d19de7, #c390e4, #b484e1, #a378df); */
+.buttonstyle:hover  .buttonstyle:after{
+    opacity: 1;
+
+  }
+/* .buttonstyle:hover{
+  
     background-image: linear-gradient(to right bottom, #a378df, #bc70ce, #cf68bc, #dc64a8, #e36294, #e56997, #e86f99, #ea769c, #ea84b3, #e893c8, #e4a1da, #e0b0ea); 
     gap: 10px;
     color:white;
     padding: 15px 10px;
 
-}
+} */
 
 .buttonstyle:hover .iconlink{
     display: block;

@@ -271,15 +271,24 @@ function Contact() {
                                         field="message"
                                         errors={state.errors}
                                     /> */} </Box>
+                            <Paper elevation={4}
+                                sx={
+                                    {
+                                        borderRadius: "10px",
+                                        width: "fit-content"
+                                    }
+                            }>
+                                <button className={
+                                        styles.buttonstyle
+                                    }
+                                    type="submit"
+                                    data-aos="fade-right">
+                                    <Typography>Send Email</Typography><DraftsIcon className={
+                                        styles.iconlink
+                                    }/> {/* <EastIcon sx={{ ml: "30px", width: "50px", height: "30px" }} className={styles.normalButton2icon} /> */} </button>
+                            </Paper>
 
-                            <button className={
-                                    styles.buttonstyle
-                                }
-                                type="submit"
-                                data-aos="fade-right">
-                                <Typography>Send Email</Typography><DraftsIcon className={
-                                    styles.iconlink
-                                }/> {/* <EastIcon sx={{ ml: "30px", width: "50px", height: "30px" }} className={styles.normalButton2icon} /> */} </button>
+
                         </form>
                     </Paper>
                 </Container>
