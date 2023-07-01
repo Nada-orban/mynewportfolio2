@@ -1034,6 +1034,9 @@
     width: 600px;
     
 }
+.boximagesmall{
+    width: 350px;
+}
 .firstviewgithub{
     background-image: url("../../public/assets/Github.png");
     background-size: 110px 100px;

@@ -245,8 +245,13 @@ function Projects() {
                                             }
                                         }
                                     }>
-                                        <Image src={exampleimage}
-                                            width={350}/>
+                                        <img src={
+                                                project.image
+                                            }
+                                            alt='project photo'
+                                            className={
+                                                styles.boximagesmall
+                                            }/>
                                     </Box>
 
 
