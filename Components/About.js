@@ -146,7 +146,7 @@ function About() {
                                     }
                                 }
                         }>
-                            <Paper elevation={4}
+                            {/* <Paper elevation={4}
                                 sx={
                                     {borderRadius: "10px"}
                             }>
@@ -155,7 +155,39 @@ function About() {
                                 }>
                                     <Typography>Get In Touch!</Typography>
                                 </button>
-                            </Paper>
+                            </Paper> */}
+                            <Box justifyContent="center" display="flex">
+                                <Link to="about"
+                                    spy={true}
+                                    smooth={true}
+                                    offset={0}
+                                    duration={500}>
+                                    <Box width="110px" height="50px"
+                                        className={
+                                            styles.w
+                                    }>
+
+                                        <Box className={
+                                                styles.l
+                                            }
+                                            width="110px"
+                                            height="50px">
+                                            <Box className={
+                                                styles.c2
+                                            }>
+                                                <Box className={
+                                                    styles.firstviewabout
+                                                }></Box>
+                                                <Box className={
+                                                    styles.secoundviewabout
+                                                }></Box>
+
+                                            </Box>
+                                        </Box>
+                                    </Box>
+                                </Link>
+
+                            </Box>
 
                         </NavLinks>
                     </Grid>

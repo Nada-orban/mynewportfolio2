@@ -906,6 +906,34 @@
 
     }
 }
+.firstviewabout{
+    background-image: url("../../public/assets/Get\ In\ Touch.png");
+    background-size: 110px 100px;
+    background-position: 0 -50px;
+    left: 0;
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 100%;
+    overflow: hidden;
+    cursor: pointer;
+
+}
+.secoundviewabout{
+    background-image: url("../../public/assets/Get\ In\ Touch.png");
+    background-size: 110px 100px;
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    background-position: 0 0px;
+    cursor: pointer;
+
+}
 
 
 /* ##################skills############### */
@@ -1006,6 +1034,62 @@
     width: 600px;
     
 }
+.firstviewgithub{
+    background-image: url("../../public/assets/Github.png");
+    background-size: 110px 100px;
+    background-position: 0 -50px;
+    left: 0;
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 100%;
+    overflow: hidden;
+    cursor: pointer;
+
+}
+.secoundviewgithub{
+    background-image: url("../../public/assets/Github.png");
+    background-size: 110px 100px;
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    background-position: 0 0px;
+    cursor: pointer;
+}
+.firstviewapp{
+    background-image: url("../../public/assets/Website.png");
+    background-size: 110px 100px;
+    background-position: 0 -50px;
+    left: 0;
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 100%;
+    overflow: hidden;
+    cursor: pointer;
+
+}
+.secoundviewapp{
+    background-image: url("../../public/assets/Website.png");
+    background-size: 110px 100px;
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    background-position: 0 0px;
+    cursor: pointer;
+}
+
+
 
 /*############Papers############ */ 
 

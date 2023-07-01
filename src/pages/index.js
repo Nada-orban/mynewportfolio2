@@ -57,7 +57,7 @@ export default function Home({photo}) {
 
 
                 <meta property="og:image" content="/profile.jpg"/>
-                <link rel="icon" href="/logo.png"/>
+                <link rel="icon" href="/n.jpg"/>
                 <link rel="icon" href="%PUBLIC_URL%/logonada.png"/>
 
                 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>

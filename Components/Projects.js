@@ -12,9 +12,10 @@ import styles from '../src/styles/Home.module.css'
 import {ColorModeContext} from '../public/theme'
 import {styled, useTheme, alpha} from '@mui/material/styles';
 import {AiFillHtml5} from 'react-icons/ai'
-import {FaCss3Alt, FaReact, FaBootstrap} from 'react-icons/fa'
+import {FaCss3Alt, FaReact, FaBootstrap, FaGithub} from 'react-icons/fa'
 import {DiJavascript} from 'react-icons/di'
 import {SiJavascript, SiNextdotjs, SiMui, SiTailwindcss} from 'react-icons/si'
+import {TbWorld} from 'react-icons/tb'
 import Image from 'next/image'
 import exampleimage from '../public/assets/projects/Adidas Clone.png'
 import LaunchIcon from '@mui/icons-material/Launch';
