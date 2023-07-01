@@ -149,14 +149,14 @@ function About() {
                             {/* <Paper elevation={4}
                                 sx={
                                     {borderRadius: "10px"}
+                            }> */}
+                            <button className={
+                                styles.button90
                             }>
-                                <button className={
-                                    styles.buttonstyle
-                                }>
-                                    <Typography>Get In Touch!</Typography>
-                                </button>
-                            </Paper> */}
-                            <Box justifyContent="center" display="flex">
+                                <Typography>Get In Touch!</Typography>
+                            </button>
+                            {/* </Paper> */}
+                            {/* <Box justifyContent="center" display="flex">
                                 <Link to="about"
                                     spy={true}
                                     smooth={true}
@@ -187,9 +187,7 @@ function About() {
                                     </Box>
                                 </Link>
 
-                            </Box>
-
-                        </NavLinks>
+                            </Box> */} </NavLinks>
                     </Grid>
                 </Grid>
             </Container>

@@ -184,16 +184,16 @@
 /* <button class="button-89" role="button">Button 89</button> */
 
 /* CSS */
-.button-89 {
+.button89 {
   --b: 3px;   /* border thickness */
   --s: .45em; /* size of the corner */
-  --color: #373B44;
+  --color:white ;
   
   padding: calc(.5em + var(--s)) calc(.9em + var(--s));
   color: var(--color);
   --_p: var(--s);
   background:
-    conic-gradient(from 90deg at var(--b) var(--b),#0000 90deg,var(--color) 0)
+    conic-gradient(from 90deg at var(--b) var(--b),#7976B7  90deg,var(--color) 0)
     var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
   transition: .3s linear, color 0s, background-color 0s;
   outline: var(--b) solid #0000;
@@ -207,17 +207,73 @@
   touch-action: manipulation;
 }
 
-.button-89:hover,
-.button-89:focus-visible{
+.button89:hover,
+.button89:focus-visible{
   --_p: 0px;
   outline-color: var(--color);
   outline-offset: .05em;
 }
 
-.button-89:active {
+.button89:active {
   background: var(--color);
   color: #fff;
 }
+.button90  {
+    --b: 3px;   /* border thickness */
+    --s: .45em; /* size of the corner */
+    --color:#7976B7 ;
+    
+    padding: calc(.5em + var(--s)) calc(.9em + var(--s));
+    color: var(--color);
+    --_p: var(--s);
+    background:
+      conic-gradient(from 90deg at var(--b) var(--b),#EBE8E7  90deg,var(--color) 0)
+      var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
+    transition: .3s linear, color 0s, background-color 0s;
+    outline: var(--b) solid #0000;
+    outline-offset: .6em;
+    font-size: 16px;
+  
+    border: 0;
+  
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .button91  {
+    --b: 3px;   /* border thickness */
+    --s: .45em; /* size of the corner */
+    --color:white ;
+    
+    padding: calc(.5em + var(--s)) calc(.9em + var(--s));
+    color: var(--color);
+    --_p: var(--s);
+    background:
+      conic-gradient(from 90deg at var(--b) var(--b),#D9D2F0  90deg,var(--color) 0)
+      var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
+    transition: .3s linear, color 0s, background-color 0s;
+    outline: var(--b) solid #0000;
+    outline-offset: .6em;
+    font-size: 16px;
+  
+    border: 0;
+  
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  .button90:hover,.button91:hover,.button91:focus-visible
+  .button90:focus-visible{
+    --_p: 0px;
+    outline-color: var(--color);
+    outline-offset: .05em;
+  }
+  
+  .button90:active,.button91:active {
+    background: var(--color);
+    color: #fff;
+  }
 .bigfakeleft{
     position: absolute;
     top: -8rem;
@@ -237,10 +293,11 @@
     margin: auto;
 }
 .titlesection1{
-    font-size: 70px;
+    font-size: 35px;
     font-weight: bold;
     text-align: center;
     color: white;
+    margin: auto;
     
 }
 
@@ -253,16 +310,7 @@
         font-size: 40px;
     
     }
-    .letterA {
-        width: 60px;
-        height: 60px;
-        margin-right: -13px;
-        margin-left: -15px;
-    }
-    .ahmedlogo {
-        width: 30px;
-        height: 30px;
-    }
+  
 
 }
 @media only screen and (max-width: 600px) {
@@ -667,23 +715,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-/* .video{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-
-} */
 .landingbackground {
     background: linear-gradient(#bbb7b78f,
         #00000000 ),url('../../public/assets/background/cloudy-purple-pink-background_91008-257.avif');
@@ -746,9 +777,7 @@
         padding-top: 100px;
     }
 
-    .arrow {
-        left: 45%;
-    }
+    
     
 
 
@@ -767,22 +796,7 @@
     transform: translateY(-10px);
 }
 
-/* .overlay{
-  
-  background-color: black;
-  width: 100%;
-  height: 100VH;
-  z-index: 2;
-  position: absolute;
-  opacity: .6;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  color: WHITE;
 
-
-} */
 
 .containertext {
     display: inline-block;
@@ -808,32 +822,7 @@
     }
 }
 
-.arrow {
-    animation: arrow 1.5s ease-in-out both;
-    animation-iteration-count: infinite;
 
-}
-
-/* @media (max-width: 768px) .hero .go-down {
-  bottom: -50px;
-} */
-@keyframes arrow {
-
-    0%,
-    10%,
-    20%,
-    50%,
-    80%,
-    100% {
-        transform: translateY(0%);
-    }
-
-    40%,
-    60% {
-        transform: translateY(-30%);
-    }
-
-}
 
 
 .wavejson{
@@ -938,14 +927,14 @@
 
 /* ##################skills############### */
 .skillbackground{ 
-    background-color:#EAC0C9;
+    /* background-color:#EAC0C9; */
 }
 .mediumbackgoundskilllanding{
     position: relative;
     width: 100%;
     height: 100px;
     /* background-color: #FEF2D8; */
-    background-color: #EAC0C9;
+    /* background-color: #EAC0C9; */
     
    
 
@@ -966,67 +955,41 @@
     height: 100px;
     /* background-color: #FEF2D8; */
     
-    background-color: #CBD5EE;
-
+    background-color:#7976B7;
 }
 
 
 .mediumbackgoundskill::before{
     content: "";
     position: absolute;
-    background-color: #EAC0C9;
+    background-color: #EBE8E7;
     width: 100%;
     height: 100px;
     clip-path: polygon(60% 60%, 100% 0, 0 0%);
 
 }
-
-
-.slider {
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-
-
-}
-
-.slideTrack {
-    margin: 70px 0px;
-    width: calc(80px * 7);
-    /* perspective: 200px; */
-    animation: scroll 10s linear infinite normal;
-
-
-}
-
-.slideTrack:hover {
-    animation-play-state: paused;
-}
-
-@keyframes scroll {
-    0% {
-        transform: translateX(0);
-    }
-
-    100% {
-        transform: translateX(-100%);
-
-    }
-}
-
-
-
-.paper {
-    transition: transform 1s;
+.skillbox{
+    border-radius: 20px;
+    width: 130px;
+    height: 130px;
+    text-align: center;
+    padding-top: 20px;
+    margin-top: 20px;
     cursor: pointer;
-    box-shadow: rgba(245, 101, 57, 0.3) 0px 0px 30px;
+    transition: all 0.5s ease-in-out;
+}
+.skillbox:hover{
+    transform: translateY(-50px);
+
 
 }
 
-.paper:hover {
-    /* transform: translateZ(20px); */
-    transform: scale(1.2);
-}
+
+
+
+
+
+
 
 
 /* ################project############# */
@@ -1094,78 +1057,8 @@
 
 
 
-/*############Papers############ */ 
-
-/* .paperbackground{
-    background: linear-gradient(#164038d0, #000000ec),
-    url('../../public/assets/backgrounds/Conference\ -\ 5.png');
-   
-    
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    
-    
-    
-    z-index: 2;
-    color: white;
-    overflow: hidden;
-  
-} */
-.slider {
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    /* color:#055f6946; */
-
-
-}
-
-.slideTrack {
-    margin: 70px 0px;
-    width: calc(410px * 3);
-    /* perspective: 200px; */
-    animation: scroll 10s linear infinite normal;
-
-
-}
-.layer{
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    width: 100%;
-    background: linear-gradient(#1f6973b7, #000000ec);
-}
-.linkText {
-    text-decoration: none;
-}
-.linkText:hover {
-    text-decoration: underline var(--secondray-maincolor);
-}
-
-.iconLink:hover {
-    color: #c7933a;
-}
-.paperimage{
-    
-    height: 400px;
-}
-.papername{
-    font-weight: bolder;
-    /* color: var(--secondray-maincolor); */
-    
-}
-@media only screen and (max-width: 600px) {
-    .paperimage {
-        width: 350px;
-        height: 200px;
-    }
-
-}
 .projectbackground{
-    background-color:#CBD5EE;
+    background-color:#7976B7;
 }
 
 
@@ -1177,7 +1070,7 @@
     width: 100%;
     height: 100px;
     /* background-color: #FEF2D8; */
-    background-color: #EAC0C9;
+    /* background-color: #EAC0C9; */
     
 
 
@@ -1185,7 +1078,7 @@
 .mediumbackgoundcontact::before{
     content: "";
     position: absolute;
-    background-color: #CBD5EE;
+    background-color: #7976B7;
     width: 100%;
     height: 100px;
     clip-path: polygon(100% 100%, 100% 0, 0 0);
@@ -1194,7 +1087,7 @@
 .contactbackground{
         /* background: linear-gradient( #eac0c9c0,
             #00000000 ),url('../../public/assets/background/common-bg.svg'); */
-        background-color: #EAC0C9;
+        /* background-color: #EAC0C9; */
  
         background-repeat: no-repeat;
         background-size: cover;

@@ -6,24 +6,28 @@ export const projectsdata = [
         "body": "During my tenure at Omnispeech, I contributed to the development of efficient speech enhancement models. My work involved scaling down large Speech Enhancement GANs to sub-1 Million parameter models, ensuring excellent clarity and noise cancellation in real-time applications.",
         "image": "../assets/projects/Ahmed-Website.png",
         "githup": "",
-        "code": "https://www.ahmedadelattia.com/"
+        "code": "https://www.ahmedadelattia.com/",
+        "id2": 2,
+        "title2": "portfolio",
+        "body2": "During my tenure at Omnispeech, I contributed to the development of efficient speech enhancement models. My work involved scaling down large Speech Enhancement GANs to sub-1 Million parameter models, ensuring excellent clarity and noise cancellation in real-time applications.",
+        "image2": "../assets/projects/Fahkry's Website.png",
+        "githup2": "",
+        "code2": "https://ahmedfakhry.vercel.app/"
 
-    },
-    {
-        "id": 2,
-        "title": "portfolio",
-        "body": "During my tenure at Omnispeech, I contributed to the development of efficient speech enhancement models. My work involved scaling down large Speech Enhancement GANs to sub-1 Million parameter models, ensuring excellent clarity and noise cancellation in real-time applications.",
-        "image": "../assets/projects/Fahkry's Website.png",
-        "githup": "",
-        "code": "https://ahmedfakhry.vercel.app/"
-    },
-    {
+    }, {
         "id": 3,
-        "title": "Store",
+        "title": "Dashboard",
         "body": "During my tenure at Omnispeech, I contributed to the development of efficient speech enhancement models. My work involved scaling down large Speech Enhancement GANs to sub-1 Million parameter models, ensuring excellent clarity and noise cancellation in real-time applications.",
-        "image": "../assets/projects/Adidas Clone.png",
+        "image": "../assets/projects/Dashboard.png",
         "githup": "",
-        "code": ""
+        "code": "https://newdashboard-nadasamir.vercel.app/",
+
+        "id2": 4,
+        "title2": "Bus Website",
+        "body2": "During my tenure at Omnispeech, I contributed to the development of efficient speech enhancement models. My work involved scaling down large Speech Enhancement GANs to sub-1 Million parameter models, ensuring excellent clarity and noise cancellation in real-time applications.",
+        "image2": "../assets/projects/Bus Website.png",
+        "githup2": "",
+        "code2": "https://busweb.vercel.app/"
     },
     // ,{
     //     "id": 4,
@@ -38,40 +42,31 @@ export const projectsdata = [
     // }
     // }
     {
-        "id": 4,
-        "title": "Bus Website",
+        "id": 5,
+        "title": "Store",
         "body": "During my tenure at Omnispeech, I contributed to the development of efficient speech enhancement models. My work involved scaling down large Speech Enhancement GANs to sub-1 Million parameter models, ensuring excellent clarity and noise cancellation in real-time applications.",
         "image": "../assets/projects/Adidas Clone.png",
         "githup": "",
-        "code": "https://busweb.vercel.app/"
-    }, {
-        "id": 5,
-        "title": "Dashboard",
-        "body": "During my tenure at Omnispeech, I contributed to the development of efficient speech enhancement models. My work involved scaling down large Speech Enhancement GANs to sub-1 Million parameter models, ensuring excellent clarity and noise cancellation in real-time applications.",
-        "image": "../assets/projects/Resto.png",
-        "githup": "",
-        "code": "https://newdashboard-nadasamir.vercel.app/"
-    }, {
-        "id": 6,
-        "title": "Restaurant Website",
-        "body": "During my tenure at Omnispeech, I contributed to the development of efficient speech enhancement models. My work involved scaling down large Speech Enhancement GANs to sub-1 Million parameter models, ensuring excellent clarity and noise cancellation in real-time applications.",
-        "image": "../assets/projects/Resto.png",
-        "githup": "",
-        "code": "https://restaurant-nadasamir.netlify.app/"
+        "code": "",
+        "id2": 6,
+        "title2": "Restaurant Website",
+        "body2": "During my tenure at Omnispeech, I contributed to the development of efficient speech enhancement models. My work involved scaling down large Speech Enhancement GANs to sub-1 Million parameter models, ensuring excellent clarity and noise cancellation in real-time applications.",
+        "image2": "../assets/projects/Resto.png",
+        "githup2": "",
+        "code2": "https://restaurant-nadasamir.netlify.app/"
     }, {
         "id": 7,
         "title": "Fast Food Website",
         "body": "During my tenure at Omnispeech, I contributed to the development of efficient speech enhancement models. My work involved scaling down large Speech Enhancement GANs to sub-1 Million parameter models, ensuring excellent clarity and noise cancellation in real-time applications.",
         "image": "../assets/projects/Food Circle.png",
         "githup": "",
-        "code": "https://food-web-nadasamir.netlify.app/"
-    }, {
-        "id": 8,
-        "title": "Online Shop Website",
-        "body": "During my tenure at Omnispeech, I contributed to the development of efficient speech enhancement models. My work involved scaling down large Speech Enhancement GANs to sub-1 Million parameter models, ensuring excellent clarity and noise cancellation in real-time applications.",
-        "image": "../assets/projects/Comfy House.png",
-        "githup": "",
-        "code": "https://onlineshop-nadasamir.netlify.app/"
+        "code": "https://food-web-nadasamir.netlify.app/",
+        "id2": 8,
+        "title2": "Online Shop Website",
+        "body2": "During my tenure at Omnispeech, I contributed to the development of efficient speech enhancement models. My work involved scaling down large Speech Enhancement GANs to sub-1 Million parameter models, ensuring excellent clarity and noise cancellation in real-time applications.",
+        "image2": "../assets/projects/Comfy House.png",
+        "githup2": "",
+        "code2": "https://onlineshop-nadasamir.netlify.app/"
     },
 
 

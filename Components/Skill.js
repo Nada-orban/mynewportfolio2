@@ -37,7 +37,7 @@ function Skill() {
             <Box className={
                 styles.mediumbackgoundskilllanding
             }></Box>
-            <Box id="skills" py="70px"
+            <Box id="skills" pt="70px" pb="100px"
                 className={
                     styles.skillbackground
             }>
@@ -84,7 +84,7 @@ function Skill() {
                             </div>
 
                         </Box>
-                        <Grid container direction="row" justifyContent="center" alignItems="center" my="50px" margin="auto"
+                        <Grid container direction="row" justifyContent="center" alignItems="center" py="0px" margin="auto"
                             spacing={2}>
                             <Grid item
                                 md={2}
@@ -92,17 +92,13 @@ function Skill() {
                                 xs={6}
                                 mt="20px">
                                 <Paper sx={
-                                        {
-                                            borderRadius: "20px",
-                                            width: "130px",
-                                            height: "130px",
-                                            textAlign: "center",
-                                            paddingTop: "20px",
-                                            border: "1.5px solid orange"
-                                        }
+                                        {border: "1.5px solid orange"}
                                     }
                                     square
-                                    elevation={6}>
+                                    elevation={6}
+                                    className={
+                                        styles.skillbox
+                                }>
                                     <Typography variant='h5'
                                         sx={
                                             {
@@ -121,17 +117,13 @@ function Skill() {
                                 xs={6}
                                 mt="20px">
                                 <Paper sx={
-                                        {
-                                            borderRadius: "20px",
-                                            width: "130px",
-                                            height: "130px",
-                                            textAlign: "center",
-                                            paddingTop: "20px",
-                                            border: "1.5px solid #2A66F3"
-                                        }
+                                        {border: "1.5px solid #2A66F3"}
                                     }
                                     square
-                                    elevation={6}>
+                                    elevation={6}
+                                    className={
+                                        styles.skillbox
+                                }>
                                     <Typography variant='h5'
                                         sx={
                                             {
@@ -152,17 +144,13 @@ function Skill() {
                                 xs={6}
                                 mt="20px">
                                 <Paper sx={
-                                        {
-                                            borderRadius: "20px",
-                                            width: "130px",
-                                            height: "130px",
-                                            textAlign: "center",
-                                            paddingTop: "20px",
-                                            border: "1.5px solid yellow"
-                                        }
+                                        {border: "1.5px solid yellow"}
                                     }
                                     square
-                                    elevation={6}>
+                                    elevation={6}
+                                    className={
+                                        styles.skillbox
+                                }>
                                     <Typography variant='h5'
                                         sx={
                                             {
@@ -182,17 +170,13 @@ function Skill() {
                                 xs={6}
                                 mt="20px">
                                 <Paper sx={
-                                        {
-                                            borderRadius: "20px",
-                                            width: "130px",
-                                            height: "130px",
-                                            textAlign: "center",
-                                            paddingTop: "20px",
-                                            border: "1.5px solid #6FDDFA"
-                                        }
+                                        {border: "1.5px solid #6FDDFA"}
                                     }
                                     square
-                                    elevation={6}>
+                                    elevation={6}
+                                    className={
+                                        styles.skillbox
+                                }>
                                     <Typography variant='h5'
                                         sx={
                                             {
@@ -211,17 +195,13 @@ function Skill() {
                                 xs={6}
                                 mt="20px">
                                 <Paper sx={
-                                        {
-                                            borderRadius: "20px",
-                                            width: "130px",
-                                            height: "130px",
-                                            textAlign: "center",
-                                            paddingTop: "20px",
-                                            border: "1.5px solid #0AB3D7"
-                                        }
+                                        {border: "1.5px solid #0AB3D7"}
                                     }
                                     square
-                                    elevation={6}>
+                                    elevation={6}
+                                    className={
+                                        styles.skillbox
+                                }>
                                     <Typography variant='h5'
                                         sx={
                                             {
@@ -240,17 +220,13 @@ function Skill() {
                                 xs={6}
                                 mt="20px">
                                 <Paper sx={
-                                        {
-                                            borderRadius: "20px",
-                                            width: "130px",
-                                            height: "130px",
-                                            textAlign: "center",
-                                            paddingTop: "20px",
-                                            border: "1.5px solid #7111F3"
-                                        }
+                                        {border: "1.5px solid #7111F3"}
                                     }
                                     square
-                                    elevation={6}>
+                                    elevation={6}
+                                    className={
+                                        styles.skillbox
+                                }>
                                     <Typography variant='h5'
                                         sx={
                                             {
@@ -269,17 +245,13 @@ function Skill() {
                                 xs={6}
                                 mt="20px">
                                 <Paper sx={
-                                        {
-                                            borderRadius: "20px",
-                                            width: "130px",
-                                            height: "130px",
-                                            textAlign: "center",
-                                            paddingTop: "20px",
-                                            border: "1.5px solid #845DC3"
-                                        }
+                                        {border: "1.5px solid #845DC3"}
                                     }
                                     square
-                                    elevation={6}>
+                                    elevation={6}
+                                    className={
+                                        styles.skillbox
+                                }>
                                     <Typography variant='h5'
                                         sx={
                                             {
@@ -298,17 +270,13 @@ function Skill() {
                                 xs={6}
                                 mt="20px">
                                 <Paper sx={
-                                        {
-                                            borderRadius: "20px",
-                                            width: "130px",
-                                            height: "130px",
-                                            textAlign: "center",
-                                            paddingTop: "20px",
-                                            border: "1.5px solid black"
-                                        }
+                                        {border: "1.5px solid black"}
                                     }
                                     square
-                                    elevation={6}>
+                                    elevation={6}
+                                    className={
+                                        styles.skillbox
+                                }>
                                     <Typography variant='h5'
                                         sx={
                                             {
@@ -327,17 +295,13 @@ function Skill() {
                                 xs={6}
                                 mt="20px">
                                 <Paper sx={
-                                        {
-                                            borderRadius: "20px",
-                                            width: "130px",
-                                            height: "130px",
-                                            textAlign: "center",
-                                            paddingTop: "20px",
-                                            border: "1.5px solid #5EA64F"
-                                        }
+                                        {border: "1.5px solid #5EA64F"}
                                     }
                                     square
-                                    elevation={6}>
+                                    elevation={6}
+                                    className={
+                                        styles.skillbox
+                                }>
                                     <Typography variant='h5'
                                         sx={
                                             {
@@ -356,17 +320,13 @@ function Skill() {
                                 xs={6}
                                 mt="20px">
                                 <Paper sx={
-                                        {
-                                            borderRadius: "20px",
-                                            width: "130px",
-                                            height: "130px",
-                                            textAlign: "center",
-                                            paddingTop: "20px",
-                                            border: "1.5px solid #5EA64F"
-                                        }
+                                        {border: "1.5px solid #5EA64F"}
                                     }
                                     square
-                                    elevation={6}>
+                                    elevation={6}
+                                    className={
+                                        styles.skillbox
+                                }>
                                     <Typography variant='h5'
                                         sx={
                                             {
@@ -385,17 +345,13 @@ function Skill() {
                                 xs={6}
                                 mt="20px">
                                 <Paper sx={
-                                        {
-                                            borderRadius: "20px",
-                                            width: "130px",
-                                            height: "130px",
-                                            textAlign: "center",
-                                            paddingTop: "20px",
-                                            border: "1.5px solid black"
-                                        }
+                                        {border: "1.5px solid black"}
                                     }
                                     square
-                                    elevation={6}>
+                                    elevation={6}
+                                    className={
+                                        styles.skillbox
+                                }>
                                     <Typography variant='h5'
                                         sx={
                                             {

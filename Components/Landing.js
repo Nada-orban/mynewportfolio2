@@ -540,7 +540,13 @@ function Landing() {
                         smooth={true}
                         offset={0}
                         duration={500}>
-                        <Box width="110px" height="50px"
+                        <button className={
+                            styles.button91
+                        }>
+                            <Typography>Learn More</Typography>
+                        </button>
+
+                        {/* <Box width="110px" height="50px"
                             className={
                                 styles.w
                         }>
@@ -562,10 +568,10 @@ function Landing() {
 
                                 </Box>
                             </Box>
-                        </Box>
-                    </Link>
+                        </Box> */} </Link>
 
                 </Box>
+
                 <Verticalnavbar/>
 
 

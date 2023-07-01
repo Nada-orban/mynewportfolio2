@@ -36,7 +36,7 @@ function Projects() {
             <Container>
                 <Box display="flex" gap="20px">
                     <div className={
-                        styles.titlesection
+                        styles.titlesection1
                     }>
                         <h1>
                             <span class={
@@ -84,113 +84,120 @@ function Projects() {
                     </div>
                 </Box>
                 <Box textAlign="center" margin="auto">
-                    <Typography variant='h6'>Here you will find some of the personal and clients projects that I created with each
+                    <Typography variant='h6'
+                        sx={
+                            {color: "background.main"}
+                    }>Here you will find some of the personal and clients projects that I created with each
                     </Typography>
-                    <Typography variant='h6'>
+                    <Typography variant='h6'
+                        sx={
+                            {color: "background.main"}
+                    }>
                         project containing its own case study</Typography>
                 </Box>
                 <Box my="70px">
                     {
                     projectsdata.map(project => {
                         return (
-                            <Grid container
-                                spacing={5}
-                                mb="60px"
-                                id={
-                                    project.id
-                            }>
-
-                                <Grid item
-                                    md={6}
-                                    xs={12}
-                                    margin="auto"
-                                    sx={
-                                        {
-                                            textAlign: {
-                                                xs: "center",
-                                                sm: "center",
-                                                md: "start"
-                                            }
-                                        }
+                            <>
+                                <Grid container
+                                    spacing={5}
+                                    mb="60px"
+                                    id={
+                                        project.id
                                 }>
-                                    <Typography variant='h4'
-                                        sx={
-                                            {color: "secondary.pink"}
-                                    }>
-                                        {
-                                        project.title
-                                    }</Typography>
-                                    <Typography variant='subtitle1'
-                                        sx={
-                                            {
-                                                my: "10px",
-                                                color: "black"
-                                            }
-                                    }>
-                                        {
-                                        project.body
-                                    }</Typography>
-                                    <Box display="flex" alignItems="center" gap="5px"
-                                        sx={
-                                            {
-                                                justifyContent: {
-                                                    xs: "center",
-                                                    sm: "center",
-                                                    md: "start"
-                                                }
-                                            }
-                                    }>
-                                        <AiFillHtml5 style={
-                                            {
-                                                width: "20px",
-                                                height: "20px",
-                                                color: "white"
-                                            }
-                                        }/>
-                                        <FaCss3Alt style={
-                                            {
-                                                width: "20px",
-                                                height: "20px",
-                                                color: "white"
-                                            }
-                                        }/>
-                                        <SiJavascript style={
-                                            {
-                                                width: "20px",
-                                                height: "20px",
-                                                color: "white"
-                                            }
-                                        }/>
 
-                                    </Box>
-                                    <Box my="20px" gap="10px" display="flex"
+                                    <Grid item
+                                        md={6}
+                                        xs={12}
+                                        margin="auto"
                                         sx={
                                             {
-                                                justifyContent: {
+                                                textAlign: {
                                                     xs: "center",
                                                     sm: "center",
                                                     md: "start"
                                                 }
                                             }
                                     }>
-                                        <Paper elevation={4}
+                                        <Typography variant='h4'
+                                            sx={
+                                                {
+                                                    color: "secondary.pink",
+                                                    fontWeight: "bold"
+                                                }
+                                        }>
+                                            {
+                                            project.title
+                                        }</Typography>
+                                        <Typography variant='subtitle1'
+                                            sx={
+                                                {
+                                                    my: "10px",
+                                                    color: "background.main"
+                                                }
+                                        }>
+                                            {
+                                            project.body
+                                        }</Typography>
+                                        <Box display="flex" alignItems="center" gap="5px"
+                                            sx={
+                                                {
+                                                    justifyContent: {
+                                                        xs: "center",
+                                                        sm: "center",
+                                                        md: "start"
+                                                    }
+                                                }
+                                        }>
+                                            <AiFillHtml5 style={
+                                                {
+                                                    width: "20px",
+                                                    height: "20px",
+                                                    color: "white"
+                                                }
+                                            }/>
+                                            <FaCss3Alt style={
+                                                {
+                                                    width: "20px",
+                                                    height: "20px",
+                                                    color: "white"
+                                                }
+                                            }/>
+                                            <SiJavascript style={
+                                                {
+                                                    width: "20px",
+                                                    height: "20px",
+                                                    color: "white"
+                                                }
+                                            }/>
+
+                                        </Box>
+                                        <Box my="20px" gap="10px" display="flex"
+                                            sx={
+                                                {
+                                                    justifyContent: {
+                                                        xs: "center",
+                                                        sm: "center",
+                                                        md: "start"
+                                                    }
+                                                }
+                                        }>
+                                            {/* <Paper elevation={4}
                                             sx={
                                                 {borderRadius: "10px"}
-                                        }>
+                                        }> */}
                                             <button className={
-                                                styles.buttonstyle
+                                                styles.button89
                                             }>
                                                 <Typography>View It Here</Typography><FiExternalLink className={
                                                     styles.iconlink
                                                 }/>
                                             </button>
-                                        </Paper>
-                                        <Paper elevation={4}
-                                            sx={
-                                                {borderRadius: "10px"}
-                                        }>
+                                            {/* </Paper> */}
+
                                             <button className={
-                                                styles.buttonstyle
+                                                styles.button89
                                             }>
                                                 <Typography>
                                                     View Github Repo</Typography><FiExternalLink className={
@@ -198,199 +205,214 @@ function Projects() {
                                                 }/>
 
                                             </button>
-                                        </Paper>
 
 
-                                    </Box>
-                                </Grid>
-                                <Grid item
-                                    md={6}
-                                    xs={12}
-                                    sx={
-                                        {
-                                            order: {
-                                                xs: -1,
-                                                sm: -1,
-                                                md: 1
+                                        </Box>
+                                    </Grid>
+                                    <Grid item
+                                        md={6}
+                                        xs={12}
+                                        sx={
+                                            {
+                                                order: {
+                                                    xs: -1,
+                                                    sm: -1,
+                                                    md: 1
+                                                }
                                             }
-                                        }
-                                }>
-                                    <Box sx={
-                                        {
-                                            display: {
-                                                xs: "none",
-                                                sm: "block",
-                                                md: "block"
-                                            },
-                                            margin: "auto"
-                                        }
                                     }>
-                                        <img src={
-                                                project.image
+                                        <Box sx={
+                                            {
+                                                display: {
+                                                    xs: "none",
+                                                    sm: "block",
+                                                    md: "block"
+                                                },
+                                                margin: "auto"
                                             }
-                                            alt='project photo'
-                                            className={
-                                                styles.boximage
-                                            }/> {/* <Image src={
+                                        }>
+                                            <img src={
+                                                    project.image
+                                                }
+                                                alt='project photo'
+                                                className={
+                                                    styles.boximage
+                                                }/> {/* <Image src={
                                                 project.image
                                             }
                                             width={650}
                                             height={400}/> */} </Box>
-                                    <Box sx={
-                                        {
-                                            display: {
-                                                xs: "block",
-                                                sm: "none",
-                                                md: "none"
+                                        <Box sx={
+                                            {
+                                                display: {
+                                                    xs: "block",
+                                                    sm: "none",
+                                                    md: "none"
+                                                }
                                             }
-                                        }
+                                        }>
+                                            <img src={
+                                                    project.image
+                                                }
+                                                alt='project photo'
+                                                className={
+                                                    styles.boximagesmall
+                                                }/>
+                                        </Box>
+
+
+                                    </Grid>
+
+                                </Grid>
+                                <Grid container
+                                    spacing={15}>
+                                    <Grid item
+                                        md={6}
+                                        xs={12}
+                                        id={
+                                            project.id2
                                     }>
-                                        <img src={
-                                                project.image
+                                        <Box sx={
+                                            {
+                                                display: {
+                                                    xs: "none",
+                                                    sm: "block",
+                                                    md: "block"
+                                                }
                                             }
-                                            alt='project photo'
-                                            className={
-                                                styles.boximagesmall
+                                        }>
+                                            <img src={
+                                                    project.image2
+                                                }
+                                                alt='project photo'
+                                                className={
+                                                    styles.boximage
+                                                }/>
+                                        </Box>
+                                        <Box sx={
+                                            {
+                                                display: {
+                                                    xs: "block",
+                                                    sm: "none",
+                                                    md: "none"
+                                                }
+                                            }
+                                        }>
+                                            <img src={
+                                                    project.image2
+                                                }
+                                                alt='project photo'
+                                                className={
+                                                    styles.boximagesmall
+                                                }/>
+                                        </Box>
+
+                                    </Grid>
+                                    <Grid item
+                                        md={6}
+                                        xs={12}
+                                        sx={
+                                            {
+                                                textAlign: {
+                                                    xs: "center",
+                                                    sm: "center",
+                                                    md: "start"
+                                                }
+                                            }
+                                    }>
+                                        <Typography variant='h4'
+                                            sx={
+                                                {color: "secondary.pink"}
+                                        }>
+                                            {
+                                            project.title2
+                                        }</Typography>
+                                        <Typography variant='subtitle1'
+                                            sx={
+                                                {
+                                                    my: "10px",
+                                                    color: "black"
+                                                }
+                                        }>
+                                            {
+                                            project.body2
+                                        }</Typography>
+                                        <Box display="flex" alignItems="center" gap="5px"
+                                            sx={
+                                                {
+                                                    justifyContent: {
+                                                        xs: "center",
+                                                        sm: "center",
+                                                        md: "start"
+                                                    }
+                                                }
+                                        }>
+                                            <AiFillHtml5 style={
+                                                {
+                                                    width: "20px",
+                                                    height: "20px",
+                                                    color: "white"
+                                                }
                                             }/>
-                                    </Box>
+                                            <FaCss3Alt style={
+                                                {
+                                                    width: "20px",
+                                                    height: "20px",
+                                                    color: "white"
+                                                }
+                                            }/>
+                                            <SiJavascript style={
+                                                {
+                                                    width: "20px",
+                                                    height: "20px",
+                                                    color: "white"
+                                                }
+                                            }/>
+
+                                        </Box>
+                                        <Box my="20px" gap="10px" display="flex"
+                                            sx={
+                                                {
+                                                    justifyContent: {
+                                                        xs: "center",
+                                                        sm: "center",
+                                                        md: "start"
+                                                    }
+                                                }
+                                        }>
+                                            {/* <Paper elevation={4}
+                                                sx={
+                                                    {borderRadius: "10px"}
+                                            }> */}
+                                            <button className={
+                                                styles.button89
+                                            }>
+                                                <Typography>View It Here</Typography><FiExternalLink className={
+                                                    styles.iconlink
+                                                }/>
+                                            </button>
+                                            {/* </Paper> */}
+
+                                            <button className={
+                                                styles.button89
+                                            }>
+                                                <Typography>
+                                                    View Github Repo</Typography><FiExternalLink className={
+                                                    styles.iconlink
+                                                }/>
+
+                                            </button>
+
+
+                                        </Box>
+                                    </Grid>
 
 
                                 </Grid>
-
-                            </Grid>
+                            </>
                         )
                     })
-                }
-
-                    {/* <Grid container
-                        spacing={7}>
-                        <Grid item
-                            md={6}
-                            xs={12}>
-                            <Box sx={
-                                {
-                                    display: {
-                                        xs: "none",
-                                        sm: "block",
-                                        md: "block"
-                                    }
-                                }
-                            }>
-                                <Image src={exampleimage}
-                                    width={650}/>
-                            </Box>
-                            <Box sx={
-                                {
-                                    display: {
-                                        xs: "block",
-                                        sm: "none",
-                                        md: "none"
-                                    }
-                                }
-                            }>
-                                <Image src={exampleimage}
-                                    width={350}/>
-                            </Box>
-
-                        </Grid>
-                        <Grid item
-                            md={6}
-                            xs={12}
-                            sx={
-                                {
-                                    textAlign: {
-                                        xs: "center",
-                                        sm: "center",
-                                        md: "start"
-                                    }
-                                }
-                        }>
-                            <Typography variant='h4'
-                                sx={
-                                    {color: "secondary.pink"}
-                            }>Personal Date Night</Typography>
-                            <Typography variant='subtitle1'
-                                sx={
-                                    {
-                                        my: "10px",
-                                        color: "black"
-                                    }
-                            }>For when you need a break from your partner but already got a babysitter. Now couples can go to different events in similar locations and at the same time. A group programming project with Can Rozanes, Irene Truong and Jamie Yeung.</Typography>
-                            <Box display="flex" alignItems="center" gap="5px"
-                                sx={
-                                    {
-                                        justifyContent: {
-                                            xs: "center",
-                                            sm: "center",
-                                            md: "start"
-                                        }
-                                    }
-                            }>
-                                <AiFillHtml5 style={
-                                    {
-                                        width: "20px",
-                                        height: "20px",
-                                        color: "white"
-                                    }
-                                }/>
-                                <FaCss3Alt style={
-                                    {
-                                        width: "20px",
-                                        height: "20px",
-                                        color: "white"
-                                    }
-                                }/>
-                                <SiJavascript style={
-                                    {
-                                        width: "20px",
-                                        height: "20px",
-                                        color: "white"
-                                    }
-                                }/>
-
-                            </Box>
-                            <Box my="20px" gap="10px" display="flex"
-                                sx={
-                                    {
-                                        justifyContent: {
-                                            xs: "center",
-                                            sm: "center",
-                                            md: "start"
-                                        }
-                                    }
-                            }>
-                                <Paper elevation={4}
-                                    sx={
-                                        {borderRadius: "10px"}
-                                }>
-                                    <button className={
-                                        styles.buttonstyle
-                                    }>
-                                        <Typography>View It Here</Typography><FiExternalLink className={
-                                            styles.iconlink
-                                        }/>
-                                    </button>
-                                </Paper>
-                                <Paper elevation={4}
-                                    sx={
-                                        {borderRadius: "10px"}
-                                }>
-                                    <button className={
-                                        styles.buttonstyle
-                                    }>
-                                        <Typography>
-                                            View Github Repo</Typography><FiExternalLink className={
-                                            styles.iconlink
-                                        }/>
-
-                                    </button>
-                                </Paper>
-
-                            </Box>
-                        </Grid>
-
-
-                    </Grid> */} </Box>
+                } </Box>
 
             </Container>
         </Box>
