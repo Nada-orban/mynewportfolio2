@@ -2,24 +2,26 @@ export const projectsdata = [
     {
 
         "id": 1,
-        "title": "resto",
+        "title": "Portfolio",
         "body": "During my tenure at Omnispeech, I contributed to the development of efficient speech enhancement models. My work involved scaling down large Speech Enhancement GANs to sub-1 Million parameter models, ensuring excellent clarity and noise cancellation in real-time applications.",
-        "image": "../assets/projects/Speech-image-1024x551.jpg",
+        "image": "../assets/projects/Ahmed-Website.png",
         "githup": "",
         "code": ""
 
-    }, {
+    },
+    {
         "id": 2,
-        "title": "resto",
+        "title": "portfolio",
         "body": "During my tenure at Omnispeech, I contributed to the development of efficient speech enhancement models. My work involved scaling down large Speech Enhancement GANs to sub-1 Million parameter models, ensuring excellent clarity and noise cancellation in real-time applications.",
-        "image": "../assets/projects/Speech-image-1024x551.jpg",
+        "image": "../assets/projects/Fahkry's Website.png",
         "githup": "",
         "code": ""
-    }, {
+    },
+    {
         "id": 3,
-        "title": "resto",
+        "title": "Store",
         "body": "During my tenure at Omnispeech, I contributed to the development of efficient speech enhancement models. My work involved scaling down large Speech Enhancement GANs to sub-1 Million parameter models, ensuring excellent clarity and noise cancellation in real-time applications.",
-        "image": "../assets/projects/Speech-image-1024x551.jpg",
+        "image": "../assets/projects/Adidas Clone.png",
         "githup": "",
         "code": ""
     },
@@ -36,10 +38,31 @@ export const projectsdata = [
     // }
     // }
     {
-        "id": 5,
-        "title": "resto",
+        "id": 4,
+        "title": "Bus Website",
         "body": "During my tenure at Omnispeech, I contributed to the development of efficient speech enhancement models. My work involved scaling down large Speech Enhancement GANs to sub-1 Million parameter models, ensuring excellent clarity and noise cancellation in real-time applications.",
-        "image": "../assets/projects/Speech-image-1024x551.jpg",
+        "image": "../assets/projects/Adidas Clone.png",
+        "githup": "",
+        "code": ""
+    }, {
+        "id": 5,
+        "title": "Restaurant Website",
+        "body": "During my tenure at Omnispeech, I contributed to the development of efficient speech enhancement models. My work involved scaling down large Speech Enhancement GANs to sub-1 Million parameter models, ensuring excellent clarity and noise cancellation in real-time applications.",
+        "image": "../assets/projects/Resto.png",
+        "githup": "",
+        "code": ""
+    }, {
+        "id": 6,
+        "title": "Fast Food Website",
+        "body": "During my tenure at Omnispeech, I contributed to the development of efficient speech enhancement models. My work involved scaling down large Speech Enhancement GANs to sub-1 Million parameter models, ensuring excellent clarity and noise cancellation in real-time applications.",
+        "image": "../assets/projects/Food Circle.png",
+        "githup": "",
+        "code": ""
+    }, {
+        "id": 7,
+        "title": "Online Shop Website",
+        "body": "During my tenure at Omnispeech, I contributed to the development of efficient speech enhancement models. My work involved scaling down large Speech Enhancement GANs to sub-1 Million parameter models, ensuring excellent clarity and noise cancellation in real-time applications.",
+        "image": "../assets/projects/Comfy House.png",
         "githup": "",
         "code": ""
     },

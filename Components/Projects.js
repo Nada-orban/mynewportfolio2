@@ -16,11 +16,12 @@ import {FaCss3Alt, FaReact, FaBootstrap} from 'react-icons/fa'
 import {DiJavascript} from 'react-icons/di'
 import {SiJavascript, SiNextdotjs, SiMui, SiTailwindcss} from 'react-icons/si'
 import Image from 'next/image'
-import exampleimage from '../public/assets/projects/work-personal-date-night.png'
+import exampleimage from '../public/assets/projects/Adidas Clone.png'
 import LaunchIcon from '@mui/icons-material/Launch';
 import DraftsIcon from '@mui/icons-material/Drafts';
 import {HiOutlineMailOpen} from 'react-icons/hi';
 import {FiExternalLink} from 'react-icons/fi';
+import {projectsdata} from '../data'
 
 
 function Projects() {
@@ -88,149 +89,174 @@ function Projects() {
                         project containing its own case study</Typography>
                 </Box>
                 <Box my="70px">
-                    <Grid container
-                        spacing={5}
-                        mb="60px">
-                        <Grid item
-                            md={6}
-                            xs={12}
-                            margin="auto"
-                            sx={
-                                {
-                                    textAlign: {
-                                        xs: "center",
-                                        sm: "center",
-                                        md: "start"
-                                    }
-                                }
-                        }>
-                            <Typography variant='h4'
-                                sx={
-                                    {color: "secondary.pink"}
-                            }>Personal Date Night</Typography>
-                            <Typography variant='subtitle1'
-                                sx={
-                                    {
-                                        my: "10px",
-                                        color: "black"
-                                    }
-                            }>For when you need a break from your partner but already got a babysitter. Now couples can go to different events in similar locations and at the same time. A group programming project with Can Rozanes, Irene Truong and Jamie Yeung.</Typography>
-                            <Box display="flex" alignItems="center" gap="5px"
-                                sx={
-                                    {
-                                        justifyContent: {
-                                            xs: "center",
-                                            sm: "center",
-                                            md: "start"
-                                        }
-                                    }
+                    {
+                    projectsdata.map(project => {
+                        return (
+                            <Grid container
+                                spacing={5}
+                                mb="60px"
+                                id={
+                                    project.id
                             }>
-                                <AiFillHtml5 style={
-                                    {
-                                        width: "20px",
-                                        height: "20px",
-                                        color: "white"
-                                    }
-                                }/>
-                                <FaCss3Alt style={
-                                    {
-                                        width: "20px",
-                                        height: "20px",
-                                        color: "white"
-                                    }
-                                }/>
-                                <SiJavascript style={
-                                    {
-                                        width: "20px",
-                                        height: "20px",
-                                        color: "white"
-                                    }
-                                }/>
 
-                            </Box>
-                            <Box my="20px" gap="10px" display="flex"
-                                sx={
-                                    {
-                                        justifyContent: {
-                                            xs: "center",
-                                            sm: "center",
-                                            md: "start"
+                                <Grid item
+                                    md={6}
+                                    xs={12}
+                                    margin="auto"
+                                    sx={
+                                        {
+                                            textAlign: {
+                                                xs: "center",
+                                                sm: "center",
+                                                md: "start"
+                                            }
                                         }
-                                    }
-                            }>
-                                <Paper elevation={4}
-                                    sx={
-                                        {borderRadius: "10px"}
                                 }>
-                                    <button className={
-                                        styles.buttonstyle
+                                    <Typography variant='h4'
+                                        sx={
+                                            {color: "secondary.pink"}
                                     }>
-                                        <Typography>View It Here</Typography><FiExternalLink className={
-                                            styles.iconlink
+                                        {
+                                        project.title
+                                    }</Typography>
+                                    <Typography variant='subtitle1'
+                                        sx={
+                                            {
+                                                my: "10px",
+                                                color: "black"
+                                            }
+                                    }>
+                                        {
+                                        project.body
+                                    }</Typography>
+                                    <Box display="flex" alignItems="center" gap="5px"
+                                        sx={
+                                            {
+                                                justifyContent: {
+                                                    xs: "center",
+                                                    sm: "center",
+                                                    md: "start"
+                                                }
+                                            }
+                                    }>
+                                        <AiFillHtml5 style={
+                                            {
+                                                width: "20px",
+                                                height: "20px",
+                                                color: "white"
+                                            }
                                         }/>
-                                    </button>
-                                </Paper>
-                                <Paper elevation={4}
-                                    sx={
-                                        {borderRadius: "10px"}
-                                }>
-                                    <button className={
-                                        styles.buttonstyle
-                                    }>
-                                        <Typography>
-                                            View Github Repo</Typography><FiExternalLink className={
-                                            styles.iconlink
+                                        <FaCss3Alt style={
+                                            {
+                                                width: "20px",
+                                                height: "20px",
+                                                color: "white"
+                                            }
+                                        }/>
+                                        <SiJavascript style={
+                                            {
+                                                width: "20px",
+                                                height: "20px",
+                                                color: "white"
+                                            }
                                         }/>
 
-                                    </button>
-                                </Paper>
+                                    </Box>
+                                    <Box my="20px" gap="10px" display="flex"
+                                        sx={
+                                            {
+                                                justifyContent: {
+                                                    xs: "center",
+                                                    sm: "center",
+                                                    md: "start"
+                                                }
+                                            }
+                                    }>
+                                        <Paper elevation={4}
+                                            sx={
+                                                {borderRadius: "10px"}
+                                        }>
+                                            <button className={
+                                                styles.buttonstyle
+                                            }>
+                                                <Typography>View It Here</Typography><FiExternalLink className={
+                                                    styles.iconlink
+                                                }/>
+                                            </button>
+                                        </Paper>
+                                        <Paper elevation={4}
+                                            sx={
+                                                {borderRadius: "10px"}
+                                        }>
+                                            <button className={
+                                                styles.buttonstyle
+                                            }>
+                                                <Typography>
+                                                    View Github Repo</Typography><FiExternalLink className={
+                                                    styles.iconlink
+                                                }/>
+
+                                            </button>
+                                        </Paper>
 
 
-                            </Box>
-                        </Grid>
-                        <Grid item
-                            md={6}
-                            xs={12}
-                            sx={
-                                {
-                                    order: {
-                                        xs: -1,
-                                        sm: -1,
-                                        md: 1
-                                    }
-                                }
-                        }>
-                            <Box sx={
-                                {
-                                    display: {
-                                        xs: "none",
-                                        sm: "block",
-                                        md: "block"
-                                    },
-                                    margin: "auto"
-                                }
-                            }>
-                                <Image src={exampleimage}
-                                    width={650}/>
-                            </Box>
-                            <Box sx={
-                                {
-                                    display: {
-                                        xs: "block",
-                                        sm: "none",
-                                        md: "none"
-                                    }
-                                }
-                            }>
-                                <Image src={exampleimage}
-                                    width={350}/>
-                            </Box>
+                                    </Box>
+                                </Grid>
+                                <Grid item
+                                    md={6}
+                                    xs={12}
+                                    sx={
+                                        {
+                                            order: {
+                                                xs: -1,
+                                                sm: -1,
+                                                md: 1
+                                            }
+                                        }
+                                }>
+                                    <Box sx={
+                                        {
+                                            display: {
+                                                xs: "none",
+                                                sm: "block",
+                                                md: "block"
+                                            },
+                                            margin: "auto"
+                                        }
+                                    }>
+                                        <img src={
+                                                project.image
+                                            }
+                                            alt='project photo'
+                                            className={
+                                                styles.boximage
+                                            }/> {/* <Image src={
+                                                project.image
+                                            }
+                                            width={650}
+                                            height={400}/> */} </Box>
+                                    <Box sx={
+                                        {
+                                            display: {
+                                                xs: "block",
+                                                sm: "none",
+                                                md: "none"
+                                            }
+                                        }
+                                    }>
+                                        <Image src={exampleimage}
+                                            width={350}/>
+                                    </Box>
 
 
-                        </Grid>
+                                </Grid>
 
-                    </Grid>
-                    <Grid container
+                            </Grid>
+                        )
+                    })
+                }
+
+                    {/* <Grid container
                         spacing={7}>
                         <Grid item
                             md={6}
@@ -358,8 +384,7 @@ function Projects() {
                         </Grid>
 
 
-                    </Grid>
-                </Box>
+                    </Grid> */} </Box>
 
             </Container>
         </Box>
