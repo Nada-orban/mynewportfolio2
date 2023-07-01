@@ -446,7 +446,9 @@ function Landing() {
                                 textAlign: "center",
                                 color: "neutral.purple"
                             }
-                    }>I'M A FRONT END DEVELOPER</Typography>
+                        }
+                        data-aos="fade-up"
+                        data-aos-delay="10">I'M A FRONT END DEVELOPER</Typography>
                     <Box display="flex"
                         sx={
                             {
@@ -461,7 +463,7 @@ function Landing() {
                         alignItems="center"
                         gap="20px"
                         data-aos="fade-up"
-                        data-aos-delay="1350">
+                        data-aos-delay="50">
                         <a href="mailto:nadasamireldesoky@gmail.com" target="_blank">
                             <Avatar sx={
                                     {
@@ -534,7 +536,7 @@ function Landing() {
                         </a>
                     </Box>
                 </Box>
-                <Box justifyContent="center" display="flex">
+                <Box justifyContent="center" display="flex" data-aos="fade-up" data-aos-delay="100">
                     <Link to="about"
                         spy={true}
                         smooth={true}

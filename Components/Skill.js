@@ -84,11 +84,8 @@ function Skill() {
                             </div>
 
                         </Box>
-                        <Box textAlign="center" margin="auto">
-                            <Typography variant='h6'
-                                sx={
-                                    {color: "black"}
-                            }>The skills, tools and technologies I use to bring your products to life:
+                        <Box textAlign="center" margin="auto" data-aos="fade-up">
+                            <Typography variant='h6'>The skills, tools and technologies I use to bring your products to life:
                             </Typography>
                             {/* <Typography variant='h6'
                                 sx={
@@ -96,7 +93,8 @@ function Skill() {
                             }>
                                 project containing its own case study</Typography> */} </Box>
                         <Grid container direction="row" justifyContent="center" alignItems="center" py="0px" margin="auto"
-                            spacing={2}>
+                            spacing={2}
+                            data-aos="fade-up">
                             <Grid item
                                 md={2}
                                 sm={4}

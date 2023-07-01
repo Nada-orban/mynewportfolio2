@@ -82,7 +82,8 @@ function About() {
                         xs={12}
                         justifyContent="center"
                         display="flex"
-                        margin="auto">
+                        margin="auto"
+                        data-aos="fade-right">
                         <Box borderRadius="10px"
                             sx={
                                 {
@@ -116,7 +117,8 @@ function About() {
                     </Grid>
                     <Grid item
                         md={6}
-                        xs={12}>
+                        xs={12}
+                        data-aos="fade-left">
                         <Box my="50px "
                             sx={
                                 {

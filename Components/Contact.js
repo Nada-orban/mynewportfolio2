@@ -96,7 +96,7 @@ function Contact() {
                                 data-aos-delay="450">e</span>
                         </h1>
                     </div> */} </Box>
-                    <Box textAlign="center" margin="auto">
+                    <Box textAlign="center" margin="auto" data-aos="fade-up">
                         <Typography variant='h6'>Feel free to Contact me by submitting the form below and I will get back to you
                         </Typography>
                         <Typography variant='h6'>
@@ -143,7 +143,8 @@ function Contact() {
                                 borderRadius: "10px",
                                 m: "30px"
                             }
-                    }>
+                        }
+                        data-aos="fade-right">
                         <form onSubmit={handleSubmit}>
                             <Box mb="20px">
                                 <Box display="grid">

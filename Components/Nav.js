@@ -114,6 +114,7 @@ function Nav(props) {
                         display: "flex", backgroundColor: "background.secondary",
                     }}
                     className={navbar ? Styles.Appbaractive : Styles.Appbar}
+                    data-aos="fade-down"
 
                 >
                     <Container maxWidth="xlg">

@@ -57,7 +57,7 @@ function Verticalnavbar() {
     const colorMode = React.useContext(ColorModeContext);
     const theme = useTheme();
     return (
-        <Box display="grid" position="fixed" top="50%" right="30px" zIndex="2"
+        <Box display="grid" position="fixed" top="50%" right="30px" zIndex="2" data-aos="fade-left"
             sx={
                 {
                     display: {

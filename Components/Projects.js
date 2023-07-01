@@ -83,7 +83,7 @@ function Projects() {
                         </h1>
                     </div>
                 </Box>
-                <Box textAlign="center" margin="auto">
+                <Box textAlign="center" margin="auto" data-aos="fade-up">
                     <Typography variant='h6'
                         sx={
                             {color: "background.main"}
@@ -120,7 +120,8 @@ function Projects() {
                                                     md: "start"
                                                 }
                                             }
-                                    }>
+                                        }
+                                        data-aos="fade-right">
                                         <Typography variant='h4'
                                             sx={
                                                 {
@@ -230,7 +231,8 @@ function Projects() {
                                                     md: 1
                                                 }
                                             }
-                                    }>
+                                        }
+                                        data-aos="fade-left">
                                         <Box sx={
                                             {
                                                 display: {
@@ -281,7 +283,8 @@ function Projects() {
                                         xs={12}
                                         id={
                                             project.id2
-                                    }>
+                                        }
+                                        data-aos="fade-right">
                                         <Box sx={
                                             {
                                                 display: {
@@ -330,7 +333,8 @@ function Projects() {
                                                     md: "start"
                                                 }
                                             }
-                                    }>
+                                        }
+                                        data-aos="fade-left">
                                         <Typography variant='h4'
                                             sx={
                                                 {
