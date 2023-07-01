@@ -193,7 +193,7 @@
   color: var(--color);
   --_p: var(--s);
   background:
-    conic-gradient(from 90deg at var(--b) var(--b),#7976B7  90deg,var(--color) 0)
+    conic-gradient(from 90deg at var(--b) var(--b),#453E78 90deg,var(--color) 0)
     var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
   transition: .3s linear, color 0s, background-color 0s;
   outline: var(--b) solid #0000;
@@ -205,19 +205,10 @@
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
+  cursor: pointer;
 }
 
-.button89:hover,
-.button89:focus-visible{
-  --_p: 0px;
-  outline-color: var(--color);
-  outline-offset: .05em;
-}
 
-.button89:active {
-  background: var(--color);
-  color: #fff;
-}
 .button90  {
     --b: 3px;   /* border thickness */
     --s: .45em; /* size of the corner */
@@ -239,6 +230,7 @@
     user-select: none;
     -webkit-user-select: none;
     touch-action: manipulation;
+    cursor: pointer;
   }
   
   .button91  {
@@ -262,15 +254,45 @@
     user-select: none;
     -webkit-user-select: none;
     touch-action: manipulation;
+    cursor: pointer;
   }
-  .button90:hover,.button91:hover,.button91:focus-visible
-  .button90:focus-visible{
+  .button92  {
+    --b: 3px;   /* border thickness */
+    --s: .45em; /* size of the corner */
+    --color:#7976B7  ;
+    
+    padding: calc(.5em + var(--s)) calc(.9em + var(--s));
+    color: var(--color);
+    --_p: var(--s);
+    background:
+      conic-gradient(from 90deg at var(--b) var(--b),white  90deg,var(--color) 0)
+      var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
+    transition: .3s linear, color 0s, background-color 0s;
+    outline: var(--b) solid #0000;
+    outline-offset: .6em;
+    font-size: 16px;
+  
+    border: 0;
+  
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    cursor: pointer;
+  }
+  .button90:hover,
+  .button91:hover,
+  .button89:hover,
+  .button92:hover,
+  .button91:focus-visible
+  .button90:focus-visible
+  .button92:focus-visible
+  .button89:focus-visible{
     --_p: 0px;
     outline-color: var(--color);
     outline-offset: .05em;
   }
   
-  .button90:active,.button91:active {
+  .button90:active,.button91:active ,.button89:active,.button92:active{
     background: var(--color);
     color: #fff;
   }
@@ -721,6 +743,7 @@
     /* background: linear-gradient(to right, #4286f4, #373B44); */
 /* #080a25d0 */
     /* background:linear-gradient( #000000bd,#424242); */
+   
 
     background-repeat: no-repeat;
     background-size: cover;
@@ -844,7 +867,7 @@
 }
 /* #########################about################# */
 /* .aboutbackground{
-    background-color:#E5DEDE ;
+    background-color:white ;
 } */
 .photoabout{
     border-radius: 10px;
@@ -955,7 +978,7 @@
     height: 100px;
     /* background-color: #FEF2D8; */
     
-    background-color:#7976B7;
+    background-color:#453E78;
 }
 
 
@@ -979,7 +1002,7 @@
     transition: all 0.5s ease-in-out;
 }
 .skillbox:hover{
-    transform: translateY(-50px);
+    transform: translateY(-30px);
 
 
 }
@@ -1058,7 +1081,8 @@
 
 
 .projectbackground{
-    background-color:#7976B7;
+    background-color:#453E78;
+    /* background-color:#4f478b ; */
 }
 
 
@@ -1069,6 +1093,8 @@
     position: relative;
     width: 100%;
     height: 100px;
+    background: linear-gradient( #ebe8e8c4,
+    #ebe8e8c5 ),url('../../public/assets/background/common-bg.svg');
     /* background-color: #FEF2D8; */
     /* background-color: #EAC0C9; */
     
@@ -1078,15 +1104,15 @@
 .mediumbackgoundcontact::before{
     content: "";
     position: absolute;
-    background-color: #7976B7;
+    background-color: #453E78;
     width: 100%;
     height: 100px;
     clip-path: polygon(100% 100%, 100% 0, 0 0);
 
 }
 .contactbackground{
-        /* background: linear-gradient( #eac0c9c0,
-            #00000000 ),url('../../public/assets/background/common-bg.svg'); */
+        background: linear-gradient( #ebe8e8c4,
+        #ebe8e8c5 ),url('../../public/assets/background/common-bg.svg');
         /* background-color: #EAC0C9; */
  
         background-repeat: no-repeat;

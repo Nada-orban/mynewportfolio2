@@ -25,7 +25,7 @@ import EastIcon from '@mui/icons-material/East';
 function Contact() {
     const colorMode = React.useContext(ColorModeContext);
     const theme = useTheme();
-    const [state, handleSubmit] = useForm("mjvdegqz");
+    const [state, handleSubmit] = useForm("moqoargq");
     return (
         <>
             <Box className={
@@ -271,7 +271,13 @@ function Contact() {
                                         field="message"
                                         errors={state.errors}
                                     /> */} </Box>
-                            <Paper elevation={4}
+                            <button type="submit"
+                                className={
+                                    styles.button92
+                            }>
+                                <Typography>Learn More</Typography>
+                            </button>
+                            {/* <Paper elevation={4}
                                 sx={
                                     {
                                         borderRadius: "10px",
@@ -285,11 +291,9 @@ function Contact() {
                                     data-aos="fade-right">
                                     <Typography>Send Email</Typography><DraftsIcon className={
                                         styles.iconlink
-                                    }/> {/* <EastIcon sx={{ ml: "30px", width: "50px", height: "30px" }} className={styles.normalButton2icon} /> */} </button>
+                                    }/> <EastIcon sx={{ ml: "30px", width: "50px", height: "30px" }} className={styles.normalButton2icon} /> </button>
                             </Paper>
-
-
-                        </form>
+ */} </form>
                     </Paper>
                 </Container>
             </Box>

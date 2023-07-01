@@ -101,8 +101,9 @@ function Projects() {
                         return (
                             <>
                                 <Grid container
-                                    spacing={5}
-                                    mb="60px"
+                                    spacing={7}
+                                    mb="100px"
+                                    mt="50px"
                                     id={
                                         project.id
                                 }>
@@ -187,24 +188,33 @@ function Projects() {
                                             sx={
                                                 {borderRadius: "10px"}
                                         }> */}
-                                            <button className={
-                                                styles.button89
-                                            }>
-                                                <Typography>View It Here</Typography><FiExternalLink className={
-                                                    styles.iconlink
-                                                }/>
-                                            </button>
+                                            <a href={
+                                                    project.code
+                                                }
+                                                target="_blank">
+                                                <button className={
+                                                    styles.button89
+                                                }>
+                                                    <Typography>View It Here</Typography><FiExternalLink className={
+                                                        styles.iconlink
+                                                    }/>
+                                                </button>
+                                            </a>
+
                                             {/* </Paper> */}
-
-                                            <button className={
-                                                styles.button89
+                                            <a href={
+                                                project.github
                                             }>
-                                                <Typography>
-                                                    View Github Repo</Typography><FiExternalLink className={
-                                                    styles.iconlink
-                                                }/>
+                                                <button className={
+                                                    styles.button89
+                                                }>
+                                                    <Typography>
+                                                        View Github Repo</Typography><FiExternalLink className={
+                                                        styles.iconlink
+                                                    }/>
 
-                                            </button>
+                                                </button>
+                                            </a>
 
 
                                         </Box>
@@ -265,7 +275,7 @@ function Projects() {
 
                                 </Grid>
                                 <Grid container
-                                    spacing={15}>
+                                    spacing={7}>
                                     <Grid item
                                         md={6}
                                         xs={12}
@@ -279,6 +289,7 @@ function Projects() {
                                                     sm: "block",
                                                     md: "block"
                                                 }
+
                                             }
                                         }>
                                             <img src={
@@ -322,7 +333,10 @@ function Projects() {
                                     }>
                                         <Typography variant='h4'
                                             sx={
-                                                {color: "secondary.pink"}
+                                                {
+                                                    color: "secondary.pink",
+                                                    fontWeight: "bold"
+                                                }
                                         }>
                                             {
                                             project.title2
@@ -331,7 +345,7 @@ function Projects() {
                                             sx={
                                                 {
                                                     my: "10px",
-                                                    color: "black"
+                                                    color: "background.main"
                                                 }
                                         }>
                                             {
@@ -384,24 +398,32 @@ function Projects() {
                                                 sx={
                                                     {borderRadius: "10px"}
                                             }> */}
-                                            <button className={
-                                                styles.button89
-                                            }>
-                                                <Typography>View It Here</Typography><FiExternalLink className={
-                                                    styles.iconlink
-                                                }/>
-                                            </button>
+                                            <a href={
+                                                    project.code2
+                                                }
+                                                target="_blank">
+                                                <button className={
+                                                    styles.button89
+                                                }>
+                                                    <Typography>View It Here</Typography><FiExternalLink className={
+                                                        styles.iconlink
+                                                    }/>
+                                                </button>
+                                            </a>
                                             {/* </Paper> */}
-
-                                            <button className={
-                                                styles.button89
+                                            <a href={
+                                                project.github2
                                             }>
-                                                <Typography>
-                                                    View Github Repo</Typography><FiExternalLink className={
-                                                    styles.iconlink
-                                                }/>
+                                                <button className={
+                                                    styles.button89
+                                                }>
+                                                    <Typography>
+                                                        View Github Repo</Typography><FiExternalLink className={
+                                                        styles.iconlink
+                                                    }/>
 
-                                            </button>
+                                                </button>
+                                            </a>
 
 
                                         </Box>
