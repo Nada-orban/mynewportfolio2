@@ -25,6 +25,99 @@ import {FiExternalLink} from 'react-icons/fi';
 import {projectsdata} from '../data'
 
 
+function skillshowhtml(skilllogo) {
+    if (skilllogo === "true") {
+        return (
+            <AiFillHtml5 style={
+                {
+                    width: "20px",
+                    height: "20px",
+                    color: "#E5657B"
+                }
+            }/>
+        )
+    }
+}
+function skillshowcss(skilllogo) {
+    if (skilllogo === "true") {
+        return (
+            <FaCss3Alt style={
+                {
+                    width: "20px",
+                    height: "20px",
+                    color: "#E5657B"
+                }
+            }/>
+        )
+    }
+}
+function skillshowjs(skilllogo) {
+    if (skilllogo === "true") {
+        return (
+            <SiJavascript style={
+                {
+                    width: "20px",
+                    height: "20px",
+                    color: "#E5657B"
+                }
+            }/>
+        )
+    }
+}
+function skillshowreact(skilllogo) {
+    if (skilllogo === "true") {
+        return (
+            <FaReact style={
+                {
+                    width: "20px",
+                    height: "20px",
+                    color: "#E5657B"
+                }
+            }/>
+        )
+    }
+}
+function skillshownext(skilllogo) {
+    if (skilllogo === "true") {
+        return (
+            <SiNextdotjs style={
+                {
+                    width: "20px",
+                    height: "20px",
+                    color: "#E5657B"
+                }
+            }/>
+        )
+    }
+}
+function skillshowmui(skilllogo) {
+    if (skilllogo === "true") {
+        return (
+            <SiMui style={
+                {
+                    width: "20px",
+                    height: "20px",
+                    color: "#E5657B"
+                }
+            }/>
+        )
+    }
+}
+function skillshowbootst(skilllogo) {
+    if (skilllogo === "true") {
+        return (
+            <FaBootstrap style={
+                {
+                    width: "20px",
+                    height: "20px",
+                    color: "#E5657B"
+                }
+            }/>
+        )
+    }
+}
+
+
 function Projects() {
     const colorMode = React.useContext(ColorModeContext);
     const theme = useTheme();
@@ -153,33 +246,27 @@ function Projects() {
                                                     }
                                                 }
                                         }>
-                                            <Box width="20px" height="20px">
-                                                <img src={
-                                                        project.html1
-                                                    }
-                                                    alt="logo"
-                                                    className={
-                                                        styles.imgskillsmall
-                                                    }/>
-                                            </Box>
-                                            <Box width="20px" height="20px">
-                                                <img src={
-                                                        project.css1
-                                                    }
-                                                    alt=""
-                                                    className={
-                                                        styles.imgskillsmall
-                                                    }/>
-                                            </Box>
-                                            <Box width="20px" height="20px">
-                                                <img src={
-                                                        project.js1
-                                                    }
-                                                    alt=""
-                                                    className={
-                                                        styles.imgskillsmall
-                                                    }/>
-                                            </Box>
+                                            {
+                                            skillshowhtml(project.html1)
+                                        }
+                                            {
+                                            skillshowcss(project.css1)
+                                        }
+                                            {
+                                            skillshowjs(project.js1)
+                                        }
+                                            {
+                                            skillshowreact(project.react1)
+                                        }
+                                            {
+                                            skillshownext(project.next1)
+                                        }
+                                            {
+                                            skillshowmui(project.MUI1)
+                                        }
+                                            {
+                                            skillshowbootst(project.bootstrap1)
+                                        }
 
 
                                             {/* <AiFillHtml5 style={
@@ -399,27 +486,27 @@ function Projects() {
                                                 }
                                         }>
 
-                                            {/* <AiFillHtml5 style={
-                                                {
-                                                    width: "20px",
-                                                    height: "20px",
-                                                    color: "white"
-                                                }
-                                            }/>
-                                            <FaCss3Alt style={
-                                                {
-                                                    width: "20px",
-                                                    height: "20px",
-                                                    color: "white"
-                                                }
-                                            }/>
-                                            <SiJavascript style={
-                                                {
-                                                    width: "20px",
-                                                    height: "20px",
-                                                    color: "white"
-                                                }
-                                            }/> */} </Box>
+                                            {
+                                            skillshowhtml(project.html2)
+                                        }
+                                            {
+                                            skillshowcss(project.css2)
+                                        }
+                                            {
+                                            skillshowjs(project.js2)
+                                        }
+                                            {
+                                            skillshowreact(project.react2)
+                                        }
+                                            {
+                                            skillshownext(project.next2)
+                                        }
+                                            {
+                                            skillshowmui(project.MUI2)
+                                        }
+                                            {
+                                            skillshowbootst(project.bootstrap2)
+                                        } </Box>
                                         <Box my="20px" gap="10px"
                                             sx={
                                                 {

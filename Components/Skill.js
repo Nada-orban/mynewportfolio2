@@ -38,7 +38,7 @@ function Skill() {
                 styles.mediumbackgoundskilllanding
             }></Box> */}
 
-            <Box id="skills" pt="70px" pb="100px"
+            <Box id="skills" pt="70px" pb="150px"
                 className={
                     styles.skillbackground
             }>
