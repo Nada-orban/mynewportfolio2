@@ -21,6 +21,7 @@ import {ColorModeContext} from '../public/theme'
 import {styled, useTheme, alpha} from '@mui/material/styles';
 import {FiFacebook, FiLinkedin, FiGithub} from 'react-icons/fi'
 import {SiUpwork} from 'react-icons/si'
+import {AiFillHeart} from 'react-icons/ai'
 import EmailIcon from '@mui/icons-material/Email';
 import Link from 'next/link'
 
@@ -34,7 +35,7 @@ function Footer() {
             <Container maxWidth="xlg">
                 <Box sx={{ px: { sm: "10px", md: "40px" },my:"20px" }}>
 
-                            <Typography variant='h6' sx={{ textAlign: "center" }}>© 2023 | Designed & coded with by Nada Samir</Typography>
+                            <Typography variant='h6' sx={{ textAlign: "center" }}>© 2023 | Designed & coded with <AiFillHeart style={{color:"#E5657B"}}/> by Nada Samir</Typography>
 
                             <Box display="flex" sx={{ justifyContent: "center", mt: "10px" }} alignItems="center" gap="20px" >
                                 <Link href="mailto:nadasamireldesoky@gmail.com" target="_blank"><Avatar sx={{ width: "30px", height: "30px", backgroundColor: "secondary.main",backgroundImage: "linear-gradient(to left top, #ddabea, #d19de7, #c390e4, #b484e1, #a378df)", color: "white" }} className={styles.nadaavatar}><EmailIcon /></Avatar></Link>
