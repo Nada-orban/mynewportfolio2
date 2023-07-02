@@ -106,7 +106,7 @@ function Mobilenav() {
                                                 data-aos-delay="200"><Typography noWrap sx={{ color: "neutral.purple", fontWeight: "bold", fontSize: "30px" }} className={Styles.logoname}  >
                                                     Nada
                                                 </Typography></Box>
-                                                <Box display="flex" flexDirection="column" justifyContent="center" textAlign="center" gap="20px" pt="100px">
+                                                <Box display="flex" flexDirection="column" justifyContent="center" textAlign="center" gap="20px" pt="70px">
                                                 <NavLinks to="home" spy={true} smooth={true} offset={0} duration={500} className={Styles.mobilenavlink} onClick={handleDrawerToggle} data-aos="fade-up"
                                                         data-aos-delay="200">
 
