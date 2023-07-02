@@ -56,7 +56,6 @@ export default function Home({photo}) {
                 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
 
-                <meta property="og:image" content="/profile.jpg"/>
                 <link rel="icon" href="/n.jpg"/>
                 <meta property="og:image" content="/n.jpg"/>
                 <link rel="icon" href="%PUBLIC_URL%/logonada.png"/>
