@@ -448,7 +448,7 @@ function Landing() {
                             }
                         }
                         data-aos="fade-up"
-                        data-aos-delay="10">I'M A FRONT END WEB DEVELOPER</Typography>
+                        data-aos-delay="10">I'M A FRONT END DEVELOPER</Typography>
                     <Box display="flex"
                         sx={
                             {
