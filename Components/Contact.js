@@ -276,7 +276,7 @@ function Contact() {
                                 className={
                                     styles.button92
                             }>
-                                <Typography>Learn More</Typography>
+                                <Typography>Send</Typography>
                             </button>
                             {/* <Paper elevation={4}
                                 sx={
