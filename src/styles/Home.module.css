@@ -318,7 +318,7 @@
     font-size: 35px;
     font-weight: bold;
     text-align: center;
-    color: white;
+    color: #EBE8E7!important;
     margin: auto;
     
 }
@@ -866,9 +866,21 @@
 
 }
 /* #########################about################# */
-/* .aboutbackground{
-    background-color:white ;
-} */
+.aboutbackground{
+    /* background-color:#D7CFE2 ; */
+    /* background: linear-gradient( #ebe8e8c4,
+    #ebe8e8c5 ),url('../../public/assets/background/common-bg.svg');
+    
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    z-index: -1;
+   
+    overflow: hidden; */
+}
 .photoabout{
     border-radius: 10px;
 
@@ -950,13 +962,26 @@
 
 /* ##################skills############### */
 .skillbackground{ 
-    /* background-color:#EAC0C9; */
+    background-color:#D2CADD;
+    /* background: linear-gradient( #ebe8e8c4,
+    #ebe8e8c5 ),url('../../public/assets/background/common-bg.svg');
+    
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    z-index: -1;
+   
+    overflow: hidden; */
 }
 .mediumbackgoundskilllanding{
     position: relative;
     width: 100%;
     height: 100px;
-    /* background-color: #FEF2D8; */
+    
+    background-color: #D2CADD;
     /* background-color: #EAC0C9; */
     
    
@@ -985,7 +1010,9 @@
 .mediumbackgoundskill::before{
     content: "";
     position: absolute;
-    background-color: #EBE8E7;
+    background-color: #D2CADD;
+    /* background: linear-gradient( #ebe8e8c4,
+    #ebe8e8c5 ),url('../../public/assets/background/common-bg.svg'); */
     width: 100%;
     height: 100px;
     clip-path: polygon(60% 60%, 100% 0, 0 0%);

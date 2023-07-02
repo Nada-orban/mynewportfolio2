@@ -34,9 +34,10 @@ function Skill() {
     const colorMode = React.useContext(ColorModeContext);
     const theme = useTheme();
     return (
-        <> {/* <Box className={
+        <>
+            <Box className={
                 styles.mediumbackgoundskilllanding
-            }></Box> */}
+            }></Box>
 
             <Box id="skills" pt="70px" pb="150px"
                 className={

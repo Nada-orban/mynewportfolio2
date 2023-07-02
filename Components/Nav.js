@@ -111,7 +111,7 @@ function Nav(props) {
                     variant="permanent"
                     position="fixed"
                     sx={{
-                        display: "flex", backgroundColor: "background.secondary",
+                        display: "flex", backgroundColor: "#D7CFE2 ",
                     }}
                     className={navbar ? Styles.Appbaractive : Styles.Appbar}
                     data-aos="fade-down"
