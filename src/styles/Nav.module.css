@@ -47,8 +47,8 @@
 
 .Appbaractive {
     /* background-color: rgba(245, 241, 241, 0.822)!important; */
-    background-color: #EBE8E7 !important;
-    
+    background-color: transparent !important;
+    visibility: hidden;
     transition: all .3s ease-in-out !important;
     /* padding: 5px 0px !important; */
     height: 60px;
