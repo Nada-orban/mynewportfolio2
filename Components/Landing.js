@@ -536,7 +536,15 @@ function Landing() {
                         </a>
                     </Box>
                 </Box>
-                <Box justifyContent="center" display="flex" data-aos="fade-up" data-aos-delay="100">
+                <Box justifyContent="center" display="flex" data-aos="fade-up" data-aos-delay="100"
+                    sx={
+                        {
+                            visibility: {
+                                xs: "hidden",
+                                sm: "visible"
+                            }
+                        }
+                }>
                     <Link to="about"
                         spy={true}
                         smooth={true}

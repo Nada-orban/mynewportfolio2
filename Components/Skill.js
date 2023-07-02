@@ -20,6 +20,7 @@ import skill1 from '../public/assets/skills/html-1.svg'
 import skill2 from '../public/assets/skills/CSS3_logo.svg.png'
 import skill3 from '../public/assets/skills/6242e5dd4337267623f1e7a5_js.svg'
 import skill4 from '../public/assets/skills/React-icon.svg.png'
+import skill5A from '../public/assets/skills/material-ui-logo-5BDCB9BA8F-seeklogo.com.png'
 import skill5 from '../public/assets/skills/Tailwind_CSS_Logo.svg.png'
 import skill6 from '../public/assets/skills/Bootstrap_logo.svg.png'
 import skill7 from '../public/assets/skills/redux.svg'
@@ -33,15 +34,16 @@ function Skill() {
     const colorMode = React.useContext(ColorModeContext);
     const theme = useTheme();
     return (
-        <>
-            <Box className={
+        <> {/* <Box className={
                 styles.mediumbackgoundskilllanding
-            }></Box>
+            }></Box> */}
+
             <Box id="skills" pt="70px" pb="100px"
                 className={
                     styles.skillbackground
             }>
                 <Container>
+
                     <Box>
                         <Box display="flex" gap="20px">
                             <div className={
@@ -194,6 +196,31 @@ function Skill() {
                                             }
                                     }>React.js</Typography>
                                     <Image src={skill4}
+                                        width={40}
+                                        alt="Picture of skill"/>
+                                </Paper>
+                            </Grid>
+                            <Grid item
+                                md={2}
+                                sm={4}
+                                xs={6}
+                                mt="20px">
+                                <Paper sx={
+                                        {border: "1.5px solid #02B0FE"}
+                                    }
+                                    square
+                                    elevation={6}
+                                    className={
+                                        styles.skillbox
+                                }>
+                                    <Typography variant='h5'
+                                        sx={
+                                            {
+                                                color: "black",
+                                                mb: "5px"
+                                            }
+                                    }>Material-UI</Typography>
+                                    <Image src={skill5A}
                                         width={40}
                                         alt="Picture of skill"/>
                                 </Paper>

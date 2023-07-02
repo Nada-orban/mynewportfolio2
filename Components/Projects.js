@@ -142,6 +142,7 @@ function Projects() {
                                             {
                                             project.body
                                         }</Typography>
+
                                         <Box display="flex" alignItems="center" gap="5px"
                                             sx={
                                                 {
@@ -152,36 +153,68 @@ function Projects() {
                                                     }
                                                 }
                                         }>
-                                            <AiFillHtml5 style={
+                                            <Box width="20px" height="20px">
+                                                <img src={
+                                                        project.html1
+                                                    }
+                                                    alt="logo"
+                                                    className={
+                                                        styles.imgskillsmall
+                                                    }/>
+                                            </Box>
+                                            <Box width="20px" height="20px">
+                                                <img src={
+                                                        project.css1
+                                                    }
+                                                    alt=""
+                                                    className={
+                                                        styles.imgskillsmall
+                                                    }/>
+                                            </Box>
+                                            <Box width="20px" height="20px">
+                                                <img src={
+                                                        project.js1
+                                                    }
+                                                    alt=""
+                                                    className={
+                                                        styles.imgskillsmall
+                                                    }/>
+                                            </Box>
+
+
+                                            {/* <AiFillHtml5 style={
                                                 {
                                                     width: "20px",
                                                     height: "20px",
-                                                    color: "white"
+                                                    color: "#E5657B"
                                                 }
                                             }/>
                                             <FaCss3Alt style={
                                                 {
                                                     width: "20px",
                                                     height: "20px",
-                                                    color: "white"
+                                                    color: "#E5657B"
                                                 }
                                             }/>
                                             <SiJavascript style={
                                                 {
                                                     width: "20px",
                                                     height: "20px",
-                                                    color: "white"
+                                                    color: "#E5657B"
                                                 }
-                                            }/>
-
-                                        </Box>
-                                        <Box my="20px" gap="10px" display="flex"
+                                            }/> */} </Box>
+                                        <Box my="20px" gap="10px"
                                             sx={
                                                 {
                                                     justifyContent: {
                                                         xs: "center",
                                                         sm: "center",
                                                         md: "start"
+                                                    },
+                                                    display: {
+                                                        xs: "grid",
+                                                        sm: "grid",
+                                                        md: "flex"
                                                     }
                                                 }
                                         }>
@@ -365,7 +398,8 @@ function Projects() {
                                                     }
                                                 }
                                         }>
-                                            <AiFillHtml5 style={
+
+                                            {/* <AiFillHtml5 style={
                                                 {
                                                     width: "20px",
                                                     height: "20px",
@@ -385,16 +419,19 @@ function Projects() {
                                                     height: "20px",
                                                     color: "white"
                                                 }
-                                            }/>
-
-                                        </Box>
-                                        <Box my="20px" gap="10px" display="flex"
+                                            }/> */} </Box>
+                                        <Box my="20px" gap="10px"
                                             sx={
                                                 {
                                                     justifyContent: {
                                                         xs: "center",
                                                         sm: "center",
                                                         md: "start"
+                                                    },
+                                                    display: {
+                                                        xs: "grid",
+                                                        sm: "grid",
+                                                        md: "flex"
                                                     }
                                                 }
                                         }>

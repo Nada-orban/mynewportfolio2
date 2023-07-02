@@ -57,6 +57,7 @@ export const themeSettongs = (mode) => {
                     purple: "#A378DF",
                     lightpurple: "#C6A4EF",
                     mediumpurple: "#7976B7",
+                    darkpurple: "#453E78",
                     lightpink: "#D18DE0"
                 },
                 background: {

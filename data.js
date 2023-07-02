@@ -7,12 +7,22 @@ export const projectsdata = [
         "image": "../assets/projects/Ahmed-Website.png",
         "github": "https://github.com/Nada-orban/ahmednewportfolio",
         "code": "https://www.ahmedadelattia.com/",
+        "html1": "../assets/skills/html-1.svg",
+        "css1": "../assets/skills/CSS3_logo.svg.png",
+        "js1": "../assets/skills/6242e5dd4337267623f1e7a5_js.svg",
+        "next": "../assets/skills/nextjs-icon.svg",
+        "MUI": "true",
         "id2": 2,
         "title2": "portfolio",
         "body2": "During my tenure at Omnispeech, I contributed to the development of efficient speech enhancement models. My work involved scaling down large Speech Enhancement GANs to sub-1 Million parameter models, ensuring excellent clarity and noise cancellation in real-time applications.",
         "image2": "../assets/projects/Fahkry's Website.png",
         "github2": "https://github.com/Nada-orban/fakhry4",
-        "code2": "https://ahmedfakhry.vercel.app/"
+        "code2": "https://ahmedfakhry.vercel.app/",
+        "html": "true",
+        "css": "true",
+        "js": "true",
+        "next": "true",
+        "MUI": "true"
 
     }, {
         "id": 3,
@@ -21,13 +31,23 @@ export const projectsdata = [
         "image": "../assets/projects/Dashboard.png",
         "github": "https://github.com/Nada-orban/newdashboard2",
         "code": "https://newdashboard-nadasamir.vercel.app/",
-
+        "html": "true",
+        "css": "true",
+        "js": "true",
+        "next": "true",
+        "MUI": "true",
         "id2": 4,
         "title2": "Bus Website",
         "body2": "During my tenure at Omnispeech, I contributed to the development of efficient speech enhancement models. My work involved scaling down large Speech Enhancement GANs to sub-1 Million parameter models, ensuring excellent clarity and noise cancellation in real-time applications.",
         "image2": "../assets/projects/Bus Website.png",
         "github2": "https://github.com/Nada-orban/bus-website",
-        "code2": "https://busweb.vercel.app/"
+        "code2": "https://busweb.vercel.app/",
+        "html": "true",
+        "css": "true",
+        "js": "true",
+        "react": "true",
+        "bootstrap": "true"
+
     },
     // ,{
     //     "id": 4,
@@ -48,12 +68,21 @@ export const projectsdata = [
         "image": "../assets/projects/Adidas Clone.png",
         "github": "",
         "code": "",
+        "html": "true",
+        "css": "true",
+        "js": "true",
+        "react": "true",
+        "bootstrap": "true",
         "id2": 6,
         "title2": "Restaurant Website",
         "body2": "During my tenure at Omnispeech, I contributed to the development of efficient speech enhancement models. My work involved scaling down large Speech Enhancement GANs to sub-1 Million parameter models, ensuring excellent clarity and noise cancellation in real-time applications.",
         "image2": "../assets/projects/Resto.png",
         "github2": "https://github.com/Nada-orban/resto",
-        "code2": "https://restaurant-nadasamir.netlify.app/"
+        "code2": "https://restaurant-nadasamir.netlify.app/",
+        "html": "true",
+        "css": "true",
+        "js": "true"
+
     }, {
         "id": 7,
         "title": "Fast Food Website",
@@ -61,12 +90,21 @@ export const projectsdata = [
         "image": "../assets/projects/Food Circle.png",
         "github": "https://github.com/Nada-orban/food-web",
         "code": "https://food-web-nadasamir.netlify.app/",
+        "html": "true",
+        "css": "true",
+        "js": "true",
+        "bootstrap": "true",
         "id2": 8,
         "title2": "Online Shop Website",
         "body2": "During my tenure at Omnispeech, I contributed to the development of efficient speech enhancement models. My work involved scaling down large Speech Enhancement GANs to sub-1 Million parameter models, ensuring excellent clarity and noise cancellation in real-time applications.",
         "image2": "../assets/projects/Comfy House.png",
         "github2": "https://github.com/Nada-orban/shop-online",
-        "code2": "https://onlineshop-nadasamir.netlify.app/"
+        "code2": "https://onlineshop-nadasamir.netlify.app/",
+        "html": "true",
+        "css": "true",
+        "js": "true",
+        "react": "true",
+        "bootstrap": "true"
     },
 
 
