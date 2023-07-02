@@ -145,6 +145,10 @@ function Nav(props) {
                                         <li  className={Styles.separtator}>/</li>
                                         <li><NavLinks to="contact" spy={true} smooth={true} offset={0} duration={500} className={Styles.navlink}  >CONTACT</NavLinks>
                                             </li>
+                                            {/* <li  className={Styles.separtator}>/</li>
+                                            
+                                            <li><NavLinks href="https://drive.google.com/drive/my-drive" target="_blank" className={Styles.navlink} >
+                                                </NavLinks>CV</li> */}
                                         
                                     </ul>
                                     {/* <List sx={{ display: "flex" }}>
