@@ -55,7 +55,7 @@ export default function Home({photo}) {
                 <meta name="description" content="Nada Samir Portfolio"/>
                 <meta name="viewport" content="width=device-width, initial-scale=1"/>
                 <meta property="og:title" content="Nada Samir "/>
-                <meta property="og:image" content="https://img.freepik.com/free-vector/cloudy-purple-pink-background_91008-257.jpg?t=st=1688324374~exp=1688324974~hmac=828c410f75b108b8023094fae204b53b5204af45d20f91221bab397468b7e363"/>
+                <meta property="og:image" content="/353087579_795325908762859_926682285706518817_n.jpg"/>
                 <link rel="icon" href="/n.jpg"/>
                 <link rel="icon" href="%PUBLIC_URL%/logonada.png"/>
                 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
