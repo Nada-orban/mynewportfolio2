@@ -132,7 +132,7 @@ function Mobilenav() {
 
                                                         <Typography className={Styles.mobilenavlink}>CONTACT</Typography>
                                                     </NavLinks>
-                                                    <a  href="https://drive.google.com/file/d/10RHKroXh_gREfswoCEjrft6ZythEDznu/view?usp=sharing"  target="_blank" onClick={handleDrawerToggle} data-aos="fade-up" className={Styles.mobilenava}
+                                                    <a  href="https://drive.google.com/file/d/1s8BFZ6_Ak-JEiuCD8lcdiW9XILyICZ2M/view?usp=sharing"  target="_blank" onClick={handleDrawerToggle} data-aos="fade-up" className={Styles.mobilenava}
                                                         data-aos-delay="200">
 
                                                         <Typography className={Styles.mobilenavlink}>CV</Typography>
