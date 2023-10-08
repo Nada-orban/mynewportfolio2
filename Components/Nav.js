@@ -146,7 +146,7 @@ function Nav(props) {
                                         <li><NavLinks to="contact" spy={true} smooth={true} offset={0} duration={500} className={Styles.navlink}  >CONTACT</NavLinks>
                                             </li>
                                             <li  className={Styles.separtator}>/</li>
-                                            <li><a href="https://drive.google.com/file/d/1s8BFZ6_Ak-JEiuCD8lcdiW9XILyICZ2M/view?usp=sharing"  target="_blank" className={Styles.nava} >CV</a>
+                                            <li><a href="https://drive.google.com/file/d/1YcF_MMWhJy-rOUUy7WnpB0JvTQxTOz83/view?usp=sharing"  target="_blank" className={Styles.nava} >CV</a>
                                             </li>
 
                                         

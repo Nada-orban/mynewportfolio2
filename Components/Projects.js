@@ -14,7 +14,14 @@ import {styled, useTheme, alpha} from '@mui/material/styles';
 import {AiFillHtml5} from 'react-icons/ai'
 import {FaCss3Alt, FaReact, FaBootstrap, FaGithub} from 'react-icons/fa'
 import {DiJavascript} from 'react-icons/di'
-import {SiJavascript, SiNextdotjs, SiMui, SiTailwindcss} from 'react-icons/si'
+import {
+    SiJavascript,
+    SiNextdotjs,
+    SiMui,
+    SiTailwindcss,
+    SiRedux
+} from 'react-icons/si'
+
 import {TbWorld} from 'react-icons/tb'
 import Image from 'next/image'
 import exampleimage from '../public/assets/projects/Adidas Clone.png'
@@ -116,13 +123,38 @@ function skillshowbootst(skilllogo) {
         )
     }
 }
+function skillshowtailwind(skilllogo) {
+    if (skilllogo === "true") {
+        return (
+            <SiTailwindcss style={
+                {
+                    width: "20px",
+                    height: "20px",
+                    color: "#E5657B"
+                }
+            }/>
+        )
+    }
+}
+function skillshowredux(skilllogo) {
+    if (skilllogo === "true") {
+        return (
+            <SiRedux style={
+                {
+                    width: "20px",
+                    height: "20px",
+                    color: "#E5657B"
+                }
+            }/>
+        )
+    }
+}
 
 
 function Projects() {
-    const colorMode = React.useContext(ColorModeContext);
-    const theme = useTheme();
-    return (
-        <Box id="projects" py="50px"
+        const colorMode = React.useContext(ColorModeContext);
+        const theme = useTheme();
+        return (<Box id="projects" py="50px"
             className={
                 styles.projectbackground
         }>
@@ -191,85 +223,87 @@ function Projects() {
                 <Box my="70px">
                     {
                     projectsdata.map(project => {
-                        return (
-                            <>
-                                <Grid container
-                                    spacing={7}
-                                    mb="100px"
-                                    mt="50px"
-                                    id={
-                                        project.id
-                                }>
-
-                                    <Grid item
-                                        md={6}
-                                        xs={12}
-                                        margin="auto"
-                                        sx={
-                                            {
-                                                textAlign: {
-                                                    xs: "center",
-                                                    sm: "center",
-                                                    md: "start"
-                                                }
-                                            }
+                                return (<> {
+                                    project.id && (< Grid container spacing =
+                                            { 7
                                         }
-                                        data-aos="fade-right">
-                                        <Typography variant='h4'
+                                        mb = "100px" mt = "50px" id =
+                                            { project.id
+                                        } > <Grid item
+                                            md={6}
+                                            xs={12}
+                                            margin="auto"
                                             sx={
                                                 {
-                                                    color: "secondary.pink",
-                                                    fontWeight: "bold"
-                                                }
-                                        }>
-                                            {
-                                            project.title
-                                        }</Typography>
-                                        <Typography variant='subtitle1'
-                                            sx={
-                                                {
-                                                    my: "10px",
-                                                    color: "background.main"
-                                                }
-                                        }>
-                                            {
-                                            project.body
-                                        }</Typography>
-
-                                        <Box display="flex" alignItems="center" gap="5px"
-                                            sx={
-                                                {
-                                                    justifyContent: {
+                                                    textAlign: {
                                                         xs: "center",
                                                         sm: "center",
                                                         md: "start"
                                                     }
                                                 }
-                                        }>
-                                            {
-                                            skillshowhtml(project.html1)
-                                        }
-                                            {
-                                            skillshowcss(project.css1)
-                                        }
-                                            {
-                                            skillshowjs(project.js1)
-                                        }
-                                            {
-                                            skillshowreact(project.react1)
-                                        }
-                                            {
-                                            skillshownext(project.next1)
-                                        }
-                                            {
-                                            skillshowmui(project.MUI1)
-                                        }
-                                            {
-                                            skillshowbootst(project.bootstrap1)
-                                        }
+                                            }
+                                            data-aos="fade-right">
+                                            <Typography variant='h4'
+                                                sx={
+                                                    {
+                                                        color: "secondary.pink",
+                                                        fontWeight: "bold"
+                                                    }
+                                            }>
+                                                {
+                                                project.title
+                                            }</Typography>
+                                            <Typography variant='subtitle1'
+                                                sx={
+                                                    {
+                                                        my: "10px",
+                                                        color: "background.main"
+                                                    }
+                                            }>
+                                                {
+                                                project.body
+                                            }</Typography>
+
+                                            <Box display="flex" alignItems="center" gap="5px"
+                                                sx={
+                                                    {
+                                                        justifyContent: {
+                                                            xs: "center",
+                                                            sm: "center",
+                                                            md: "start"
+                                                        }
+                                                    }
+                                            }>
+                                                {
+                                                skillshowhtml(project.html1)
+                                            }
+                                                {
+                                                skillshowcss(project.css1)
+                                            }
+                                                {
+                                                skillshowjs(project.js1)
+                                            }
+                                                {
+                                                skillshowreact(project.react1)
+                                            }
+                                                {
+                                                skillshownext(project.next1)
+                                            }
+                                                {
+                                                skillshowmui(project.MUI1)
+                                            }
+                                                {
+                                                skillshowbootst(project.bootstrap1)
+                                            }
+                                                {
+                                                skillshowtailwind(project.tailwind1)
+                                            }
+                                                {
+                                                skillshowredux(project.redux1)
+                                            }
 
 
-                                            {/* <AiFillHtml5 style={
+                                                {/* <AiFillHtml5 style={
                                                 {
                                                     width: "20px",
                                                     height: "20px",
@@ -290,278 +324,291 @@ function Projects() {
                                                     color: "#E5657B"
                                                 }
                                             }/> */} </Box>
-                                        <Box my="20px" gap="10px"
-                                            sx={
-                                                {
-                                                    justifyContent: {
-                                                        xs: "center",
-                                                        sm: "center",
-                                                        md: "start"
-                                                    },
-                                                    display: {
-                                                        xs: "grid",
-                                                        sm: "grid",
-                                                        md: "flex"
+                                            <Box my="20px" gap="10px"
+                                                sx={
+                                                    {
+                                                        justifyContent: {
+                                                            xs: "center",
+                                                            sm: "center",
+                                                            md: "start"
+                                                        },
+                                                        display: {
+                                                            xs: "grid",
+                                                            sm: "grid",
+                                                            md: "flex"
+                                                        }
                                                     }
-                                                }
-                                        }>
-                                            {/* <Paper elevation={4}
+                                            }>
+                                                {/* <Paper elevation={4}
                                             sx={
                                                 {borderRadius: "10px"}
                                         }> */}
-                                            <a href={
-                                                    project.code
-                                                }
-                                                target="_blank">
-                                                <button className={
-                                                    styles.button89
-                                                }>
-                                                    <Typography>View It Here</Typography><FiExternalLink className={
-                                                        styles.iconlink
-                                                    }/>
-                                                </button>
-                                            </a>
+                                                <a href={
+                                                        project.code
+                                                    }
+                                                    target="_blank">
+                                                    <button className={
+                                                        styles.button89
+                                                    }>
+                                                        <Typography>View It Here</Typography><FiExternalLink className={
+                                                            styles.iconlink
+                                                        }/>
+                                                    </button>
+                                                </a>
 
-                                            {/* </Paper> */}
-                                            <a href={
-                                                project.github
+                                                {/* </Paper> */}
+                                                <a href={
+                                                    project.github
+                                                }>
+                                                    <button className={
+                                                        styles.button89
+                                                    }>
+                                                        <Typography>
+                                                            View Github Repo</Typography><FiExternalLink className={
+                                                            styles.iconlink
+                                                        }/>
+
+                                                    </button>
+                                                </a>
+
+
+                                            </Box>
+                                        </Grid>
+                                        <Grid item
+                                            md={6}
+                                            xs={12}
+                                            sx={
+                                                {
+                                                    order: {
+                                                        xs: -1,
+                                                        sm: -1,
+                                                        md: 1
+                                                    }
+                                                }
+                                            }
+                                            data-aos="fade-left">
+                                            <Box sx={
+                                                {
+                                                    display: {
+                                                        xs: "none",
+                                                        sm: "block",
+                                                        md: "block"
+                                                    },
+                                                    margin: "auto"
+                                                }
                                             }>
-                                                <button className={
-                                                    styles.button89
-                                                }>
-                                                    <Typography>
-                                                        View Github Repo</Typography><FiExternalLink className={
-                                                        styles.iconlink
-                                                    }/>
-
-                                                </button>
-                                            </a>
-
-
-                                        </Box>
-                                    </Grid>
-                                    <Grid item
-                                        md={6}
-                                        xs={12}
-                                        sx={
-                                            {
-                                                order: {
-                                                    xs: -1,
-                                                    sm: -1,
-                                                    md: 1
-                                                }
-                                            }
-                                        }
-                                        data-aos="fade-left">
-                                        <Box sx={
-                                            {
-                                                display: {
-                                                    xs: "none",
-                                                    sm: "block",
-                                                    md: "block"
-                                                },
-                                                margin: "auto"
-                                            }
-                                        }>
-                                            <img src={
-                                                    project.image
-                                                }
-                                                alt='project photo'
-                                                className={
-                                                    styles.boximage
-                                                }/> {/* <Image src={
+                                                <img src={
+                                                        project.image
+                                                    }
+                                                    alt='project photo'
+                                                    className={
+                                                        styles.boximage
+                                                    }/> {/* <Image src={
                                                 project.image
                                             }
                                             width={650}
                                             height={400}/> */} </Box>
-                                        <Box sx={
-                                            {
-                                                display: {
-                                                    xs: "block",
-                                                    sm: "none",
-                                                    md: "none"
-                                                }
-                                            }
-                                        }>
-                                            <img src={
-                                                    project.image
-                                                }
-                                                alt='project photo'
-                                                className={
-                                                    styles.boximagesmall
-                                                }/>
-                                        </Box>
-
-
-                                    </Grid>
-
-                                </Grid>
-                                <Grid container
-                                    spacing={7}>
-                                    <Grid item
-                                        md={6}
-                                        xs={12}
-                                        id={
-                                            project.id2
-                                        }
-                                        data-aos="fade-right">
-                                        <Box sx={
-                                            {
-                                                display: {
-                                                    xs: "none",
-                                                    sm: "block",
-                                                    md: "block"
-                                                }
-
-                                            }
-                                        }>
-                                            <img src={
-                                                    project.image2
-                                                }
-                                                alt='project photo'
-                                                className={
-                                                    styles.boximage
-                                                }/>
-                                        </Box>
-                                        <Box sx={
-                                            {
-                                                display: {
-                                                    xs: "block",
-                                                    sm: "none",
-                                                    md: "none"
-                                                }
-                                            }
-                                        }>
-                                            <img src={
-                                                    project.image2
-                                                }
-                                                alt='project photo'
-                                                className={
-                                                    styles.boximagesmall
-                                                }/>
-                                        </Box>
-
-                                    </Grid>
-                                    <Grid item
-                                        md={6}
-                                        xs={12}
-                                        sx={
-                                            {
-                                                textAlign: {
-                                                    xs: "center",
-                                                    sm: "center",
-                                                    md: "start"
-                                                }
-                                            }
-                                        }
-                                        data-aos="fade-left">
-                                        <Typography variant='h4'
-                                            sx={
+                                            <Box sx={
                                                 {
-                                                    color: "secondary.pink",
-                                                    fontWeight: "bold"
-                                                }
-                                        }>
-                                            {
-                                            project.title2
-                                        }</Typography>
-                                        <Typography variant='subtitle1'
-                                            sx={
-                                                {
-                                                    my: "10px",
-                                                    color: "background.main"
-                                                }
-                                        }>
-                                            {
-                                            project.body2
-                                        }</Typography>
-                                        <Box display="flex" alignItems="center" gap="5px"
-                                            sx={
-                                                {
-                                                    justifyContent: {
-                                                        xs: "center",
-                                                        sm: "center",
-                                                        md: "start"
-                                                    }
-                                                }
-                                        }>
-
-                                            {
-                                            skillshowhtml(project.html2)
-                                        }
-                                            {
-                                            skillshowcss(project.css2)
-                                        }
-                                            {
-                                            skillshowjs(project.js2)
-                                        }
-                                            {
-                                            skillshowreact(project.react2)
-                                        }
-                                            {
-                                            skillshownext(project.next2)
-                                        }
-                                            {
-                                            skillshowmui(project.MUI2)
-                                        }
-                                            {
-                                            skillshowbootst(project.bootstrap2)
-                                        } </Box>
-                                        <Box my="20px" gap="10px"
-                                            sx={
-                                                {
-                                                    justifyContent: {
-                                                        xs: "center",
-                                                        sm: "center",
-                                                        md: "start"
-                                                    },
                                                     display: {
-                                                        xs: "grid",
-                                                        sm: "grid",
-                                                        md: "flex"
+                                                        xs: "block",
+                                                        sm: "none",
+                                                        md: "none"
                                                     }
                                                 }
-                                        }>
-                                            {/* <Paper elevation={4}
+                                            }>
+                                                <img src={
+                                                        project.image
+                                                    }
+                                                    alt='project photo'
+                                                    className={
+                                                        styles.boximagesmall
+                                                    }/>
+                                            </Box>
+
+
+                                        </Grid>
+                                    </Grid>
+
+
+                                    )
+                                }
+
+
+                                    <Grid container
+                                        spacing={7}>
+                                        <Grid item
+                                            md={6}
+                                            xs={12}
+                                            id={
+                                                project.id2
+                                            }
+                                            data-aos="fade-right">
+                                            <Box sx={
+                                                {
+                                                    display: {
+                                                        xs: "none",
+                                                        sm: "block",
+                                                        md: "block"
+                                                    }
+
+                                                }
+                                            }>
+                                                <img src={
+                                                        project.image2
+                                                    }
+                                                    alt='project photo'
+                                                    className={
+                                                        styles.boximage
+                                                    }/>
+                                            </Box>
+                                            <Box sx={
+                                                {
+                                                    display: {
+                                                        xs: "block",
+                                                        sm: "none",
+                                                        md: "none"
+                                                    }
+                                                }
+                                            }>
+                                                <img src={
+                                                        project.image2
+                                                    }
+                                                    alt='project photo'
+                                                    className={
+                                                        styles.boximagesmall
+                                                    }/>
+                                            </Box>
+
+                                        </Grid>
+                                        <Grid item
+                                            md={6}
+                                            xs={12}
+                                            sx={
+                                                {
+                                                    textAlign: {
+                                                        xs: "center",
+                                                        sm: "center",
+                                                        md: "start"
+                                                    }
+                                                }
+                                            }
+                                            data-aos="fade-left">
+                                            <Typography variant='h4'
+                                                sx={
+                                                    {
+                                                        color: "secondary.pink",
+                                                        fontWeight: "bold"
+                                                    }
+                                            }>
+                                                {
+                                                project.title2
+                                            }</Typography>
+                                            <Typography variant='subtitle1'
+                                                sx={
+                                                    {
+                                                        my: "10px",
+                                                        color: "background.main"
+                                                    }
+                                            }>
+                                                {
+                                                project.body2
+                                            }</Typography>
+                                            <Box display="flex" alignItems="center" gap="5px"
+                                                sx={
+                                                    {
+                                                        justifyContent: {
+                                                            xs: "center",
+                                                            sm: "center",
+                                                            md: "start"
+                                                        }
+                                                    }
+                                            }>
+
+                                                {
+                                                skillshowhtml(project.html2)
+                                            }
+                                                {
+                                                skillshowcss(project.css2)
+                                            }
+                                                {
+                                                skillshowjs(project.js2)
+                                            }
+                                                {
+                                                skillshowreact(project.react2)
+                                            }
+                                                {
+                                                skillshownext(project.next2)
+                                            }
+                                                {
+                                                skillshowmui(project.MUI2)
+                                            }
+                                                {
+                                                skillshowbootst(project.bootstrap2)
+                                            }
+                                                {
+                                                skillshowtailwind(project.tailwind2)
+                                            }
+                                                {
+                                                skillshowredux(project.redux2)
+                                            } </Box>
+
+                                            <Box my="20px" gap="10px"
+                                                sx={
+                                                    {
+                                                        justifyContent: {
+                                                            xs: "center",
+                                                            sm: "center",
+                                                            md: "start"
+                                                        },
+                                                        display: {
+                                                            xs: "grid",
+                                                            sm: "grid",
+                                                            md: "flex"
+                                                        }
+                                                    }
+                                            }>
+                                                {/* <Paper elevation={4}
                                                 sx={
                                                     {borderRadius: "10px"}
                                             }> */}
-                                            <a href={
-                                                    project.code2
-                                                }
-                                                target="_blank">
-                                                <button className={
-                                                    styles.button89
+                                                <a href={
+                                                        project.code2
+                                                    }
+                                                    target="_blank">
+                                                    <button className={
+                                                        styles.button89
+                                                    }>
+                                                        <Typography>View It Here</Typography><FiExternalLink className={
+                                                            styles.iconlink
+                                                        }/>
+                                                    </button>
+                                                </a>
+                                                {/* </Paper> */}
+                                                <a href={
+                                                    project.github2
                                                 }>
-                                                    <Typography>View It Here</Typography><FiExternalLink className={
-                                                        styles.iconlink
-                                                    }/>
-                                                </button>
-                                            </a>
-                                            {/* </Paper> */}
-                                            <a href={
-                                                project.github2
-                                            }>
-                                                <button className={
-                                                    styles.button89
-                                                }>
-                                                    <Typography>
-                                                        View Github Repo</Typography><FiExternalLink className={
-                                                        styles.iconlink
-                                                    }/>
+                                                    <button className={
+                                                        styles.button89
+                                                    }>
+                                                        <Typography>
+                                                            View Github Repo</Typography><FiExternalLink className={
+                                                            styles.iconlink
+                                                        }/>
 
-                                                </button>
-                                            </a>
+                                                    </button>
+                                                </a>
 
 
-                                        </Box>
+                                            </Box>
+                                        </Grid>
+
+
                                     </Grid>
-
-
-                                </Grid>
-                            </>
-                        )
-                    })
+                                </>
+                            )
+                        }
+                    )
                 } </Box>
 
             </Container>
