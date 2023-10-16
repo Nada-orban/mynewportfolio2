@@ -25,6 +25,7 @@ import skill5 from '../public/assets/skills/Tailwind_CSS_Logo.svg.png'
 import skill6 from '../public/assets/skills/Bootstrap_logo.svg.png'
 import skill7 from '../public/assets/skills/redux.svg'
 import skill8 from '../public/assets/skills/nextjs-icon.svg'
+import skill8a from '../public/assets/skills/Typescript_logo_2020.svg.png'
 import skill9 from '../public/assets/skills/nodejs-logo-FBE122E377-seeklogo.com.png'
 import skill10 from '../public/assets/skills/erkxwhl1gd48xfhe2yld.png'
 import skill11 from '../public/assets/skills/expressjs_logo_icon_169185.png'
@@ -326,6 +327,33 @@ function Skill() {
                                         alt="Picture of skill"/>
                                 </Paper>
                             </Grid>
+
+                            <Grid item
+                                md={2}
+                                sm={4}
+                                xs={6}
+                                mt="20px">
+                                <Paper sx={
+                                        {border: "1.5px solid #3178C6"}
+                                    }
+                                    square
+                                    elevation={6}
+                                    className={
+                                        styles.skillbox
+                                }>
+                                    <Typography variant='h5'
+                                        sx={
+                                            {
+                                                color: "black",
+                                                mb: "5px"
+                                            }
+                                    }>TypeScript</Typography>
+                                    <Image src={skill8a}
+                                        width={40}
+                                        alt="Picture of skill"/>
+                                </Paper>
+                            </Grid>
+
                             <Grid item
                                 md={2}
                                 sm={4}
@@ -351,7 +379,7 @@ function Skill() {
                                         alt="Picture of skill"/>
                                 </Paper>
                             </Grid>
-                            <Grid item
+                            {/* <Grid item
                                 md={2}
                                 sm={4}
                                 xs={6}
@@ -375,7 +403,7 @@ function Skill() {
                                         width={40}
                                         alt="Picture of skill"/>
                                 </Paper>
-                            </Grid>
+                            </Grid> */}
                             <Grid item
                                 md={2}
                                 sm={4}
