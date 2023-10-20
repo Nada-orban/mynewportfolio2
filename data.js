@@ -41,7 +41,8 @@ export const projectsdata = [
         "body2": " The design of the website is clean, modern, and visually appealing, with a focus on highlighting Ahmed's data-driven approach and passion for machine learning. The website features interactive elements, including links to Ahmed's personal projects and GitHub repository, allowing visitors to explore his work in more detail. ",
         "image2": "../assets/projects/Fahkry's Website.png",
         "github2": "https://github.com/Nada-orban/fakhry4",
-        "code2": "https://ahmedfakhry.vercel.app/",
+        "code2": "https://ahmed-fakhry.vercel.app/",
+
         "html2": "true",
         "css2": "true",
         "js2": "true",
